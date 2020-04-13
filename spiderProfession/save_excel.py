@@ -1,7 +1,6 @@
 #!/usr/bin/python
 # -*-coding:utf-8-*-
 
-import shutil
 import os
 import json
 import sys
@@ -19,8 +18,10 @@ failedItem = {}
 def unicode_convert(input):
     result = ''
     if isinstance(input, dict):
-        result = {unicode_convert(key): unicode_convert(value)
-                  for key, value in input.iteritems()}
+        result = {
+            unicode_convert(key): unicode_convert(value)
+            for key, value in input.iteritems()
+        }
     elif isinstance(input, list):
         result = [unicode_convert(element) for element in input]
     elif isinstance(input, unicode):
@@ -81,8 +82,10 @@ def saveExcel():
     book = xlwt.Workbook(encoding='utf-8', style_compression=0)
     sheet = book.add_sheet('专业大全', cell_overwrite_ok=True)
 
-    excelHeader = ['专业', '专业代码', '门类', '学科', '授予学位', '学历层次', '相近专业',
-                   '开设高校数量', '主要课程', '主干学科', '教学实践', '培养要求', '培养目标', '就业方向', 'url', 'p']
+    excelHeader = [
+        '专业', '专业代码', '门类', '学科', '授予学位', '学历层次', '相近专业', '开设高校数量', '主要课程',
+        '主干学科', '教学实践', '培养要求', '培养目标', '就业方向', 'url', 'p'
+    ]
     for index in range(len(excelHeader)):
         sheet.write(0, index, excelHeader[index].decode('utf-8'))
 

@@ -1,32 +1,30 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
 
+import sys
+sys.path.append('..')
+
 import time
 import json
-import os
+from common.request import Request
+from common.json_func import JsonFunc
 from bs4 import BeautifulSoup
-import requests
-import sys
 reload(sys)
 sys.setdefaultencoding('utf8')
 
+START_NUM = 92
+END_NUM = 93
 
-listItems = {}
-
-headers = {
-    'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36'
-}
-
-startNum = 92
-endNum = 200
+list_items = {}
+request = Request()
 
 
-def getInfo(startNum, endNum):
-    for num in range(startNum, endNum + 1):
+def get_info(start_num, end_num):
+    for num in range(start_num, end_num + 1):
         url = 'http://college.gaokao.com/speciality/' + str(num) + '/'
         detailInfo = {"id": num}
         try:
-            res = requests.get(url, headers=headers)
+            res = request.set_request(url)
             soup = BeautifulSoup(res.text, "html.parser")
 
             dom = soup.find('div', {'class': 'bg_sez'})
@@ -55,22 +53,18 @@ def getInfo(startNum, endNum):
                     detailInfo[temp[0]] = ''
 
             print 'ok: ', url
-        except:
+        except IOError:
             print 'failed: ', url
         finally:
             print json.dumps({name: detailInfo},
-                             encoding='UTF-8', ensure_ascii=False)
-            listItems[name] = detailInfo
+                             encoding='UTF-8',
+                             ensure_ascii=False)
+            list_items[name] = detailInfo
             time.sleep(5)
             pass
 
 
-getInfo(startNum, endNum)
-
-getDic = json.dumps(listItems, encoding='UTF-8', ensure_ascii=False)
-# print getDic
-
-# 保存结果JSON
-with open('./profession_' + str(endNum) + '.json', 'w') as json_file:
-    json_file.write(getDic)
-json_file.close()
+if __name__ == '__main__':
+    get_info(START_NUM, END_NUM)
+    JsonFunc().save_json(list_items, './profession_detail_' + str(END_NUM))
+    list_items = {}
