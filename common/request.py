@@ -20,7 +20,14 @@ proxy_list = [
 
 class Request(object):
     def __init__(self):
+        self.url = {
+            'pro_list_url': 'http://college.gaokao.com/spelist/',
+            'pro_url': 'http://college.gaokao.com/speciality/'
+        }
         pass
+
+    def get_url(self, url, mod='pro_url'):
+        return url if 'http' in url else (self.url[mod] + url)
 
     def get_header(self, mod='default'):
         location = PROFESSION_UA_PATH[mod] + 'fake_useragent.json'
