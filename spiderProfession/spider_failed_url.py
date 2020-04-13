@@ -10,8 +10,8 @@ sys.path.append(PAR_DIR)
 
 import time
 import json
-from common.request import Request
 from common.json_func import JsonFunc
+from common.utils import Utils
 from common_func import CommonFunc
 
 reload(sys)
@@ -29,7 +29,7 @@ def get_info():
     path = os.path.abspath(os.path.join(os.path.dirname(__file__)))
     with open(path + '/failed.json') as fp:
         data = fp.read()
-        result = Request().unicode_convert(json.loads(data))
+        result = Utils().unicode_convert(json.loads(data))
         failed_item_dict = eval(result)
 
         for item in failed_item_dict.values():
