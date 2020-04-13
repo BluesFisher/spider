@@ -24,3 +24,8 @@ class Utils(object):
         else:
             result = input
         return str(result).decode("string_escape")
+
+    def merge_two_dicts(self, x, y):
+        z = x.copy()
+        z.update(y)
+        return z
