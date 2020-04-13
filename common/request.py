@@ -44,18 +44,3 @@ class Request(object):
         headers = {'user-agent': self.get_header()}
         res = requests.get(url, headers=headers)
         return res
-
-    def unicode_convert(self, input):
-        result = ''
-        if isinstance(input, dict):
-            result = {
-                self.unicode_convert(key): self.unicode_convert(value)
-                for key, value in input.iteritems()
-            }
-        elif isinstance(input, list):
-            result = [self.unicode_convert(element) for element in input]
-        elif isinstance(input, unicode):
-            result = input.encode('utf-8')
-        else:
-            result = input
-        return str(result).decode("string_escape")

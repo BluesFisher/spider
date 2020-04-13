@@ -2,10 +2,16 @@
 # -*-coding:utf-8-*-
 
 import os
-import json
 import sys
+
+PAR_DIR = os.path.abspath(
+    os.path.join(os.path.dirname(__file__), os.path.pardir))
+sys.path.append(PAR_DIR)
+
+import json
 import xlwt
 import time
+from common.utils import Utils
 
 reload(sys)
 sys.setdefaultencoding('utf8')
@@ -13,22 +19,6 @@ sys.setdefaultencoding('utf8')
 professionFiles = []
 professionDict = {}
 failedItem = {}
-
-
-def unicode_convert(input):
-    result = ''
-    if isinstance(input, dict):
-        result = {
-            unicode_convert(key): unicode_convert(value)
-            for key, value in input.iteritems()
-        }
-    elif isinstance(input, list):
-        result = [unicode_convert(element) for element in input]
-    elif isinstance(input, unicode):
-        result = input.encode('utf-8')
-    else:
-        result = input
-    return str(result).decode("string_escape")
 
 
 def merge_two_dicts(x, y):
@@ -57,14 +47,14 @@ professionFiles.append('./profile/profession_failed.json')
 for path in professionFiles:
     with open(path) as fp:
         data = fp.read()
-        result = unicode_convert(json.loads(data))
+        result = Utils().unicode_convert(json.loads(data))
 
         if len(professionDict.keys()) == 0:
             professionDict = eval(result)
         else:
             professionDict = merge_two_dicts(professionDict, eval(result))
 
-professionDict = eval(unicode_convert(professionDict))
+professionDict = eval(Utils().unicode_convert(professionDict))
 
 for key in professionDict.copy():
     if 'failed' in key:
