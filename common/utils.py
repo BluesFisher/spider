@@ -30,14 +30,23 @@ class Utils(object):
         z.update(y)
         return z
 
-    def savePic(self, url):
+    def savePic(self, url, path_in=''):
         if not url:
             return ''
         try:
+            if 'icon_default' in url:
+                return PROFESSION_UA_PATH['static'] + path_in + 'none.png'
+
             imgres = requests.get(url)  # 取得文件内容
-            path = PROFESSION_UA_PATH['static'] + str(uuid.uuid4()) + '.png'
+
+            if imgres.status_code == 404:
+                return PROFESSION_UA_PATH['static'] + path_in + 'none.png'
+
+            path = PROFESSION_UA_PATH['static'] + path_in + str(
+                uuid.uuid4()) + '.png'
             with open(path, "wb") as f:
                 f.write(imgres.content)
+            # time.sleep(5)
             return path
         except IOError:
             return url
