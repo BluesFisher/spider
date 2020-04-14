@@ -1,0 +1,323 @@
+{
+  "广州民航职业": {
+    "logo": "/spider/static/logo/广州民航职业-551200a5-3eac-403b-b4be-09175ac52f30.png"
+  },
+  "番禺职业技术": {
+    "logo": "/spider/static/logo/番禺职业技术-none.png"
+  },
+  "私立华联学院": {
+    "logo": "/spider/static/logo/私立华联学院-f596310b-c288-4784-bcac-0a1b3d127d46.png"
+  },
+  "广东科贸职业": {
+    "logo": "/spider/static/logo/广东科贸职业-none.png"
+  },
+  "北京理工大学": {
+    "logo": "/spider/static/logo/北京理工大学-6742e2b2-8ea0-4d42-a9de-d61b1e324eaa.png"
+  },
+  "广东女子职业": {
+    "logo": "/spider/static/logo/广东女子职业-7b344caa-40bc-4441-9e6c-7dee8c9bab0c.png"
+  },
+  "广东科学技术": {
+    "logo": "/spider/static/logo/广东科学技术-c94be789-cfbf-45c4-a8ca-843c1ed38f51.png"
+  },
+  "广东建设职业": {
+    "logo": "/spider/static/logo/广东建设职业-a4a6447d-af95-4960-aed2-dfd2596ae1d8.png"
+  },
+  "佛山职业技术": {
+    "logo": "/spider/static/logo/佛山职业技术-6a9e6a72-c287-4c7a-8aef-de78b9048c5a.png"
+  },
+  "惠州学院": {
+    "logo": "/spider/static/logo/惠州学院-1568dd81-5136-4d27-894d-a3b532b8cde9.png"
+  },
+  "广东白云学院": {
+    "logo": "/spider/static/logo/广东白云学院-b185ffb1-5bad-4dc6-9bb2-6b48c615587f.png"
+  },
+  "广州大学松田": {
+    "logo": "/spider/static/logo/广州大学松田-a03f5af0-6aad-4bc6-a443-868b679a5f5b.png"
+  },
+  "广东外语外贸": {
+    "logo": "/spider/static/logo/广东外语外贸-48797e79-943b-4fb6-90ef-cb570d207264.png"
+  },
+  "湛江师范学院": {
+    "logo": "/spider/static/logo/湛江师范学院-b51790da-5e60-4e04-8b0b-8508abe4e80a.png"
+  },
+  "华南农业大学": {
+    "logo": "/spider/static/logo/华南农业大学-bfb256d9-68e0-4044-8c80-53170c8a4dea.png"
+  },
+  "嘉应学院": {
+    "logo": "/spider/static/logo/嘉应学院-7c97344e-e2c4-4562-bd67-10545ba86bc5.png"
+  },
+  "仲恺农业技术": {
+    "logo": "/spider/static/logo/仲恺农业技术-e57b06f7-3df8-4cc8-8f66-2f3c92a96fe1.png"
+  },
+  "广州涉外经济": {
+    "logo": "/spider/static/logo/广州涉外经济-50bbeb0a-b554-4875-b612-929517d1c8f0.png"
+  },
+  "广州体育职业": {
+    "logo": "/spider/static/logo/广州体育职业-a27c33f7-d0ed-4879-8b4e-a529a0df58b4.png"
+  },
+  "广州大学华软": {
+    "logo": "/spider/static/logo/广州大学华软-none.png"
+  },
+  "暨南大学": {
+    "logo": "/spider/static/logo/暨南大学-aae44f9c-d431-4f6b-af6c-950720c46878.png"
+  },
+  "广东医学院": {
+    "logo": "/spider/static/logo/广东医学院-220facdc-6bb4-40c3-9dff-c13c3561e475.png"
+  },
+  "华南理工大学": {
+    "logo": "/spider/static/logo/华南理工大学-662c3996-f5f1-42c9-b4e2-50c7cdab77f4.png"
+  },
+  "广州体育学院": {
+    "logo": "/spider/static/logo/广州体育学院-8d7a284a-6e5f-4981-afc3-4e4061c8ac3c.png"
+  },
+  "吉林大学珠海": {
+    "logo": "/spider/static/logo/吉林大学珠海-6ef4e7e2-779f-4d79-9142-c8cd951923bf.png"
+  },
+  "中山大学南方": {
+    "logo": "/spider/static/logo/中山大学南方-41d295e8-127e-4260-95c5-7d46bba8af0a.png"
+  },
+  "河源职业技术": {
+    "logo": "/spider/static/logo/河源职业技术-e51c75c1-826e-430f-8199-3b61ec0b89ab.png"
+  },
+  "广州中医药大": {
+    "logo": "/spider/static/logo/广州中医药大-9d01d937-ec03-412c-ac4e-ca9c0b3e127c.png"
+  },
+  "广州科技职业": {
+    "logo": "/spider/static/logo/广州科技职业-c6eea7d0-8390-4784-b883-8d1694adacd7.png"
+  },
+  "东莞理工学院": {
+    "logo": "/spider/static/logo/东莞理工学院-b67e742e-ca84-41be-bb3e-71887f43f0a5.png"
+  },
+  "广东省外语艺": {
+    "logo": "/spider/static/logo/广东省外语艺-2046536d-5de0-4a51-9716-72ca90371848.png"
+  },
+  "广州工程技术": {
+    "logo": "/spider/static/logo/广州工程技术-28ba3ae7-8852-4238-8c5f-4b2c41e5a0e9.png"
+  },
+  "星海音乐学院": {
+    "logo": "/spider/static/logo/星海音乐学院-a2128730-d5bb-4db1-9e5b-9549dae525b1.png"
+  },
+  "电子科技大学": {
+    "logo": "/spider/static/logo/电子科技大学-10788690-319e-48ef-a126-8fa1cf06895f.png"
+  },
+  "广东行政职业": {
+    "logo": "/spider/static/logo/广东行政职业-1e473473-da88-41e6-b25a-b62834dc704e.png"
+  },
+  "揭阳职业技术": {
+    "logo": "/spider/static/logo/揭阳职业技术-44099fd7-0735-4cdc-9091-03c236ec599e.png"
+  },
+  "广州南洋理工": {
+    "logo": "/spider/static/logo/广州南洋理工-99b9ecab-2cd2-4f75-864a-9bea4670c3ae.png"
+  },
+  "广东体育职业": {
+    "logo": "/spider/static/logo/广东体育职业-a43901f4-3266-45b8-9c67-ed39a8bf5a05.png"
+  },
+  "广东教育学院": {
+    "logo": "/spider/static/logo/广东教育学院-none.png"
+  },
+  "惠州大学": {
+    "logo": "/spider/static/logo/惠州大学-e0e29fd8-b129-4672-812f-0715a03ffbfd.png"
+  },
+  "广东轻工职业": {
+    "logo": "/spider/static/logo/广东轻工职业-4b790686-8c7b-4094-9109-e269590913bf.png"
+  },
+  "广东亚视演艺": {
+    "logo": "/spider/static/logo/广东亚视演艺-be4733d5-f454-4294-aea8-a7fa10ece1cf.png"
+  },
+  "广州华立科技": {
+    "logo": "/spider/static/logo/广州华立科技-none.png"
+  },
+  "广东新安职业": {
+    "logo": "/spider/static/logo/广东新安职业-2633606d-98d2-487e-8a4c-68fb091f69ed.png"
+  },
+  "华南师范大学": {
+    "logo": "/spider/static/logo/华南师范大学-8d91a861-6ad0-4065-93d1-415e80f672f0.png"
+  },
+  "广东水利电力": {
+    "logo": "/spider/static/logo/广东水利电力-d77d7167-e5bc-4b5b-b18e-d280bc1ee157.png"
+  },
+  "广州科技贸易": {
+    "logo": "/spider/static/logo/广州科技贸易-none.png"
+  },
+  "潮汕职业技术": {
+    "logo": "/spider/static/logo/潮汕职业技术-fb34d8ae-a0a8-4b49-9f14-a5b371c47df0.png"
+  },
+  "北京师范大学": {
+    "logo": "/spider/static/logo/北京师范大学-none.png"
+  },
+  "广州珠江职业": {
+    "logo": "/spider/static/logo/广州珠江职业-none.png"
+  },
+  "广州现代信息": {
+    "logo": "/spider/static/logo/广州现代信息-none.png"
+  },
+  "广州松田职业": {
+    "logo": "/spider/static/logo/广州松田职业-none.png"
+  },
+  "汕头职业技术": {
+    "logo": "/spider/static/logo/汕头职业技术-6bc298cc-6707-407d-8319-96a20d04433a.png"
+  },
+  "佛山科学技术": {
+    "logo": "/spider/static/logo/佛山科学技术-5b4f3559-83d9-48a8-830e-136f4bc2cb8b.png"
+  },
+  "阳江职业技术": {
+    "logo": "/spider/static/logo/阳江职业技术-dc0fdd62-79a5-4bc4-866d-e0746a3ddea0.png"
+  },
+  "广州城建职业": {
+    "logo": "/spider/static/logo/广州城建职业-none.png"
+  },
+  "广东金融学院": {
+    "logo": "/spider/static/logo/广东金融学院-44624d10-4d52-483b-a4a6-2f6974d1f2e7.png"
+  },
+  "广东石油化工": {
+    "logo": "/spider/static/logo/广东石油化工-77ab79e9-69d6-4ceb-a29b-6f2ae8111f05.png"
+  },
+  "汕尾职业技术": {
+    "logo": "/spider/static/logo/汕尾职业技术-2a49b28a-ea1d-4fd4-a417-a782287182a2.png"
+  },
+  "韩山师范学院": {
+    "logo": "/spider/static/logo/韩山师范学院-ff2ba0ff-867b-437e-8198-6dcc518d953d.png"
+  },
+  "广东警官学院": {
+    "logo": "/spider/static/logo/广东警官学院-3bf2f264-398f-4149-812e-0f0edc3a2c21.png"
+  },
+  "韶关学院": {
+    "logo": "/spider/static/logo/韶关学院-36b03b4f-8801-41e7-aa9e-8b4fcede8b98.png"
+  },
+  "广州华南商贸": {
+    "logo": "/spider/static/logo/广州华南商贸-none.png"
+  },
+  "广州工商职业": {
+    "logo": "/spider/static/logo/广州工商职业-2b058af5-108c-46ee-bf64-d28e051e200e.png"
+  },
+  "广东财经大学": {
+    "logo": "/spider/static/logo/广东财经大学-5df657f2-d201-4bbd-a796-47c003189290.png"
+  },
+  "广东培正学院": {
+    "logo": "/spider/static/logo/广东培正学院-55075b33-26a1-4f95-abfb-04ce59407b37.png"
+  },
+  "中山大学": {
+    "logo": "/spider/static/logo/中山大学-5220d9fb-6aee-421b-a67c-23ee7a37b8ba.png"
+  },
+  "汕头大学": {
+    "logo": "/spider/static/logo/汕头大学-d49fd131-ef9a-493b-b270-de217f65fa93.png"
+  },
+  "珠海艺术职业": {
+    "logo": "/spider/static/logo/珠海艺术职业-85cb9889-bd77-456f-8d45-07862801849d.png"
+  },
+  "广东食品药品": {
+    "logo": "/spider/static/logo/广东食品药品-5a984404-92e5-4b92-a5cd-fa5d9adf51a9.png"
+  },
+  "肇庆学院": {
+    "logo": "/spider/static/logo/肇庆学院-aeeda0f0-4f06-422f-b1e7-55f15fb85c4a.png"
+  },
+  "南海东软信息": {
+    "logo": "/spider/static/logo/南海东软信息-98020484-b35f-44c0-83d2-302dd88380a7.png"
+  },
+  "深圳信息职业": {
+    "logo": "/spider/static/logo/深圳信息职业-d21f96a1-ef73-4194-99cb-1acd931663a0.png"
+  },
+  "广东工程职业": {
+    "logo": "/spider/static/logo/广东工程职业-none.png"
+  },
+  "广东建华职业": {
+    "logo": "/spider/static/logo/广东建华职业-none.png"
+  },
+  "南方医科大学": {
+    "logo": "/spider/static/logo/南方医科大学-d572ad09-9e73-49a5-baba-1af88cdc7ca4.png"
+  },
+  "广州美术学院": {
+    "logo": "/spider/static/logo/广州美术学院-fb8a2067-aab8-484b-89bc-0ff80aa85fb6.png"
+  },
+  "广东工业大学": {
+    "logo": "/spider/static/logo/广东工业大学-d1c18045-60f2-41ce-8d65-33a084c90bdc.png"
+  },
+  "广东药学院": {
+    "logo": "/spider/static/logo/广东药学院-e49f4890-2d33-483a-8d12-37be26553e3b.png"
+  },
+  "广东纺织职业": {
+    "logo": "/spider/static/logo/广东纺织职业-25c73d06-1312-40ba-acbc-fd4e2ee7c738.png"
+  },
+  "广东海洋大学": {
+    "logo": "/spider/static/logo/广东海洋大学-332405f6-e06d-46fe-8a82-59ba236b99b9.png"
+  },
+  "广州康大职业": {
+    "logo": "/spider/static/logo/广州康大职业-70ac5121-114a-41ec-93a8-53dde2a37531.png"
+  },
+  "顺德职业技术": {
+    "logo": "/spider/static/logo/顺德职业技术-8831a690-82b4-4283-abd5-283386f1d9e5.png"
+  },
+  "深圳大学": {
+    "logo": "/spider/static/logo/深圳大学-bfb430cb-de0f-4925-bc31-5ff8d74816cc.png"
+  },
+  "广州铁路职业": {
+    "logo": "/spider/static/logo/广州铁路职业-none.png"
+  },
+  "广东机电职业": {
+    "logo": "/spider/static/logo/广东机电职业-ae5bc3ed-abfd-45ec-8e70-aa3ca580f463.png"
+  },
+  "广州大学": {
+    "logo": "/spider/static/logo/广州大学-fa0de853-3e23-46a5-be44-2dcbbbb90893.png"
+  },
+  "罗定职业技术": {
+    "logo": "/spider/static/logo/罗定职业技术-00c363fd-8811-4ee7-9365-83fab41d851d.png"
+  },
+  "清远职业技术": {
+    "logo": "/spider/static/logo/清远职业技术-751b0098-b151-42de-acd0-152422212301.png"
+  },
+  "广东司法警官": {
+    "logo": "/spider/static/logo/广东司法警官-948eff61-5e32-4e3b-8420-c907c40919de.png"
+  },
+  "广东商学院华": {
+    "logo": "/spider/static/logo/广东商学院华-none.png"
+  },
+  "广东财经职业": {
+    "logo": "/spider/static/logo/广东财经职业-8aebdd9e-d64a-49ed-955a-3f990b170ea9.png"
+  },
+  "广东松山职业": {
+    "logo": "/spider/static/logo/广东松山职业-910384a1-a236-48e6-9ef5-a496db6090b6.png"
+  },
+  "深圳职业技术": {
+    "logo": "/spider/static/logo/深圳职业技术-e93e5c95-71a1-45e6-933e-b2bd4de5986c.png"
+  },
+  "中山大学新华": {
+    "logo": "/spider/static/logo/中山大学新华-6181ec1c-c8ef-4b23-b684-94d40008fd6f.png"
+  },
+  "广东理工职业": {
+    "logo": "/spider/static/logo/广东理工职业-none.png"
+  },
+  "广东岭南职业": {
+    "logo": "/spider/static/logo/广东岭南职业-7051bc81-ca8c-4122-b409-dad1ec75aeed.png"
+  },
+  "广东邮电职业": {
+    "logo": "/spider/static/logo/广东邮电职业-196c55f4-1a54-4eeb-b9b4-a58c69fc5906.png"
+  },
+  "广东文艺职业": {
+    "logo": "/spider/static/logo/广东文艺职业-78769847-ff3f-4bc1-9d7b-4985d636aa57.png"
+  },
+  "五邑大学": {
+    "logo": "/spider/static/logo/五邑大学-fb66fe5d-138f-420f-b01f-f065fab29700.png"
+  },
+  "广东工贸职业": {
+    "logo": "/spider/static/logo/广东工贸职业-01dbfda4-2244-4154-8cac-db5f4e1a1812.png"
+  },
+  "广东技术师范": {
+    "logo": "/spider/static/logo/广东技术师范-71a2ef26-fcca-4edd-be3f-fddfa2f30187.png"
+  },
+  "广州医学院": {
+    "logo": "/spider/static/logo/广州医学院-403e6c59-e378-4d77-89ae-cefdb6f37b9d.png"
+  },
+  "广东农工商职": {
+    "logo": "/spider/static/logo/广东农工商职-b8b2ace7-04aa-4b77-8ec5-a39ce3d4ab81.png"
+  },
+  "广州城市职业": {
+    "logo": "/spider/static/logo/广州城市职业-none.png"
+  },
+  "广州航海高等": {
+    "logo": "/spider/static/logo/广州航海高等-e2985b76-7e19-4f8f-945f-b979610eadde.png"
+  },
+  "广东交通职业": {
+    "logo": "/spider/static/logo/广东交通职业-2ff704e1-8961-4690-a291-384bffe50f50.png"
+  }
+}

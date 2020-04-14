@@ -25,7 +25,8 @@ class Request(object):
             'pro_url': 'http://college.gaokao.com/speciality/',  # 专业介绍
             'college_info': 'http://www.gaokao.com/guangdong/gdxw/',  # 高考资讯
             'student_guide': 'http://www.gaokao.com/guangdong/zsjz/',  # 招生简章
-            'college_dynamic': 'http://www.gaokao.com/guangdong/yx/'  # 院校动态
+            'college_dynamic': 'http://www.gaokao.com/guangdong/yx/',  # 院校动态
+            'college_detail': 'http://college.gaokao.com/schlist/a14/'  # 院校详情
         }
         pass
 
