@@ -9,10 +9,16 @@ reload(sys)
 sys.setdefaultencoding('utf8')
 
 from common.request import Request
+from common.utils import Utils
 from bs4 import BeautifulSoup
 import time
 import json
 import re
+
+NO_IMG = [
+    'http://files.eduuu.com/img/2018/03/07/111547_5a9f59633b91a.jpg',
+    'http://gaokaobang.oss-cn-beijing.aliyuncs.com/attachs/img/2019/05/16/120656_5cdce1e052934.jpg'
+]
 
 
 class CommonFunc(object):
@@ -26,7 +32,7 @@ class CommonFunc(object):
                          detail_info={},
                          mod='college_info'):
         send_url = self.request.get_url(url, mod)
-
+        desc_class = 'intro' if mod == 'college_info' else 'desc'
         try:
             res = Request().set_request(send_url)
             res.encoding = 'gbk'
@@ -40,7 +46,7 @@ class CommonFunc(object):
                 title = li.find_all('a')[0].get_text().strip()
                 date = li.find_all('span')[0].get_text().strip()
                 desc = li.find('div', {
-                    'class': 'intro'
+                    'class': desc_class
                 }).get_text().strip().replace(' ', '')
 
                 info = {
@@ -59,7 +65,7 @@ class CommonFunc(object):
             time.sleep(5)
             return list_items, detail_info
 
-    def get_college_info_detail(self, url, detail_info):
+    def get_news_detail(self, url, detail_info):
 
         try:
             res = Request().set_request(url)
@@ -88,17 +94,18 @@ class CommonFunc(object):
 
                 if item.find('img'):
                     for img in item.find_all('img'):
-                        if img.get(
-                                'src'
-                        ) != 'http://gaokaobang.oss-cn-beijing.aliyuncs.com/attachs/img/2019/05/16/120656_5cdce1e052934.jpg':
-                            result.append({'img': img.get('src')})
+                        if img.get('src') not in NO_IMG:
+                            img_url = Utils().savePic(img.get('src'))
+                            result.append({'img': img_url})
                     continue
 
                 info = re.sub(r'[<br><br/></br>]', '\n',
                               item.get_text().strip()).replace(
                                   '\r', '').replace('\t', '').replace(
-                                      '\n\n', '\n').replace(' ', '')
-                if "最新高考资讯、高考政策、考前准备、高考预测、志愿填报、录取分数线等" not in info:
+                                      '\n\n',
+                                      '\n').replace(' ',
+                                                    '').replace('[阅读全文]', '')
+                if "最新高考资讯、高考政策、考前准备、高考预测、志愿填报、录取分数线等" not in info and '尽在\"高考网\"微信公众号' not in info:
                     if item.find('a'):
                         result.append({'a': item.find('a')['href'], 'p': info})
                     else:
@@ -112,3 +119,36 @@ class CommonFunc(object):
         finally:
             time.sleep(5)
             return detail_info
+
+    def get_student_guide(self,
+                          url,
+                          list_items,
+                          detail_info={},
+                          mod='student_guide'):
+        send_url = self.request.get_url(url, mod)
+
+        try:
+            res = Request().set_request(send_url)
+            res.encoding = 'gbk'
+            soup = BeautifulSoup(res.text, "html.parser")
+
+            dom = soup.find_all('table')
+
+            for table in dom:
+                tbody = table.find_all('tr')
+
+                for tr in tbody[1:]:  # 第一行为表头
+                    td = tr.find_all('td')
+                    college_name = td[0].get_text().strip()
+                    college_guide = '' if len(td) <= 1 or (
+                        not td[1].find('a')) else td[1].find('a')['href']
+                    if college_name:
+                        list_items[college_name] = {'url': college_guide}
+
+            print 'ok: ', send_url
+        except IOError:
+            print 'failed: ', send_url
+        finally:
+            print json.dumps(list_items, encoding='UTF-8', ensure_ascii=False)
+            time.sleep(5)
+            return list_items, detail_info
