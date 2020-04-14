@@ -1,13 +1,13 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
 
+import requests
+import uuid
+from common import PROFESSION_UA_PATH
+
 
 class Utils(object):
     def __init__(self):
-        self.url = {
-            'pro_list_url': 'http://college.gaokao.com/spelist/',
-            'pro_url': 'http://college.gaokao.com/speciality/'
-        }
         pass
 
     def unicode_convert(self, input):
@@ -29,3 +29,15 @@ class Utils(object):
         z = x.copy()
         z.update(y)
         return z
+
+    def savePic(self, url):
+        if not url:
+            return ''
+        try:
+            imgres = requests.get(url)  # 取得文件内容
+            path = PROFESSION_UA_PATH['static'] + str(uuid.uuid4()) + '.png'
+            with open(path, "wb") as f:
+                f.write(imgres.content)
+            return path
+        except IOError:
+            return url

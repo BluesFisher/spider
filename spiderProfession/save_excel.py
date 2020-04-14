@@ -87,7 +87,7 @@ def saveExcel():
             sheet.write(row, index, detail.decode('utf-8'))
         row += 1
 
-    date = time.strftime('%m%d', time.localtime(time.time()))
+    date = time.strftime('%Y%m%d', time.localtime(time.time()))
     book.save(PATH + '/result/profession_' + date + '.xls')
 
 

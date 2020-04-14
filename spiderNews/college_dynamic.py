@@ -23,13 +23,13 @@ list_items = []
 def get_info():
     global list_items
 
-    list_items, detail_info = CommonFunc().get_college_info('', list_items)
+    list_items, detail_info = CommonFunc().get_college_info(
+        '', list_items, mod='college_dynamic')
     now_date = datetime.datetime.strptime(str(datetime.date.today()),
                                           '%Y-%m-%d')
     num = 0
     for item in copy.deepcopy(list_items):
-        news_date = datetime.datetime.strptime(item['date'],
-                                               '%Y-%m-%d %H:%M:%S')
+        news_date = datetime.datetime.strptime(item['date'], '%Y-%m-%d')
         if news_date.__lt__(now_date):
             print item['date']
             list_items = list_items[0:num]
@@ -46,10 +46,4 @@ if __name__ == '__main__':
 
     get_info()
     date = time.strftime('%Y%m%d', time.localtime(time.time()))
-    JsonFunc().save_json(list_items, path + '/news/college_info_' + date)
-
-    # url = 'http://www.gaokao.com/e/20200312/5e6a165d1060f.shtml' # img
-    # url = 'http://www.gaokao.com/e/20200326/5e7c0b3a2aeca.shtml' # normal
-    # url = 'http://www.gaokao.com/e/20200319/5e735b65e2da7.shtml'  # table
-    # detail_info = CommonFunc().get_news_detail(url, {})
-    # print json.dumps(detail_info, encoding='UTF-8', ensure_ascii=False)
+    JsonFunc().save_json(list_items, path + '/news/college_dynamic_' + date)

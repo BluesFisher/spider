@@ -21,9 +21,11 @@ proxy_list = [
 class Request(object):
     def __init__(self):
         self.url = {
-            'pro_list_url': 'http://college.gaokao.com/spelist/',
-            'pro_url': 'http://college.gaokao.com/speciality/',
-            'college_info': 'http://www.gaokao.com/guangdong/gdxw/'
+            'pro_list_url': 'http://college.gaokao.com/spelist/',  # 专业列表
+            'pro_url': 'http://college.gaokao.com/speciality/',  # 专业介绍
+            'college_info': 'http://www.gaokao.com/guangdong/gdxw/',  # 高考资讯
+            'student_guide': 'http://www.gaokao.com/guangdong/zsjz/',  # 招生简章
+            'college_dynamic': 'http://www.gaokao.com/guangdong/yx/'  # 院校动态
         }
         pass
 

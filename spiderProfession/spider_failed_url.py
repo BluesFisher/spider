@@ -41,7 +41,7 @@ def get_info():
                 time.sleep(5)
                 pass
 
-    date = time.strftime('%m%d', time.localtime(time.time()))
+    date = time.strftime('%Y%m%d', time.localtime(time.time()))
 
     JsonFunc().save_json(list_items,
                          path + '/profile/profession_failed_' + date)
