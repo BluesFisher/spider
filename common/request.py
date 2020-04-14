@@ -22,7 +22,8 @@ class Request(object):
     def __init__(self):
         self.url = {
             'pro_list_url': 'http://college.gaokao.com/spelist/',
-            'pro_url': 'http://college.gaokao.com/speciality/'
+            'pro_url': 'http://college.gaokao.com/speciality/',
+            'college_info': 'http://www.gaokao.com/guangdong/gdxw/'
         }
         pass
 
