@@ -8,7 +8,7 @@ ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), os.path.pardir))
 COMMON_PATH = {'default': ROOT + '/common/', 'static': ROOT + '/static/'}
 
 SQL_CREATE_TABLE = {
-    # 院校资讯
+    # 新闻资讯
     't_college_info':
     "create table if not exists t_college_info(\
         `id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,\
