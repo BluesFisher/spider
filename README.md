@@ -1,5 +1,6 @@
 #### 环境说明
 - 开发环境：python 2.7.16
+- 所需模块：MySQLdb、DBUtils、requests、fake_useragent、bs4、xlwt
 
 #### MySQLdb安装
 ##### 1、fatal error: 'my_config.h' file not found解决方案

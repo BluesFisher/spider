@@ -4,7 +4,7 @@
 import requests
 import uuid
 import time
-from common import PROFESSION_UA_PATH
+from common import COMMON_PATH
 
 
 class Utils(object):
@@ -36,15 +36,14 @@ class Utils(object):
             return ''
         try:
             if 'icon_default' in url:
-                return PROFESSION_UA_PATH['static'] + path_in + 'none.png'
+                return COMMON_PATH['static'] + path_in + 'none.png'
 
             imgres = requests.get(url)  # 取得文件内容
 
             if imgres.status_code == 404:
-                return PROFESSION_UA_PATH['static'] + path_in + 'none.png'
+                return COMMON_PATH['static'] + path_in + 'none.png'
 
-            path = PROFESSION_UA_PATH['static'] + path_in + str(
-                uuid.uuid4()) + '.png'
+            path = COMMON_PATH['static'] + path_in + str(uuid.uuid4()) + '.png'
             with open(path, "wb") as f:
                 f.write(imgres.content)
             time.sleep(5)

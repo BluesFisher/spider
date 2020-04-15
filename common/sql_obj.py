@@ -6,28 +6,36 @@ reload(sys)
 sys.setdefaultencoding('utf8')
 
 import MySQLdb
+from DBUtils.PooledDB import PooledDB
 
 
 class SqlObj(object):
     def __init__(self,
                  host='localhost',
+                 port=3306,
                  username='root',
                  password='root',
                  database='my_python'):
         self.host = host
+        self.port = port
         self.username = username
         self.password = password
         self.database = database
-        self.db = ''
-        self.cursor = ''
+        self.db = None
+        self.cursor = None
 
     def connect_db(self):
-        # 打开数据库连接
-        self.db = MySQLdb.connect(self.host,
-                                  self.username,
-                                  self.password,
-                                  self.database,
-                                  charset='utf8')
+        # 创建连接池
+        pool = PooledDB(creator=MySQLdb,
+                        mincached=1,
+                        maxcached=16,
+                        host=self.host,
+                        user=self.username,
+                        passwd=self.password,
+                        db=self.database,
+                        port=self.port,
+                        charset='utf8')
+        self.db = pool.connection()
         self.cursor = self.db.cursor()
         self.cursor.execute("SELECT VERSION()")
         print "连接成功：Database version %s " % self.cursor.fetchone()
@@ -59,7 +67,7 @@ class SqlObj(object):
             value = (str(value))
         return value
 
-    def insert(self, table, insert_data, is_replace=False):
+    def insert(self, table, insert_data, is_replace=False, need_close=True):
         '''
             insert(table, insert_data)
             添加数据到数据库
@@ -89,9 +97,10 @@ class SqlObj(object):
         except Exception as error:
             print 'sql insert err: ', error
         finally:
-            self.close_db()
+            if need_close:
+                self.close_db()
 
-    def delete(self, table, condition):
+    def delete(self, table, condition, need_close=True):
         '''
             delete(table, condition)
             删除数据库中的数据
@@ -116,9 +125,10 @@ class SqlObj(object):
         except Exception as error:
             print 'sql delete err: ', error
         finally:
-            self.close_db()
+            if need_close:
+                self.close_db()
 
-    def update(self, table, data, condition=None):
+    def update(self, table, data, condition=None, need_close=True):
         """
             update(table, data, [condition])
             更新数据
@@ -150,9 +160,15 @@ class SqlObj(object):
         except Exception as error:
             print 'sql update err: ', error
         finally:
-            self.close_db()
+            if need_close:
+                self.close_db()
 
-    def get(self, table, show_list=['*'], condition=None, get_one=False):
+    def get(self,
+            table,
+            show_list=['*'],
+            condition=None,
+            get_one=False,
+            need_close=True):
         """
             get(table, show_list, [condition, get_one]) -> tupe
             获取数据 返回一个元祖
@@ -185,16 +201,17 @@ class SqlObj(object):
             result = ()
             print 'sql get err: ', error
         finally:
-            self.close_db()
+            if need_close:
+                self.close_db()
             return result
 
 
 if __name__ == '__main__':
     sql_obj = SqlObj()
     sql_obj.insert('users', [{
-        'phone': '13612817761',
+        'phone': '15361420407',
         'password': '1234567',
-        'name': 'yu'
+        'name': 'zhen'
     }])
     # sql_obj.delete('users', {'phone': '13612817761'})
     # sql_obj.update('users', {'name': 'yu'}, {'phone': '13612817761'})
