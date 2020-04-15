@@ -2,7 +2,7 @@
 # -*- coding: UTF-8 -*-
 
 from fake_useragent import UserAgent
-from common import PROFESSION_UA_PATH
+from common import COMMON_PATH
 import requests
 import logging
 
@@ -34,7 +34,7 @@ class Request(object):
         return url if 'http' in url else (self.url[mod] + url)
 
     def get_header(self, mod='default'):
-        location = PROFESSION_UA_PATH[mod] + 'fake_useragent.json'
+        location = COMMON_PATH[mod] + 'fake_useragent.json'
         ua = UserAgent(path=location)
         return ua.random
 
