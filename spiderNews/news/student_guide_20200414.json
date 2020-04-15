@@ -35,7 +35,7 @@
       }
     ]
   },
-  "海军广州舰艇学院": { "url": "" },
+  "海军广州舰艇学院": { "url": "", "content": [] },
   "广东东软学院": {
     "url": "http://www.gaokao.com/e/20190619/5d09fe86586bb.shtml",
     "content": [
@@ -413,7 +413,7 @@
       }
     ]
   },
-  "广东职业技术学院": { "url": "" },
+  "广东职业技术学院": { "url": "", "content": [] },
   "广州中医药大学": {
     "url": "http://www.gaokao.com/e/20190619/5d09d36c27f69.shtml",
     "content": [

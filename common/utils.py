@@ -3,6 +3,7 @@
 
 import requests
 import uuid
+import time
 from common import PROFESSION_UA_PATH
 
 
@@ -46,7 +47,7 @@ class Utils(object):
                 uuid.uuid4()) + '.png'
             with open(path, "wb") as f:
                 f.write(imgres.content)
-            # time.sleep(5)
+            time.sleep(5)
             return path
         except IOError:
             return url

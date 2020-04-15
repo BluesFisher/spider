@@ -15,6 +15,8 @@ import copy
 import time
 import datetime
 from common.json_func import JsonFunc
+from common.sql_obj import SqlObj
+from common.utils import Utils
 from common_func import CommonFunc
 
 list_items = []
@@ -41,12 +43,42 @@ def get_info():
                      ensure_ascii=False), len(list_items)
 
 
+def save_db(path):
+    try:
+        with open(path + '.json') as fp:
+            data = fp.read()
+            sql_obj = SqlObj()
+            insert_data = []
+            for item in json.loads(data):
+                insert_data.append({
+                    'url':
+                    item['url'].encode('gbk'),
+                    'date':
+                    item['date'].encode('gbk'),
+                    'title':
+                    Utils().unicode_convert(item['title']),
+                    '`desc`':
+                    Utils().unicode_convert(item['desc']),
+                    'content':
+                    Utils().unicode_convert(
+                        json.dumps(item['content'], ensure_ascii=False))
+                })
+
+            sql_obj.insert('t_college_info', insert_data, True)
+        print 'save_db ok'
+    except Exception as error:
+        print 'save_db failed: ', error
+
+
 if __name__ == '__main__':
     path = os.path.abspath(os.path.join(os.path.dirname(__file__)))
+    date = time.strftime('%Y%m%d', time.localtime(time.time()))
+    file_path = path + '/news/college_info_' + date
 
     get_info()
-    date = time.strftime('%Y%m%d', time.localtime(time.time()))
-    JsonFunc().save_json(list_items, path + '/news/college_info_' + date)
+    JsonFunc().save_json(list_items, file_path)
+
+    save_db(file_path)
 
     # url = 'http://www.gaokao.com/e/20200312/5e6a165d1060f.shtml' # img
     # url = 'http://www.gaokao.com/e/20200326/5e7c0b3a2aeca.shtml' # normal
