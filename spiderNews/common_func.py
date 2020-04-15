@@ -73,6 +73,13 @@ class CommonFunc(object):
             soup = BeautifulSoup(res.text, "html.parser")
             content = soup.find('div', {'class': 'main'}).contents
 
+            if 'title' not in detail_info or 'desc' not in detail_info:
+                header = soup.find('div', {'class': 'content'})
+                h1 = header.find('h1').get_text().strip()
+                detail_info['title'] = h1
+                detail_info['desc'] = h1
+                detail_info['date'] = header.find('span').get_text().strip()
+
             result = []
 
             for item in filter(lambda x: x != '\n', content):

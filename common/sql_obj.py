@@ -208,11 +208,11 @@ class SqlObj(object):
 
 if __name__ == '__main__':
     sql_obj = SqlObj()
-    sql_obj.insert('users', [{
-        'phone': '15361420407',
-        'password': '1234567',
-        'name': 'zhen'
-    }])
+    # sql_obj.insert('users', [{
+    #     'phone': '15361420407',
+    #     'password': '1234567',
+    #     'name': 'zhen'
+    # }])
     # sql_obj.delete('users', {'phone': '13612817761'})
     # sql_obj.update('users', {'name': 'yu'}, {'phone': '13612817761'})
-    # print sql_obj.get('users', ['name', 'phone'])
+    print sql_obj.get('users', ['name', 'phone'])

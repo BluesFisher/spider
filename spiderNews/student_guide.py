@@ -29,6 +29,11 @@ def get_info():
     for item in copy.deepcopy(list_items).keys():
         list_items[item] = CommonFunc().get_news_detail(
             list_items[item]['url'], list_items[item])
+        if 'content' not in list_items[item]:
+            list_items[item]['content'] = []
+        if 'title' not in list_items[item]:
+            list_items[item]['tile'] = ''
+            list_items[item]['desc'] = ''
         num += 1
 
     print json.dumps(list_items, encoding='UTF-8',
@@ -67,7 +72,7 @@ if __name__ == '__main__':
     date = time.strftime('%Y%m%d', time.localtime(time.time()))
     JsonFunc().save_json(list_items, file_path)
 
-    save_db(file_path)
+    # save_db(file_path)
 
     # url = 'http://www.gaokao.com/e/20200312/5e6a165d1060f.shtml' # img
     # url = 'http://www.gaokao.com/e/20200326/5e7c0b3a2aeca.shtml' # normal
