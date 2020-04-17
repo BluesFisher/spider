@@ -5,7 +5,7 @@ import os
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), os.path.pardir))
 
-COMMON_PATH = {'default': ROOT + '/common/', 'static': ROOT + '/static/'}
+COMMON_PATH = {'default': ROOT + '/common/', 'static': ROOT + '/data/static/'}
 
 SQL_CREATE_TABLE = {
     # 新闻资讯

@@ -24,6 +24,7 @@ list_items = {}
 detail_info = {}
 name = ''
 request = Request()
+PATH = PAR_DIR + '/data/profession'
 
 
 def get_info(start_num, end_num):
@@ -57,9 +58,8 @@ def get_info(start_num, end_num):
         except IOError:
             print 'failed: ', url
         finally:
-            path = os.path.abspath(os.path.join(os.path.dirname(__file__)))
             JsonFunc().save_json(list_items,
-                                 path + '/profile/profession_' + str(num))
+                                 PATH + '/profile/profession_' + str(num))
             list_items = {}
             time.sleep(30)
             pass
