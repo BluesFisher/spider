@@ -18,6 +18,7 @@ from common_func import CommonFunc
 list_items = {}
 START_NUM = 1
 END_NUM = 5
+PATH = PAR_DIR + '/data/college'
 
 
 def get_info(start_num, end_num):
@@ -34,8 +35,6 @@ def get_info(start_num, end_num):
 
 
 if __name__ == '__main__':
-    path = os.path.abspath(os.path.join(os.path.dirname(__file__)))
-
     get_info(START_NUM, END_NUM)
     date = time.strftime('%Y%m%d', time.localtime(time.time()))
-    JsonFunc().save_json(list_items, path + '/college/college_detail_' + date)
+    JsonFunc().save_json(list_items, PATH + '/college_detail_' + date)

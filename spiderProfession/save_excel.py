@@ -17,7 +17,7 @@ from common.json_func import JsonFunc
 reload(sys)
 sys.setdefaultencoding('utf8')
 
-PATH = os.path.abspath(os.path.join(os.path.dirname(__file__)))
+PATH = PAR_DIR + '/data/profession'
 profession_files = []
 profession_dict = {}
 failed_item = {}

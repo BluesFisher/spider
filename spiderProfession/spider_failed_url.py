@@ -21,13 +21,13 @@ list_items = {}
 detail_info = {}
 name = ''
 failed_item_dict = {}
+PATH = PAR_DIR + '/data/profession'
 
 
 def get_info():
     global list_items
     global detail_info
-    path = os.path.abspath(os.path.join(os.path.dirname(__file__)))
-    with open(path + '/failed.json') as fp:
+    with open(PATH + '/result/failed.json') as fp:
         data = fp.read()
         result = Utils().unicode_convert(json.loads(data))
         failed_item_dict = eval(result)
@@ -44,7 +44,7 @@ def get_info():
     date = time.strftime('%Y%m%d', time.localtime(time.time()))
 
     JsonFunc().save_json(list_items,
-                         path + '/profile/profession_failed_' + date)
+                         PATH + '/profile/profession_failed_' + date)
     list_items = {}
 
 

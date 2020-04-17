@@ -20,6 +20,7 @@ from common.sql_obj import SqlObj
 from common.utils import Utils
 
 list_items = []
+PATH = PAR_DIR + '/data/news'
 
 
 def get_info():
@@ -71,9 +72,8 @@ def save_db(path):
 
 
 if __name__ == '__main__':
-    path = os.path.abspath(os.path.join(os.path.dirname(__file__)))
     date = time.strftime('%Y%m%d', time.localtime(time.time()))
-    file_path = path + '/news/college_dynamic_' + date
+    file_path = PATH + '/college_dynamic_' + date
 
     get_info()
     JsonFunc().save_json(list_items, file_path)

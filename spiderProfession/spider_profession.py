@@ -18,6 +18,7 @@ START_NUM = 92
 END_NUM = 92
 
 list_items = {}
+PATH = PAR_DIR + '/data/profession'
 
 
 def get_info(start_num, end_num):
@@ -31,9 +32,8 @@ def get_info(start_num, end_num):
 
 
 if __name__ == '__main__':
-    path = os.path.abspath(os.path.join(os.path.dirname(__file__)))
 
     get_info(START_NUM, END_NUM)
     JsonFunc().save_json(list_items,
-                         path + '/profession_detail_' + str(END_NUM))
+                         PATH + '/profession_detail_' + str(END_NUM))
     list_items = {}
