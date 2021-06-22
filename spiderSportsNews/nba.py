@@ -1,0 +1,71 @@
+#!/usr/bin/python
+# -*- coding: UTF-8 -*-
+
+import os
+import sys
+
+PAR_DIR = os.path.abspath(
+    os.path.join(os.path.dirname(__file__), os.path.pardir))
+sys.path.append(PAR_DIR)
+reload(sys)
+sys.setdefaultencoding('utf8')
+
+# import json
+from common.json_func import JsonFunc
+from common_func import CommonFunc
+
+file_dict = []
+PATH = PAR_DIR + '/data/sportsNews'
+
+URL = [
+    # '20210621004209', '20210621002250', '20210621001928', '20210621000881', '20210621000765'
+    '20210622004107',
+    '20210622003909',
+    '20210622003794',
+    '20210622003445',
+    '20210622003072'
+]
+
+
+def get_news_list():
+    url = 'https://pbaccess.video.qq.com/trpc.nbacommunity.news.NewsCgi/NewsIndex?column_id=6&last_id=0&page_num=5'
+    id_list = CommonFunc().get_nba_news_list(url, [])
+    print id_list
+
+
+def get_news_info(url, file_dict):
+    # print 'get_nba_news_detail: ', url
+
+    return CommonFunc().get_nba_news_detail(url, file_dict)
+
+    # print json.dumps(file_dict, encoding='UTF-8', ensure_ascii=False)
+
+
+def trans_dict_to_arr(file_dict, file_path):
+    keys = map(lambda x: int(x), file_dict.keys())
+    keys.sort()
+
+    list_file = []
+
+    for i in keys:
+        list_file.append(file_dict[str(i)])
+    JsonFunc().save_json(list_file, file_path)
+
+
+def get_news():
+    file_path = PATH + '/nba_news'
+    global file_dict
+
+    with open(file_path + '.json') as fp:
+        data = fp.read()
+        file_dict = eval(data)
+
+    for url in URL:
+        aimUrl = 'https://pbaccess.video.qq.com/trpc.nbacommunity.news.NewsCgi/NewsInfo?site=nbatop&news_id=' + url
+        file_dict = get_news_info(aimUrl, file_dict)
+    JsonFunc().save_json(file_dict, file_path)
+
+
+if __name__ == '__main__':
+    # get_news_list()
+    get_news()
