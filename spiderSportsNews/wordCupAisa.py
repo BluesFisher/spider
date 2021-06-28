@@ -33,7 +33,7 @@ def get_news_info(url, file_dict):
 
 
 def get_news(url_list):
-    file_path = PATH + '/euro_news'
+    file_path = PATH + '/wordCupAsia_news'
     global file_dict
 
     with open(file_path + '.json') as fp:

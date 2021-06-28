@@ -19,7 +19,7 @@ PATH = PAR_DIR + '/data/sportsNews'
 
 
 def get_news_list():
-    url = 'https://xw.qq.com/zt/20210519008860/SPO20210519008860FR'
+    url = 'https://xw.qq.com/zt/202106130042070/SPO202106130042070K'
     id_list = CommonFunc().get_news_list(url, [])
     return id_list
 
@@ -33,7 +33,7 @@ def get_news_info(url, file_dict):
 
 
 def get_news(url_list):
-    file_path = PATH + '/euro_news'
+    file_path = PATH + '/copa_news'
     global file_dict
 
     with open(file_path + '.json') as fp:

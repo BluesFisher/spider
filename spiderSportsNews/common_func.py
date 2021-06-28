@@ -32,7 +32,8 @@ class CommonFunc(object):
             contentJson = json.loads(content[0])
             article = contentJson['props']['pageProps']['data']['data']
 
-            if len(article['json_content']) == 0:
+            if len(article['json_content']
+                   ) == 0 or article['json_content'][0]['type'] == 3:
                 print 'no data: ', url
                 return list_items
 
@@ -76,7 +77,12 @@ class CommonFunc(object):
         try:
             id_list = []
             res = Request().set_request(url)
-            print res
+            print res, res.status_code
+
+            if res.status_code == 404:
+                time.sleep(5)
+                return self.get_news_list(url, list_items)
+
             soup = BeautifulSoup(res.text, "html.parser")
             content = soup.find('script', id='__NEXT_DATA__').contents
             contentJson = json.loads(content[0])
@@ -93,9 +99,9 @@ class CommonFunc(object):
         except IOError:
             list_items = []
             print 'failed: ', url
-        finally:
-            time.sleep(5)
-            return list_items
+
+        time.sleep(5)
+        return list_items
 
     def get_nba_news_list(self, url, list_items):
         try:
