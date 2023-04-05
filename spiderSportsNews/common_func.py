@@ -108,7 +108,7 @@ class CommonFunc(object):
             id_list = []
             res = Request().set_request(url)
             contentJson = json.loads(res.text)
-            idlist = contentJson['data']['news_info']
+            idlist = contentJson['data']
 
             for item in idlist:
                 id_list.append(item['news_id'])
@@ -128,10 +128,10 @@ class CommonFunc(object):
             res = Request().set_request(url)
             # res.encoding = 'gbk'
             contentJson = json.loads(res.text)
-            data = contentJson['data'][0]
+            data = contentJson['data']
             cnt_attr = data['cnt_attr']
 
-            if contentJson['ret'] != 0 or not data:
+            if contentJson['code'] != 0 or not data:
                 print 'no data: ', url
                 return list_items
 
@@ -140,40 +140,49 @@ class CommonFunc(object):
                 'type':
                 'auth',
                 'value':
-                data['source'] + ' | ' + data['pub_time']
+                data['source'] + ' | ' + data['publish_time']
             })
 
-            html = BeautifulSoup(data['cnt_html'], "html.parser").find_all('p')
+            for item in cnt_attr:
+                detail = json.loads(item['object'])
+                if 'IMG_' in item['placeholder']:
+                  file_items.append({'type': 'img', 'value': detail['imgurl']})
+                if 'TXT_' in item['placeholder']:
+                  file_items.append({'type': 'p', 'value': detail['content']})
+                if 'VIDEO_' in item['placeholder']:
+                  file_items.append({'type': 'img', 'value': detail['image']})
 
-            for item in html:
-                p = item.get_text()
-                content = ''.join(map(lambda x: str(x), item.contents))
+            # html = BeautifulSoup(data['cnt_html'], "html.parser").find_all('p')
 
-                if p or content:
-                    if 'IMG_' in content:
-                        img = content
-                        file_items.append({
-                            'type':
-                            'img',
-                            'value':
-                            re.sub(r'http:', 'https:',
-                                   cnt_attr[img]['img']['imgurl0']['imgurl'])
-                        })
-                    else:
-                        info = {
-                            'type':
-                            'p',
-                            'value':
-                            re.sub(
-                                r'<STRONG>|<\/STRONG>|<h2>|<\/h2>|<h1>|<\/h1>',
-                                '', p.lower())
-                        }
+            # for item in html:
+            #     p = item.get_text()
+            #     content = ''.join(map(lambda x: str(x), item.contents))
 
-                        if content.lower().startswith(
-                                '<strong>') and content.lower().endswith(
-                                    '</strong>'):
-                            info['fontWeight'] = 'bold'
-                        file_items.append(info)
+            #     if p or content:
+            #         if 'IMG_' in content:
+            #             img = content
+            #             file_items.append({
+            #                 'type':
+            #                 'img',
+            #                 'value':
+            #                 re.sub(r'http:', 'https:',
+            #                        cnt_attr[img]['img']['imgurl0']['imgurl'])
+            #             })
+            #         else:
+            #             info = {
+            #                 'type':
+            #                 'p',
+            #                 'value':
+            #                 re.sub(
+            #                     r'<STRONG>|<\/STRONG>|<h2>|<\/h2>|<h1>|<\/h1>',
+            #                     '', p.lower())
+            #             }
+
+            #             if content.lower().startswith(
+            #                     '<strong>') and content.lower().endswith(
+            #                         '</strong>'):
+            #                 info['fontWeight'] = 'bold'
+            #             file_items.append(info)
 
             list_items.append(file_items)
 

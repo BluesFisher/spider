@@ -19,7 +19,7 @@ PATH = PAR_DIR + '/data/sportsNews'
 
 
 def get_news_list():
-    url = 'https://pbaccess.video.qq.com/trpc.nbacommunity.news.NewsCgi/NewsIndex?column_id=6&last_id=0&page_num=5'
+    url = 'https://china.nba.cn/cms/v1/news/list?column_id=13&last_id=0&page_num=20'
     id_list = CommonFunc().get_nba_news_list(url, [])
     return id_list
 
@@ -52,10 +52,9 @@ def get_news(url_list):
         file_dict = eval(data)
 
     for url in url_list:
-        aimUrl = 'https://pbaccess.video.qq.com/trpc.nbacommunity.news.NewsCgi/NewsInfo?site=nbatop&news_id=' + url
+        aimUrl = 'https://china.nba.cn/cms/v1/news/info?news_id=' + url
         file_dict = get_news_info(aimUrl, file_dict)
     JsonFunc().save_json(file_dict, file_path)
-
 
 if __name__ == '__main__':
     url_list = get_news_list()
