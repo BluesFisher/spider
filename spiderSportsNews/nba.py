@@ -50,6 +50,8 @@ def get_news(url_list):
     with open(file_path + '.json') as fp:
         data = fp.read()
         file_dict = eval(data)
+    
+    file_dict = []
 
     for url in url_list:
         aimUrl = 'https://china.nba.cn/cms/v1/news/info?news_id=' + url

@@ -45,6 +45,6 @@ class Request(object):
 
         # proxy = { 'http': 'http://' + proxy_list[random.randint(0,len(proxy_list) - 1)] }
         # res = requests.get(url, headers=headers, proxies=proxy)
-        headers = {'user-agent': self.get_header()}
+        headers = {'user-agent': self.get_header(), 'uuid': '18759dc5510c8-1e738c3919cf03-0-0-18759dc5510c8','token': 'AgGkI8Q86H7DI0CyTgPWdVXis31z0wi3U75QJjvtGRDbD0lwpjIscJ-RuHPdcbph2NXfzGVcGq59bwAAAACdFwAATmpiLl9EuTuVm-lr4KwOGMbiAMRmBkMSbpeW6OPxeLfkbYscdnSMyFQN19wRivkc', 'openId': 'oJVP50FqTESXFWoA0CrQqT4_5zgA', 'clientversion': '2.30.4', 'M-TRACEID': '3019535102683527080', 'openIdCipher': 'AwQAAABJAgAAAAEAAAAyAAAAPLgC95WH3MyqngAoyM/hf1hEoKrGdo0pJ5DI44e1wGF9AT3PH7Wes03actC2n/GVnwfURonD78PewMUppAAAADjRujQWnsTxZOc5jzkVvUKUvNU14lydaS+iNa/y3GwJK8b1v4frcTJzKkbxqGbvaQtatowA9PMPpw==', 'Referer': 'https://servicewechat.com/wxde8ac0a21135c07d/1130/page-frame.html'}
         res = requests.get(url, headers=headers)
         return res
