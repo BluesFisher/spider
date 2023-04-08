@@ -121,7 +121,22 @@ const getAreaItems = () => {
   fs.writeJsonSync('./area-city.json', cityInfo, { spaces: 2 });
 };
 
+const setElement = () => {
+  let res = fs.readJSONSync(aimFile) || {};
+  res = res.map(item =>{
+    const v = item.tags[0].value.replace('评分：', '')
+
+    return {
+      ...item,
+      score: v === '-' ? 0 : +v
+  }
+  })
+  console.log('file content: ', res.length);
+  fs.writeJsonSync(aimFile, res, { spaces: 2 });
+};
+
 // console.log(data);
 // filterId();
 // getData();
 // getAreaItems();
+setElement()
