@@ -192,8 +192,33 @@ class CommonFunc(object):
         finally:
             time.sleep(5)
             return list_items
-        
-    def get_area_detail(self, url):
+    
+    # 美团信息
+    def get_area_mt_detail(self, url):
+        res = {}
+        try:
+            res = Request().set_request(url)
+
+            # res.encoding = 'gbk'
+            contentJson = json.loads(res.text)
+
+            data = contentJson['data']['baseInfo']
+
+            if contentJson['code'] != 0 or not data:
+                print 'no data: ', url
+                return res
+
+            res = {'address': data['address'], 'phone': data['phone'], 'openTime': data['openTime']}
+
+            print 'ok: ', url
+        except IOError:
+            print 'failed: ', url
+        finally:
+            time.sleep(5)
+            return res
+    
+    # 大众点评信息
+    def get_area_dz_detail(self, url):
         res = {}
         try:
             res = Request().set_request(url)

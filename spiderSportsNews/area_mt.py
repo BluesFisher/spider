@@ -20,7 +20,7 @@ PATH = PAR_DIR + '/data/sportsNews'
 def get_news_info(url):
     # print 'get_nba_news_detail: ', url
 
-    return CommonFunc().get_area_detail(url)
+    return CommonFunc().get_area_mt_detail(url)
 
     # print json.dumps(file_dict, encoding='UTF-8', ensure_ascii=False)
 
