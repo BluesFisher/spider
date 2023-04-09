@@ -67,16 +67,16 @@ const getMtDetail = (id) =>
  * 过滤美团重复的id
  */
 const filterMtId = () => {
-  const res = fs.readJSONSync(srcFile) || {};
+  const res = fs.readJSONSync(mtFile) || [];
   let idList = [];
-  res.data.searchResult = res.data.searchResult.filter((item) => {
-    const isFilter = !idList.includes(item.id);
-    idList = [...new Set([...idList, item.id])];
+  const result = res.filter((item) => {
+    const isFilter = !idList.includes(item.orgId);
+    idList = [...new Set([...idList, item.orgId])];
 
     return isFilter;
   });
-  console.log("file content: ", res.data.searchResult.length);
-  fs.writeJsonSync(srcFile, res, { spaces: 2 });
+  console.log("file content: ", result.length);
+  fs.writeJsonSync(mtFile, result, { spaces: 2 });
 };
 
 const dealMtData = async (item) => {
@@ -429,3 +429,4 @@ const getDiffMtData = async () => {
 compare();
 // getDiffDzData();
 // getDiffMtData();
+// filterMtId()
