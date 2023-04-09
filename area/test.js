@@ -3,8 +3,10 @@ const path = require("path");
 const request = require("request");
 
 const mtFile = path.resolve(__dirname, "./area-mt.json");
-const dzFile = path.resolve(__dirname, "./area-res.json");
+const dzFile = path.resolve(__dirname, "./area-dz.json");
+const resFile = path.resolve(__dirname, "./area-res.json");
 const srcFile = path.resolve(__dirname, "./area.json");
+const notFile = path.resolve(__dirname, "./not.json");
 
 const sleep = () =>
   new Promise((resolve) => {
@@ -143,9 +145,6 @@ const setMtElement = () => {
   fs.writeJsonSync(mtFile, res, { spaces: 2 });
 };
 
-// getMtData();
-// setMtElement()
-
 /**
  * 获取大众点评篮球场详细信息，h5的headers
  * @param {*} item
@@ -197,10 +196,12 @@ const getDzDetail = (item) =>
  * @param {*} index
  * @returns
  */
-const getDzList = (index = 0) =>
+const getDzList = (index = 0, keyword = "篮球场") =>
   new Promise((resolve) => {
     request.get(
-      `https://m.dianping.com/wxmapi/search?cityId=7&locateCityid=7&categoryId=0&sortId=0&range=-1&lat=22.60956144876099&lng=114.12653115188573&myLat=22.60956144876099&myLng=114.12653115188573&keyword=%E7%AF%AE%E7%90%83%E5%9C%BA&start=${index * 10}`,
+      `https://m.dianping.com/wxmapi/search?cityId=7&locateCityid=7&lat=22.60956144876099&lng=114.12653115188573&myLat=22.60956144876099&myLng=114.12653115188573&keyword=${encodeURIComponent(
+        keyword
+      )}&start=${index * 10}`,
       {
         headers: {
           Host: "m.dianping.com",
@@ -238,6 +239,42 @@ const getDzList = (index = 0) =>
     );
   });
 
+const dealDzData = async (item) => {
+  const { orgAddr, phone, latitude, longitude, desc } = await getDzDetail(item);
+  const { areaCode } = await parseLocation({ latitude, longitude });
+  let note = item.recommendReason?.text || "";
+
+  const tags = (item.tagList || []).map((v) => ({
+    value: v.text,
+    type: v.textColor === "#B15E2C" ? 2 : 1,
+  }));
+
+  return {
+    orgId: item.shopUuid,
+    dzId: item.shopUuid,
+    dzPath: item.navData?.url,
+    areaCode,
+    latitude: latitude,
+    longitude: longitude,
+    orgName: item.name + (item.branchName ? `（${item.branchName}）` : ""),
+    orgAddr,
+    note,
+    score: +item.starScore,
+    tags: [
+      {
+        value: `评分：${`${item.starScore}`.slice(0, -1) || "-"}`,
+        type: 2,
+      },
+      ...tags,
+    ],
+    desc,
+    phone,
+  };
+};
+
+/**
+ * 获取大众点评篮球场信息
+ */
 const getDzData = async () => {
   for (let index = 40; index < 60; index++) {
     const data = (await getDzList(index)) || [];
@@ -245,38 +282,9 @@ const getDzData = async () => {
 
     for (let i = 0; i < data.length; i++) {
       const item = data[i].shopInfo;
-      const { orgAddr, phone, latitude, longitude, desc } = await getDzDetail(
-        item
-      );
-      const { areaCode } = await parseLocation({ latitude, longitude });
-      let note = item.recommendReason?.text || "";
+      const result = await dealDzData(item);
 
-      const tags = (item.tagList || []).map((v) => ({
-        value: v.text,
-        type: v.textColor === "#B15E2C" ? 2 : 1,
-      }));
-
-      res.push({
-        orgId: item.shopUuid,
-        dzId: item.shopUuid,
-        dzPath: item.navData?.url,
-        areaCode,
-        latitude: latitude,
-        longitude: longitude,
-        orgName: item.name + (item.branchName ? `（${item.branchName}）` : ""),
-        orgAddr,
-        note,
-        score: +item.starScore,
-        tags: [
-          {
-            value: `评分：${`${item.starScore}`.slice(0, -1) || "-"}`,
-            type: 2,
-          },
-          ...tags,
-        ],
-        desc,
-        phone,
-      });
+      res.push(result);
 
       console.log("ok: ", { id: item.shopUuid, i, index });
 
@@ -288,4 +296,69 @@ const getDzData = async () => {
   }
 };
 
-getDzData();
+const filterDz = () => {
+  let dz = fs.readJSONSync(dzFile) || {};
+  let dzRes = [];
+
+  dz.forEach((item) => {
+    if (!["贰木眼镜"].some((v) => item.orgName.includes(v))) {
+      dzRes.push(item);
+    }
+  });
+
+  let idList = [];
+  dzRes = dzRes.filter((item) => {
+    const isFilter = !idList.includes(item.orgId);
+    idList = [...new Set([...idList, item.orgId])];
+
+    return isFilter;
+  });
+
+  dz = dzRes;
+  fs.writeJsonSync(dzFile, dzRes, { spaces: 2 });
+};
+
+const compare = () => {
+  let mt = fs.readJSONSync(mtFile) || {};
+  let dz = fs.readJSONSync(dzFile) || {};
+  let notInDz = [];
+  let notInMt = [];
+
+  mt.forEach((item) => {
+    if (!dz.find((v) => v.orgName === item.orgName)) {
+      notInDz.push(item.orgName);
+    }
+  });
+
+  dz.forEach((item) => {
+    if (!mt.find((v) => v.orgName === item.orgName)) {
+      notInMt.push(item.orgName);
+    }
+  });
+
+  fs.writeJsonSync(notFile, { notInDz, notInMt }, { spaces: 2 });
+};
+
+const getDiffData = async () => {
+  const { notInDz = [] } = fs.readJSONSync(notFile) || {};
+
+  for (let i = 0; i < notInDz.length; i++) {
+    const item = notInDz[i];
+    const data = await getDzList(0, "上域·糖果篮球公园");
+    if (!data?.[0]?.shopInfo) {
+      console.log("getDiffData dz err: ", orgName);
+    } else {
+      const result = await dealDzData(data?.[0]?.shopInfo);
+      const text = fs.readJSONSync(dzFile);
+      fs.writeJsonSync(dzFile, [...text, result], { spaces: 2 });
+
+      await sleep();
+    }
+  }
+};
+
+// getMtData();
+// setMtElement()
+// getDzData();
+// compare();
+getDiffData();
