@@ -359,10 +359,19 @@ const compare = () => {
   let dz = fs.readJSONSync(dzFile) || {};
   let notInDz = [];
   let notInMt = [];
+  let mtSameName = [];
 
   mt.forEach((item) => {
     if (!dz.find((v) => v.orgName === item.orgName)) {
       notInDz.push(item.orgName);
+    }
+
+    if (mt.filter((v) => v.orgName === item.orgName)?.length > 1) {
+      mtSameName.push({
+        orgName: item.orgName,
+        latitude: item.latitude,
+        longitude: item.longitude,
+      });
     }
   });
 
@@ -372,9 +381,18 @@ const compare = () => {
     }
   });
 
-  console.log("notInDz: ", notInDz.length, "notInMt: ", notInMt.length);
+  mtSameName = mtSameName.sort((a, b) => a.orgName <= b.orgName ? 1 : -1);
 
-  fs.writeJsonSync(notFile, { notInDz, notInMt }, { spaces: 2 });
+  console.log(
+    "notInDz: ",
+    notInDz.length,
+    "notInMt: ",
+    notInMt.length,
+    "mtSameName: ",
+    mtSameName.length
+  );
+
+  fs.writeJsonSync(notFile, { notInDz, notInMt, mtSameName }, { spaces: 2 });
 };
 
 /**
