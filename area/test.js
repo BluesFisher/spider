@@ -79,6 +79,67 @@ const filterMtId = () => {
   fs.writeJsonSync(srcFile, res, { spaces: 2 });
 };
 
+const dealMtData = async (item) => {
+  const { areaCode, orgAddr } = await parseLocation(item);
+  const { tags, desc } = await getMtDetail(item.id);
+  let note = "";
+
+  if (item.lowestprice) {
+    note += `¥${item.lowestprice}起`;
+  }
+
+  item.deals &&
+    item.deals.forEach((v) => {
+      note += `，${v.title}-¥${v.price}`;
+    });
+
+  return {
+    orgId: item.id,
+    areaCode,
+    latitude: item.latitude,
+    longitude: item.longitude,
+    orgName: item.title,
+    orgAddr,
+    note,
+    score: item.avgscore,
+    tags: [{ value: `评分：${item.avgscore || "-"}`, type: 2 }, ...tags],
+    desc,
+    phone: "",
+  };
+};
+
+const getMtSearch = (keyword = "篮球场") =>
+  new Promise((resolve) => {
+    request.get(
+      `https://apimobile.meituan.com/group/v4/poi/pcsearch/30?uuid=858ebe70fba8447f8468.1680836575.1.0.0&userid=92956443&limit=32&offset=0&cateId=-1&q=${encodeURIComponent(
+        keyword
+      )}&token=AgHNI0lHbrCRWt0Q_RdZTmvwUQi2F7agSHtAXb7M6bQikcEhwk91xtvqBwx1aUbBd8UJyHqTy-2EWQAAAAC2FwAAe42T8ycY8VcawP1NqkEfqynyFNDbzq3cHbDlfEQXTjbt50U-GqerNsElz1QSqcOs`,
+      {
+        headers: {
+          Cookie:
+            "ga=GA1.1.1431178464.1676274558; _ga_LYVVHCWVNG=GS1.1.1676274557.1.1.1676274801.0.0.0; uuid=858ebe70fba8447f8468.1680836575.1.0.0; _lxsdk_cuid=18759aac3a0c8-0ef42e79fcca48-1e525634-1ea000-18759aac3a0c8; WEBDFPID=6u6y29ux278256w5zwu53308w3024vy381240zzx128979580w294u04-1996196577248-1680836576526GUASGOI75613c134b6a252faa6802015be905511013; rvct=30; ci=30; _lx_utm=utm_source%3DBaidu%26utm_medium%3Dorganic; __mta=51164822.1680836580734.1681009323229.1681041076244.4; qruuid=3f36d399-823c-42dd-9271-00a00c2289bd; token2=AgHIIrPknCwaEn0kGO2Oh_OCvfWdRip_yuwfAOYftlOWS8pa9j5UqcEfUsw83BD0Q_fPn6ccaS1PWAAAAAC2FwAAeKRACxUmVcROfTje1xUp4tGREVNxv67fjRHfYuZv5VnphbqQTrsf8pwYd_K8gHsN; oops=AgHIIrPknCwaEn0kGO2Oh_OCvfWdRip_yuwfAOYftlOWS8pa9j5UqcEfUsw83BD0Q_fPn6ccaS1PWAAAAAC2FwAAeKRACxUmVcROfTje1xUp4tGREVNxv67fjRHfYuZv5VnphbqQTrsf8pwYd_K8gHsN; lt=AgHIIrPknCwaEn0kGO2Oh_OCvfWdRip_yuwfAOYftlOWS8pa9j5UqcEfUsw83BD0Q_fPn6ccaS1PWAAAAAC2FwAAeKRACxUmVcROfTje1xUp4tGREVNxv67fjRHfYuZv5VnphbqQTrsf8pwYd_K8gHsN; u=92956443; n=yz112287812; firstTime=1681042331225; unc=yz112287812; _lxsdk_s=18765d9f9d7-fdd-247-a87%7C%7C11",
+          Host: "apimobile.meituan.com",
+          Origin: "https://sz.meituan.com",
+          Pragma: "no-cache",
+          Referer: "https://sz.meituan.com/",
+          "User-Agent":
+            " Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
+        },
+      },
+      (err, res) => {
+        if (!err && res.statusCode === 200) {
+          const { data } = JSON.parse(res.body || "{}");
+          console.log("getMtSearch ok: ", keyword);
+          resolve(data.searchResult);
+        } else {
+          console.log("getMtSearch err: ", err, res);
+
+          resolve({});
+        }
+      }
+    );
+  });
+
 /**
  * 获取美团信息
  */
@@ -89,32 +150,9 @@ const getMtData = async () => {
 
   for (let i = 0; i < data.searchResult?.length; i++) {
     const item = data.searchResult[i];
-    const { areaCode, orgAddr } = await parseLocation(item);
-    const { tags, desc } = await getMtDetail(item.id);
-    let note = "";
+    const result = await dealMtData(item);
 
-    if (item.lowestprice) {
-      note += `¥${item.lowestprice}起`;
-    }
-
-    item.deals &&
-      item.deals.forEach((v) => {
-        note += `，${v.title}-¥${v.price}`;
-      });
-
-    res.push({
-      orgId: item.id,
-      areaCode,
-      latitude: item.latitude,
-      longitude: item.longitude,
-      orgName: item.title,
-      orgAddr,
-      note,
-      score: item.avgscore,
-      tags: [{ value: `评分：${item.avgscore || "-"}`, type: 2 }, ...tags],
-      desc,
-      phone: "",
-    });
+    res.push(result);
 
     console.log("ok: ", { id: item.id, i });
 
@@ -212,7 +250,7 @@ const getDzList = (index = 0, keyword = "篮球场") =>
           sdkversion: "2.30.4",
           openid: "mWq3fmLuGZDgPhqFgvu_25T8UYXJVaa2VngiSW5_vwY",
           token:
-            "279aa4474837b29d0d502fb9c43a28652b420bfef2e060dcdf44fed44cbcdfc2b5b744f30169ec7d122c6570b5777b80d539749021b9a3376bf633109e3ee4983cebba92c0c64782a5750269448fee2ca794b5c32b98977c8bb1b8868edfdaa2",
+            "b963fed050cf864c818b026f82760f0bde998200db16ffa700a83c40c18c5d2207b3f760b3e5b34e70380f54efb11f06e2bbeaa578297c9720fedb746378c43de991d71d16bae49cc80c0a5af23d28b99a11a27fa69232ec91d4634b8159f995",
           platform: "Android",
           platformversion: "15.5",
           dpid: "mWq3fmLuGZDgPhqFgvu_25T8UYXJVaa2VngiSW5_vwY",
@@ -231,7 +269,7 @@ const getDzList = (index = 0, keyword = "篮球场") =>
           console.log("getDzList ok: ", index);
           resolve(data.list);
         } else {
-          console.log("getDzList err: ", index, err);
+          console.log("getDzList err: ", index, err, res);
 
           resolve([]);
         }
@@ -336,29 +374,58 @@ const compare = () => {
     }
   });
 
+  console.log("notInDz: ", notInDz.length, "notInMt: ", notInMt.length);
+
   fs.writeJsonSync(notFile, { notInDz, notInMt }, { spaces: 2 });
 };
 
-const getDiffData = async () => {
+/**
+ * 获取不在美团里的大众点评
+ */
+const getDiffDzData = async () => {
   const { notInDz = [] } = fs.readJSONSync(notFile) || {};
 
-  for (let i = 0; i < notInDz.length; i++) {
+  for (let i = 0; i < 1; i++) {
     const item = notInDz[i];
-    const data = await getDzList(0, "上域·糖果篮球公园");
+    const data = await getDzList(0, item);
     if (!data?.[0]?.shopInfo) {
-      console.log("getDiffData dz err: ", orgName);
+      console.log("getDiffDzData fail err: ", item);
     } else {
       const result = await dealDzData(data?.[0]?.shopInfo);
       const text = fs.readJSONSync(dzFile);
       fs.writeJsonSync(dzFile, [...text, result], { spaces: 2 });
-
-      await sleep();
+      console.log("getDiffDzData dz ok: ", item);
     }
+
+    await sleep();
+  }
+};
+
+/**
+ * 获取不在大众点评里的美团
+ */
+const getDiffMtData = async () => {
+  const { notInMt = [] } = fs.readJSONSync(notFile) || {};
+
+  for (let i = 0; i < notInMt.length; i++) {
+    const item = notInMt[i];
+    const data = await getMtSearch(item);
+    if (!data?.[0]) {
+      console.log("getDiffMtData mt fail: ", item);
+    } else {
+      const result = await dealMtData(data?.[0]);
+      const text = fs.readJSONSync(mtFile);
+      fs.writeJsonSync(mtFile, [...text, result], { spaces: 2 });
+      console.log("getDiffMtData mt ok: ", item);
+    }
+
+    await sleep();
   }
 };
 
 // getMtData();
 // setMtElement()
 // getDzData();
-// compare();
-getDiffData();
+compare();
+// getDiffDzData();
+// getDiffMtData();

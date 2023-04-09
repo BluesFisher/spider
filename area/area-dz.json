@@ -2120,90 +2120,6 @@
     "phone": "18603024660"
   },
   {
-    "orgId": "G5eGvM1mLvzqayt5",
-    "dzId": "G5eGvM1mLvzqayt5",
-    "dzPath": "/pages/detail/detail?shopUuid=G5eGvM1mLvzqayt5&shopType=85&shopStyle=multipic",
-    "areaCode": "440303",
-    "latitude": 22.543891,
-    "longitude": 114.126291,
-    "orgName": "深圳瑞合康复医疗中心",
-    "orgAddr": "深南东路2023号（湖贝地铁站A口步行100米）广深大厦一层、二十五层",
-    "note": "",
-    "score": 4.5,
-    "tags": [
-      {
-        "value": "评分：4.5",
-        "type": 2
-      },
-      {
-        "value": "医疗执业许可",
-        "type": 1
-      },
-      {
-        "value": "正骨",
-        "type": 1
-      },
-      {
-        "value": "拔罐",
-        "type": 1
-      },
-      {
-        "value": "中医养生",
-        "type": 1
-      },
-      {
-        "value": "一人一方",
-        "type": 1
-      },
-      {
-        "value": "执证医生理疗",
-        "type": 1
-      },
-      {
-        "value": "中医调理",
-        "type": 1
-      },
-      {
-        "value": "中医把脉",
-        "type": 1
-      },
-      {
-        "value": "中医针灸",
-        "type": 1
-      },
-      {
-        "value": "中医艾灸",
-        "type": 1
-      },
-      {
-        "value": "中医刮痧",
-        "type": 1
-      },
-      {
-        "value": "中医拔罐",
-        "type": 1
-      },
-      {
-        "value": "中医推拿按摩",
-        "type": 1
-      },
-      {
-        "value": "中医敷贴",
-        "type": 1
-      },
-      {
-        "value": "中医正骨",
-        "type": 1
-      },
-      {
-        "value": "中医膏方",
-        "type": 1
-      }
-    ],
-    "desc": "营业时间：周一至周日 09:00-21:00",
-    "phone": "0755-82174321"
-  },
-  {
     "orgId": "G6vOSA1JfJyoJQJn",
     "dzId": "G6vOSA1JfJyoJQJn",
     "dzPath": "/pages/detail/detail?shopUuid=G6vOSA1JfJyoJQJn&shopType=75&shopStyle=bigpic",
@@ -8126,5 +8042,2613 @@
     ],
     "desc": "营业时间：周一至周日 10:00-22:00",
     "phone": "17302640919"
+  },
+  {
+    "orgId": "k4GGm3WTHF5g4Xpr",
+    "dzId": "k4GGm3WTHF5g4Xpr",
+    "dzPath": "/pages/detail/detail?shopUuid=k4GGm3WTHF5g4Xpr&shopType=45&shopStyle=multipic",
+    "areaCode": "440304",
+    "latitude": 22.507099,
+    "longitude": 114.059919,
+    "orgName": "上域·糖果篮球公园",
+    "orgAddr": "市花路1号创凌通大厦一层",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周六,周日 08:30-12:00 15:00-22:00  周一至周五 16:00-22:00",
+    "phone": "19867750050"
+  },
+  {
+    "orgId": "EV7UcbuKGkofEswB",
+    "dzId": "EV7UcbuKGkofEswB",
+    "dzPath": "/pages/detail/detail?shopUuid=EV7UcbuKGkofEswB&shopType=45&shopStyle=multipic",
+    "areaCode": "440309",
+    "latitude": 22.72014,
+    "longitude": 114.02927,
+    "orgName": "龙澜篮球运动馆",
+    "orgAddr": "福水路3号佳纷天地2楼206B号",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周一至周日 08:00-22:00",
+    "phone": "15818744197"
+  },
+  {
+    "orgId": "G6PEgIMgmoHcYkVF",
+    "dzId": "G6PEgIMgmoHcYkVF",
+    "dzPath": "/pages/detail/detail?shopUuid=G6PEgIMgmoHcYkVF&shopType=45&shopStyle=multipic",
+    "areaCode": "440307",
+    "latitude": 22.666699,
+    "longitude": 114.212609,
+    "orgName": "篮冠篮球馆",
+    "orgAddr": "园山街道保安社区红棉四路25号101",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周一至周日 10:00-22:00",
+    "phone": "84506930"
+  },
+  {
+    "orgId": "l7pWmw9l0sQaWOK5",
+    "dzId": "l7pWmw9l0sQaWOK5",
+    "dzPath": "/pages/detail/detail?shopUuid=l7pWmw9l0sQaWOK5&shopType=45&shopStyle=multipic",
+    "areaCode": "440309",
+    "latitude": 22.692247,
+    "longitude": 114.057497,
+    "orgName": "纪元体育观澜大和篮球场",
+    "orgAddr": "观澜大和工业区（斗井三路西)",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周一至周五 14:00-22:00  周六,周日 09:00-22:00",
+    "phone": "17322368180"
+  },
+  {
+    "orgId": "laWvflUgDUeYX671",
+    "dzId": "laWvflUgDUeYX671",
+    "dzPath": "/pages/detail/detail?shopUuid=laWvflUgDUeYX671&shopType=45&shopStyle=multipic",
+    "areaCode": "440305",
+    "latitude": 22.545,
+    "longitude": 113.95095,
+    "orgName": "纪元体育大冲篮球场",
+    "orgAddr": "科技路科技园三十区9号（美宜多对面）",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周一至周日 16:00-22:00",
+    "phone": "18218429983"
+  },
+  {
+    "orgId": "l34IEKwxvIKIeyPr",
+    "dzId": "l34IEKwxvIKIeyPr",
+    "dzPath": "/pages/detail/detail?shopUuid=l34IEKwxvIKIeyPr&shopType=45&shopStyle=multipic",
+    "areaCode": "440307",
+    "latitude": 22.657192,
+    "longitude": 114.079842,
+    "orgName": "雪象篮球馆",
+    "orgAddr": "坂田街道中浩二路33号源创空间(雪象园)A5栋",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周一至周日 08:00-23:00",
+    "phone": "19166304636"
+  },
+  {
+    "orgId": "l3jSK1aljNcbz5VQ",
+    "dzId": "l3jSK1aljNcbz5VQ",
+    "dzPath": "/pages/detail/detail?shopUuid=l3jSK1aljNcbz5VQ&shopType=75&shopStyle=multipic",
+    "areaCode": "440306",
+    "latitude": 22.556636,
+    "longitude": 113.886166,
+    "orgName": "关键球员·室内篮球培训（宝安中心馆）",
+    "orgAddr": "新湖路天悦龙庭A座C区宝安中心教育城6号铺（区政府对面）",
+    "note": "“各种游戏各种道具,孩子玩的不亦乐乎”",
+    "score": 3.4,
+    "tags": [
+      {
+        "value": "评分：3.4",
+        "type": 2
+      },
+      {
+        "value": "近地铁站",
+        "type": 1
+      }
+    ],
+    "desc": "营业时间：周二至周五 14:30-21:00  周六,周日 09:00-21:00",
+    "phone": "4000303096-54812"
+  },
+  {
+    "orgId": "G1ZeI7Lc5ZWYSxWM",
+    "dzId": "G1ZeI7Lc5ZWYSxWM",
+    "dzPath": "/pages/detail/detail?shopUuid=G1ZeI7Lc5ZWYSxWM&shopType=75&shopStyle=multipic",
+    "areaCode": "440307",
+    "latitude": 22.701119,
+    "longitude": 114.246554,
+    "orgName": "骁腾体育猩球馆",
+    "orgAddr": "龙腾三路6号忠艺创投产业园6号猩球馆",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周一至周日 08:00-23:00",
+    "phone": "4000303096-30312"
+  },
+  {
+    "orgId": "iF5n4otAPMT01MMt",
+    "dzId": "iF5n4otAPMT01MMt",
+    "dzPath": "/pages/detail/detail?shopUuid=iF5n4otAPMT01MMt&shopType=75&shopStyle=multipic",
+    "areaCode": "440307",
+    "latitude": 22.62908,
+    "longitude": 114.06393,
+    "orgName": "帕特里克篮球学院（龙岗坂田校区）",
+    "orgAddr": "坂富路长坑第二工业区辉达自行车厂2栋",
+    "note": "“老师和孩子互动交流挺多的”",
+    "score": 4,
+    "tags": [
+      {
+        "value": "评分：4.0",
+        "type": 2
+      },
+      {
+        "value": "龙岗区篮球培训热门榜第1名",
+        "type": 1
+      },
+      {
+        "value": "3位认证老师",
+        "type": 1
+      }
+    ],
+    "desc": "营业时间：周六,周日 08:00-22:30  周一至周五 14:30-22:30",
+    "phone": "4000303096-75271"
+  },
+  {
+    "orgId": "l9XEI4PdOU934wxp",
+    "dzId": "l9XEI4PdOU934wxp",
+    "dzPath": "/pages/detail/detail?shopUuid=l9XEI4PdOU934wxp&shopType=45&shopStyle=multipic",
+    "areaCode": "440305",
+    "latitude": 22.532134,
+    "longitude": 113.95176,
+    "orgName": "深圳湾生态运动公园",
+    "orgAddr": "高新南环路深圳湾生态科技园12栋b1座十层",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周一至周日 10:00-22:00",
+    "phone": "13612851141"
+  },
+  {
+    "orgId": "k9JW3fuangdzUd4E",
+    "dzId": "k9JW3fuangdzUd4E",
+    "dzPath": "/pages/detail/detail?shopUuid=k9JW3fuangdzUd4E&shopType=45&shopStyle=multipic",
+    "areaCode": "440305",
+    "latitude": 22.466527,
+    "longitude": 113.89638,
+    "orgName": "湄南河羽毛球篮球馆",
+    "orgAddr": "海湾路19号湄南河体育小镇A栋1区",
+    "note": "“地胶都非常不错滴,出汗的感觉真好”",
+    "score": 3.5,
+    "tags": [
+      {
+        "value": "评分：3.5",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周一至周日 08:00-22:30",
+    "phone": "21659083"
+  },
+  {
+    "orgId": "kacVZRirxYdnxjpg",
+    "dzId": "kacVZRirxYdnxjpg",
+    "dzPath": "/pages/detail/detail?shopUuid=kacVZRirxYdnxjpg&shopType=45&shopStyle=multipic",
+    "areaCode": "440307",
+    "latitude": 22.71423,
+    "longitude": 114.31548,
+    "orgName": "竞风游泳健身体育馆",
+    "orgAddr": "同心社区阳新路100号101",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周一至周日 10:00-22:00",
+    "phone": "89333386"
+  },
+  {
+    "orgId": "H6meRUFnaPmWbtGn",
+    "dzId": "H6meRUFnaPmWbtGn",
+    "dzPath": "/pages/detail/detail?shopUuid=H6meRUFnaPmWbtGn&shopType=75&shopStyle=multipic",
+    "areaCode": "440305",
+    "latitude": 22.489167,
+    "longitude": 113.912737,
+    "orgName": "超级星球羽毛球篮球培训中心（蛇口店）",
+    "orgAddr": "沿山路9-3号",
+    "note": "“超级星球运动成长中心不愧是运动好地方”",
+    "score": 3.8,
+    "tags": [
+      {
+        "value": "评分：3.8",
+        "type": 2
+      },
+      {
+        "value": "南山区篮球培训热门榜第3名",
+        "type": 1
+      },
+      {
+        "value": "11位认证老师",
+        "type": 1
+      }
+    ],
+    "desc": "营业时间：周一至周日 09:00-22:00",
+    "phone": "4000303096-46373"
+  },
+  {
+    "orgId": "k9kXYhiOrJdWx8Qg",
+    "dzId": "k9kXYhiOrJdWx8Qg",
+    "dzPath": "/pages/detail/detail?shopUuid=k9kXYhiOrJdWx8Qg&shopType=75&shopStyle=multipic",
+    "areaCode": "440305",
+    "latitude": 22.589001,
+    "longitude": 113.999504,
+    "orgName": "领跑国际少儿篮球（塘朗城分店）",
+    "orgAddr": "塘朗城L1层L101-7",
+    "note": "“孩子在这学习打篮球挺开心的”",
+    "score": 3.4,
+    "tags": [
+      {
+        "value": "评分：3.4",
+        "type": 2
+      },
+      {
+        "value": "4位认证老师",
+        "type": 1
+      }
+    ],
+    "desc": "营业时间：周一至周日 09:00-24:00",
+    "phone": "4000303096-16398"
+  },
+  {
+    "orgId": "k4mjYDEHvzYi6It6",
+    "dzId": "k4mjYDEHvzYi6It6",
+    "dzPath": "/pages/detail/detail?shopUuid=k4mjYDEHvzYi6It6&shopType=75&shopStyle=bigpic",
+    "areaCode": "440305",
+    "latitude": 22.495525,
+    "longitude": 113.924485,
+    "orgName": "大宇体育篮球（蛇口体育中心校区）",
+    "orgAddr": "公园路45号（四海公园旁）",
+    "note": "",
+    "score": 3.4,
+    "tags": [
+      {
+        "value": "评分：3.4",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周一至周日 08:00-18:00",
+    "phone": "18922806942"
+  },
+  {
+    "orgId": "FUCZFKVkh4ij6NeP",
+    "dzId": "FUCZFKVkh4ij6NeP",
+    "dzPath": "/pages/detail/detail?shopUuid=FUCZFKVkh4ij6NeP&shopType=45&shopStyle=multipic",
+    "areaCode": "440306",
+    "latitude": 22.56875,
+    "longitude": 113.91427,
+    "orgName": "OT篮球公园（中粮店）",
+    "orgAddr": "新安街道中粮031创意园C栋3楼天台",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周一至周日 08:00-21:00",
+    "phone": "15814699836"
+  },
+  {
+    "orgId": "k601Cv4yXWXiSGY1",
+    "dzId": "k601Cv4yXWXiSGY1",
+    "dzPath": "/pages/detail/detail?shopUuid=k601Cv4yXWXiSGY1&shopType=75&shopStyle=multipic",
+    "areaCode": "440306",
+    "latitude": 22.570675,
+    "longitude": 113.892101,
+    "orgName": "迪小将少儿运动中心（宝安万达中心）",
+    "orgAddr": "宝民一路万达广场B栋3楼3029",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      },
+      {
+        "value": "6位认证老师",
+        "type": 1
+      }
+    ],
+    "desc": "营业时间：周二至周日 10:00-22:00",
+    "phone": "18948702927"
+  },
+  {
+    "orgId": "H94gdjEs9m6m7fxb",
+    "dzId": "H94gdjEs9m6m7fxb",
+    "dzPath": "/pages/detail/detail?shopUuid=H94gdjEs9m6m7fxb&shopType=75&shopStyle=bigpic",
+    "areaCode": "440304",
+    "latitude": 22.563123,
+    "longitude": 114.052859,
+    "orgName": "众心篮球（梅林校区）",
+    "orgAddr": "梅村路梅林生活中心三楼B315",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周一至周日 10:00-22:00",
+    "phone": "15243816456"
+  },
+  {
+    "orgId": "l853314BDnQM7xFv",
+    "dzId": "l853314BDnQM7xFv",
+    "dzPath": "/pages/detail/detail?shopUuid=l853314BDnQM7xFv&shopType=75&shopStyle=multipic",
+    "areaCode": "440305",
+    "latitude": 22.493578,
+    "longitude": 113.924361,
+    "orgName": "玩胜青训（蛇口四海中心）",
+    "orgAddr": "四海宜家大厦2楼104",
+    "note": "“长颈鹿教练对待孩子积极耐心很有说服力”",
+    "score": 3.7,
+    "tags": [
+      {
+        "value": "评分：3.7",
+        "type": 2
+      },
+      {
+        "value": "2位认证老师",
+        "type": 1
+      }
+    ],
+    "desc": "营业时间：周六,周日 07:30-19:00  周二至周五 10:00-21:00",
+    "phone": "4001016029-0379"
+  },
+  {
+    "orgId": "k3JUBL1jzBBwr2s5",
+    "dzId": "k3JUBL1jzBBwr2s5",
+    "dzPath": "/pages/detail/detail?shopUuid=k3JUBL1jzBBwr2s5&shopType=75&shopStyle=multipic",
+    "areaCode": "440305",
+    "latitude": 22.493054,
+    "longitude": 113.924384,
+    "orgName": "东方启明星篮球培训（蛇口校区）",
+    "orgAddr": "四海宜家北座2楼201-2",
+    "note": "“培训课程内容丰富,孩子挺喜欢的”",
+    "score": 3.9,
+    "tags": [
+      {
+        "value": "评分：3.9",
+        "type": 2
+      },
+      {
+        "value": "南山区篮球培训热门榜第6名",
+        "type": 1
+      },
+      {
+        "value": "3位认证老师",
+        "type": 1
+      }
+    ],
+    "desc": "营业时间：周一至周日 09:00-20:00",
+    "phone": "4000303096-39145"
+  },
+  {
+    "orgId": "l1IoCnmAGeTZpMp0",
+    "dzId": "l1IoCnmAGeTZpMp0",
+    "dzPath": "/pages/detail/detail?shopUuid=l1IoCnmAGeTZpMp0&shopType=45&shopStyle=multipic",
+    "areaCode": "440305",
+    "latitude": 22.51889,
+    "longitude": 113.92145,
+    "orgName": "球冠篮球馆",
+    "orgAddr": "南山大道1061号联华篮球馆",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周一至周日 09:00-24:00",
+    "phone": "18565326873"
+  },
+  {
+    "orgId": "k3FCQmJxH1NGAb56",
+    "dzId": "k3FCQmJxH1NGAb56",
+    "dzPath": "/pages/detail/detail?shopUuid=k3FCQmJxH1NGAb56&shopType=75&shopStyle=bigpic",
+    "areaCode": "440306",
+    "latitude": 22.772456,
+    "longitude": 113.854096,
+    "orgName": "立志篮球训练基地（松岗校区）",
+    "orgAddr": "松岗街道锦江路6号",
+    "note": "“在立志学篮球的孩子挺多的”",
+    "score": 3.4,
+    "tags": [
+      {
+        "value": "评分：3.4",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周一至周日 10:00-22:00",
+    "phone": "13632545383"
+  },
+  {
+    "orgId": "l5OdqyXZ1ivOZzLk",
+    "dzId": "l5OdqyXZ1ivOZzLk",
+    "dzPath": "/pages/detail/detail?shopUuid=l5OdqyXZ1ivOZzLk&shopType=75&shopStyle=bigpic",
+    "areaCode": "440306",
+    "latitude": 22.572598,
+    "longitude": 113.904028,
+    "orgName": "关键球员篮球培训（宝安中洲馆）（宝安中洲馆）",
+    "orgAddr": "新安街道中洲华府旁乐添教育广场1楼",
+    "note": "“这里的场馆设施都很干净很齐全”",
+    "score": 3.5,
+    "tags": [
+      {
+        "value": "评分：3.5",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周二至周五 14:30-21:00  周六,周日 09:00-21:00",
+    "phone": "18124180258"
+  },
+  {
+    "orgId": "G3aZTJMB24SBf2cM",
+    "dzId": "G3aZTJMB24SBf2cM",
+    "dzPath": "/pages/detail/detail?shopUuid=G3aZTJMB24SBf2cM&shopType=75&shopStyle=multipic",
+    "areaCode": "440305",
+    "latitude": 22.512442,
+    "longitude": 113.914062,
+    "orgName": "全明星篮球俱乐部（阳光科创校区）",
+    "orgAddr": "南山街道东滨路阳光科创中心A座3-4层",
+    "note": "“课后会积极反馈孩子上课状态,很用心”",
+    "score": 4.5,
+    "tags": [
+      {
+        "value": "评分：4.5",
+        "type": 2
+      },
+      {
+        "value": "南山区篮球培训好评榜第2名",
+        "type": 1
+      },
+      {
+        "value": "6位认证老师",
+        "type": 1
+      },
+      {
+        "value": "近地铁站",
+        "type": 1
+      }
+    ],
+    "desc": "营业时间：周一至周日 10:00-21:00",
+    "phone": "4000303096-48783"
+  },
+  {
+    "orgId": "k2Kahq8M4RdXbxLN",
+    "dzId": "k2Kahq8M4RdXbxLN",
+    "dzPath": "/pages/detail/detail?shopUuid=k2Kahq8M4RdXbxLN&shopType=75&shopStyle=bigpic",
+    "areaCode": "440305",
+    "latitude": 22.556559,
+    "longitude": 113.921158,
+    "orgName": "晨曦篮球俱乐部",
+    "orgAddr": "二号路南联体育公园",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周一至周日 10:00-22:00",
+    "phone": "15014048656"
+  },
+  {
+    "orgId": "k2E2Uem1MjcbYCq2",
+    "dzId": "k2E2Uem1MjcbYCq2",
+    "dzPath": "/pages/detail/detail?shopUuid=k2E2Uem1MjcbYCq2&shopType=75&shopStyle=multipic",
+    "areaCode": "440309",
+    "latitude": 22.63072,
+    "longitude": 114.01922,
+    "orgName": "Superkid运动馆（龙华星河校区）",
+    "orgAddr": "上塘路星河传奇3期cocogardenL2-045号商铺",
+    "note": "“非常有心的对整节课制作精美的视频”",
+    "score": 3.6,
+    "tags": [
+      {
+        "value": "评分：3.6",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周二至周日 10:00-20:00",
+    "phone": "4000303096-78602"
+  },
+  {
+    "orgId": "G1DF5EwejSa0LR2J",
+    "dzId": "G1DF5EwejSa0LR2J",
+    "dzPath": "/pages/detail/detail?shopUuid=G1DF5EwejSa0LR2J&shopType=75&shopStyle=multipic",
+    "areaCode": "440309",
+    "latitude": 22.723036,
+    "longitude": 114.029976,
+    "orgName": "壹号球员少儿篮球运动馆（九龙山体育公园店）",
+    "orgAddr": "观澜珑门名苑6栋锦鲤教育城501",
+    "note": "“教练蛮负责,对新来的学员动作辅导到位”",
+    "score": 4.1,
+    "tags": [
+      {
+        "value": "评分：4.1",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周二至周五 15:00-21:00  周六,周日 09:00-12:00 14:00-21:00",
+    "phone": "4000303096-68926"
+  },
+  {
+    "orgId": "k8xUR87ZHY5OIOus",
+    "dzId": "k8xUR87ZHY5OIOus",
+    "dzPath": "/pages/detail/detail?shopUuid=k8xUR87ZHY5OIOus&shopType=45&shopStyle=bigpic",
+    "areaCode": "440306",
+    "latitude": 22.6781,
+    "longitude": 113.800235,
+    "orgName": "富桥工业二区篮球场",
+    "orgAddr": "天福路与永福路交叉口西南220米",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：-",
+    "phone": ""
+  },
+  {
+    "orgId": "G8qbQkwjdiV7xVqg",
+    "dzId": "G8qbQkwjdiV7xVqg",
+    "dzPath": "/pages/detail/detail?shopUuid=G8qbQkwjdiV7xVqg&shopType=75&shopStyle=bigpic",
+    "areaCode": "440306",
+    "latitude": 22.575472,
+    "longitude": 113.865592,
+    "orgName": "GY篮球实验室",
+    "orgAddr": "文化潮汕博览园三楼",
+    "note": "“让孩子喜欢并且愿意去学习篮球”",
+    "score": 3.5,
+    "tags": [
+      {
+        "value": "评分：3.5",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周一至周日 10:00-22:00",
+    "phone": "13168064242"
+  },
+  {
+    "orgId": "l41nbI6RP0gRLAOu",
+    "dzId": "l41nbI6RP0gRLAOu",
+    "dzPath": "/pages/detail/detail?shopUuid=l41nbI6RP0gRLAOu&shopType=45&shopStyle=bigpic",
+    "areaCode": "440306",
+    "latitude": 22.594346,
+    "longitude": 113.836236,
+    "orgName": "TOP篮球场星耀体育",
+    "orgAddr": "固戍一路前湾硬科技产业园B栋8楼顶",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周一至周五 14:00-22:30  周六,周日 09:00-22:30",
+    "phone": "13138868110"
+  },
+  {
+    "orgId": "G7DbD1r0GgFzpw6F",
+    "dzId": "G7DbD1r0GgFzpw6F",
+    "dzPath": "/pages/detail/detail?shopUuid=G7DbD1r0GgFzpw6F&shopType=45&shopStyle=multipic",
+    "areaCode": "440306",
+    "latitude": 22.686221,
+    "longitude": 113.941421,
+    "orgName": "UNC冠军球馆",
+    "orgAddr": "石岩街道上屋社区鸿景达产业园D栋",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周一至周日 09:00-22:00",
+    "phone": "18335162526"
+  },
+  {
+    "orgId": "HaOyBxF79YnTmAuY",
+    "dzId": "HaOyBxF79YnTmAuY",
+    "dzPath": "/pages/detail/detail?shopUuid=HaOyBxF79YnTmAuY&shopType=75&shopStyle=bigpic",
+    "areaCode": "440306",
+    "latitude": 22.675261,
+    "longitude": 113.929841,
+    "orgName": "悦动篮球培训中心（岁宝百货店）",
+    "orgAddr": "宝石南路78号岁宝百货（石岩店)F4层",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周五 16:30-21:00  周三,周四 15:00-21:00  周六,周日 08:30-21:00  周二 15:00-17:00",
+    "phone": "13380302875"
+  },
+  {
+    "orgId": "GaoUdTWkXl2VvwnN",
+    "dzId": "GaoUdTWkXl2VvwnN",
+    "dzPath": "/pages/detail/detail?shopUuid=GaoUdTWkXl2VvwnN&shopType=45&shopStyle=bigpic",
+    "areaCode": "440306",
+    "latitude": 22.735592,
+    "longitude": 113.817628,
+    "orgName": "觉园新村篮球场",
+    "orgAddr": "蚝乡路",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周一至周日 07:00-12:00 14:00-22:00",
+    "phone": ""
+  },
+  {
+    "orgId": "lao4zhrbTG5VUZ9M",
+    "dzId": "lao4zhrbTG5VUZ9M",
+    "dzPath": "/pages/detail/detail?shopUuid=lao4zhrbTG5VUZ9M&shopType=75&shopStyle=multipic",
+    "areaCode": "440309",
+    "latitude": 22.602742,
+    "longitude": 114.046303,
+    "orgName": "动因体育青少年篮球培训（cococity店）",
+    "orgAddr": "梅龙路2号cococity",
+    "note": "“娃学得很开心很认真,果断当场报课啦”",
+    "score": 3.8,
+    "tags": [
+      {
+        "value": "评分：3.8",
+        "type": 2
+      },
+      {
+        "value": "3位认证老师",
+        "type": 1
+      }
+    ],
+    "desc": "营业时间：周一至周日 09:00-21:30",
+    "phone": "4000303096-76517"
+  },
+  {
+    "orgId": "l9zy0aqpIBsYXi65",
+    "dzId": "l9zy0aqpIBsYXi65",
+    "dzPath": "/pages/detail/detail?shopUuid=l9zy0aqpIBsYXi65&shopType=75&shopStyle=multipic",
+    "areaCode": "440306",
+    "latitude": 22.736554,
+    "longitude": 113.812954,
+    "orgName": "飞跃体能·中考·攀岩",
+    "orgAddr": "环镇路沙井卓悦时光二楼8A",
+    "note": "“接下来就在飞跃定好时间来接着锻炼了”",
+    "score": 4.3,
+    "tags": [
+      {
+        "value": "评分：4.3",
+        "type": 2
+      },
+      {
+        "value": "3位认证老师",
+        "type": 1
+      }
+    ],
+    "desc": "营业时间：周一至周日 10:00-22:00",
+    "phone": "4000303096-26473"
+  },
+  {
+    "orgId": "G9fxwLAxNaHWYin7",
+    "dzId": "G9fxwLAxNaHWYin7",
+    "dzPath": "/pages/detail/detail?shopUuid=G9fxwLAxNaHWYin7&shopType=45&shopStyle=multipic",
+    "areaCode": "440307",
+    "latitude": 22.702914,
+    "longitude": 114.240774,
+    "orgName": "新屯东边月篮球场",
+    "orgAddr": "建军路16号",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：-",
+    "phone": ""
+  },
+  {
+    "orgId": "l7KFIgjhnEpsa8Pl",
+    "dzId": "l7KFIgjhnEpsa8Pl",
+    "dzPath": "/pages/detail/detail?shopUuid=l7KFIgjhnEpsa8Pl&shopType=45&shopStyle=bigpic",
+    "areaCode": "440305",
+    "latitude": 22.529016,
+    "longitude": 113.949606,
+    "orgName": "金地威新软件科技园南区篮球场",
+    "orgAddr": "科技南路与高新南九道交叉口西南100米",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周一至周日 10:00-22:00",
+    "phone": "21535533"
+  },
+  {
+    "orgId": "k8C0Y5b1iXUCVZzv",
+    "dzId": "k8C0Y5b1iXUCVZzv",
+    "dzPath": "/pages/detail/detail?shopUuid=k8C0Y5b1iXUCVZzv&shopType=45&shopStyle=bigpic",
+    "areaCode": "440305",
+    "latitude": 22.519401,
+    "longitude": 113.949181,
+    "orgName": "灌篮篮球场羽毛球场",
+    "orgAddr": "粤海街道滨海大道深圳湾体育中心",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周一至周日 06:00-23:00",
+    "phone": "15820353280"
+  },
+  {
+    "orgId": "k9mL9M2vKSmflKn3",
+    "dzId": "k9mL9M2vKSmflKn3",
+    "dzPath": "/pages/detail/detail?shopUuid=k9mL9M2vKSmflKn3&shopType=45&shopStyle=bigpic",
+    "areaCode": "440304",
+    "latitude": 22.514672,
+    "longitude": 114.056415,
+    "orgName": "动因体育室内篮球馆（益田店）",
+    "orgAddr": "福强路1605号附近",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：-",
+    "phone": ""
+  },
+  {
+    "orgId": "G8MObmuzxzMxEE8D",
+    "dzId": "G8MObmuzxzMxEE8D",
+    "dzPath": "/pages/detail/detail?shopUuid=G8MObmuzxzMxEE8D&shopType=45&shopStyle=bigpic",
+    "areaCode": "440305",
+    "latitude": 22.632801,
+    "longitude": 113.936261,
+    "orgName": "皮卡篮球公园",
+    "orgAddr": "松旺五路与三交叉口东南10米2层（企航·人才公寓）",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周一至周日 12:00-22:30",
+    "phone": "13480838382"
+  },
+  {
+    "orgId": "H7pBUDDasG6yoUxd",
+    "dzId": "H7pBUDDasG6yoUxd",
+    "dzPath": "/pages/detail/detail?shopUuid=H7pBUDDasG6yoUxd&shopType=45&shopStyle=bigpic",
+    "areaCode": "440306",
+    "latitude": 22.709291,
+    "longitude": 113.806521,
+    "orgName": "沙井天空之城篮球馆（深圳国际会展中心馆）",
+    "orgAddr": "沙井路大王山广场F5层",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：-",
+    "phone": "18312511915"
+  },
+  {
+    "orgId": "H2cFSkzlkPE239NM",
+    "dzId": "H2cFSkzlkPE239NM",
+    "dzPath": "/pages/detail/detail?shopUuid=H2cFSkzlkPE239NM&shopType=45&shopStyle=bigpic",
+    "areaCode": "440305",
+    "latitude": 22.516183,
+    "longitude": 113.933765,
+    "orgName": "正浩体育篮球馆",
+    "orgAddr": "后海大道2332号",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周一至周日 09:00-22:00",
+    "phone": "19925474328"
+  },
+  {
+    "orgId": "H6u5029M3KVye15c",
+    "dzId": "H6u5029M3KVye15c",
+    "dzPath": "/pages/detail/detail?shopUuid=H6u5029M3KVye15c&shopType=45&shopStyle=bigpic",
+    "areaCode": "440305",
+    "latitude": 22.483962,
+    "longitude": 113.892906,
+    "orgName": "锡才小南山篮球场",
+    "orgAddr": "少帝路1号",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周一至周日 16:00-22:30",
+    "phone": "18938867347"
+  },
+  {
+    "orgId": "k5oW9lQKIoizX3xd",
+    "dzId": "k5oW9lQKIoizX3xd",
+    "dzPath": "/pages/detail/detail?shopUuid=k5oW9lQKIoizX3xd&shopType=45&shopStyle=multipic",
+    "areaCode": "440305",
+    "latitude": 22.507154,
+    "longitude": 113.928434,
+    "orgName": "南油篮球场",
+    "orgAddr": "好运街6号南油第一幼儿园旁",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周一至周日 10:00-22:00",
+    "phone": "13600437372"
+  },
+  {
+    "orgId": "ipVu00evVJoEqlfn",
+    "dzId": "ipVu00evVJoEqlfn",
+    "dzPath": "/pages/detail/detail?shopUuid=ipVu00evVJoEqlfn&shopType=45&shopStyle=bigpic",
+    "areaCode": "440306",
+    "latitude": 22.681831,
+    "longitude": 113.831641,
+    "orgName": "远明体育篮球训练馆",
+    "orgAddr": "凤凰花园B06",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：-",
+    "phone": "13798367669"
+  },
+  {
+    "orgId": "k1XCoGffQ4cN5TM2",
+    "dzId": "k1XCoGffQ4cN5TM2",
+    "dzPath": "/pages/detail/detail?shopUuid=k1XCoGffQ4cN5TM2&shopType=75&shopStyle=bigpic",
+    "areaCode": "440305",
+    "latitude": 22.550371,
+    "longitude": 113.953671,
+    "orgName": "关键球员·室内篮球培训（南山科技园馆）",
+    "orgAddr": "铜鼓路城市山谷奥凯迪教育城1楼1009号商铺1号",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周一,周二,周四,周五 14:30-21:00  周六,周日 09:00-21:00",
+    "phone": "18124065800"
+  },
+  {
+    "orgId": "H2yE9CHtBQSunoEG",
+    "dzId": "H2yE9CHtBQSunoEG",
+    "dzPath": "/pages/detail/detail?shopUuid=H2yE9CHtBQSunoEG&shopType=45&shopStyle=multipic",
+    "areaCode": "440305",
+    "latitude": 22.488806,
+    "longitude": 113.919016,
+    "orgName": "EACO运动馆",
+    "orgAddr": "招商街道水湾社区太子路111号水湾壹玖柒玖广场(二期)5B",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周一至周日 10:00-22:00",
+    "phone": ""
+  },
+  {
+    "orgId": "G9tc6wvTb3zXyg4a",
+    "dzId": "G9tc6wvTb3zXyg4a",
+    "dzPath": "/pages/detail/detail?shopUuid=G9tc6wvTb3zXyg4a&shopType=45&shopStyle=multipic",
+    "areaCode": "440306",
+    "latitude": 22.711773,
+    "longitude": 113.831173,
+    "orgName": "华普篮球训练中心",
+    "orgAddr": "上星第二工业区",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周一至周日 10:00-23:30",
+    "phone": "13723739588"
+  },
+  {
+    "orgId": "EHDXKXmiiFOl1xYu",
+    "dzId": "EHDXKXmiiFOl1xYu",
+    "dzPath": "/pages/detail/detail?shopUuid=EHDXKXmiiFOl1xYu&shopType=75&shopStyle=bigpic",
+    "areaCode": "440307",
+    "latitude": 22.722104,
+    "longitude": 114.296882,
+    "orgName": "星火KIDS篮球培训中心（龙东龙胜新天地店）",
+    "orgAddr": "深汕路与爱南路交叉口中信龙盛广场负一层汇佳超市入口旁",
+    "note": "“教练们都很有耐心,很和蔼可亲”",
+    "score": 3.4,
+    "tags": [
+      {
+        "value": "评分：3.4",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周一至周五 16:30-20:30  周六,周日 08:30-22:00",
+    "phone": "15920001714"
+  },
+  {
+    "orgId": "l2mzWgjGQESjc4a7",
+    "dzId": "l2mzWgjGQESjc4a7",
+    "dzPath": "/pages/detail/detail?shopUuid=l2mzWgjGQESjc4a7&shopType=75&shopStyle=bigpic",
+    "areaCode": "440305",
+    "latitude": 22.493901,
+    "longitude": 113.931441,
+    "orgName": "海洋篮球馆(Ocean Park)",
+    "orgAddr": "工业七路四海公寓一楼文化广场118号",
+    "note": "",
+    "score": 3.4,
+    "tags": [
+      {
+        "value": "评分：3.4",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周一至周日 09:00-24:00",
+    "phone": "17788783747"
+  },
+  {
+    "orgId": "l6YA5EyDYPJXZyZ4",
+    "dzId": "l6YA5EyDYPJXZyZ4",
+    "dzPath": "/pages/detail/detail?shopUuid=l6YA5EyDYPJXZyZ4&shopType=45&shopStyle=bigpic",
+    "areaCode": "440305",
+    "latitude": 22.548402,
+    "longitude": 113.935433,
+    "orgName": "QPark篮球公园（科技中一路店）",
+    "orgAddr": "科技中一路19号赛百诺基因治疗园西门旁",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周一至周日 14:00-22:00",
+    "phone": "18123950366"
+  },
+  {
+    "orgId": "G1HeI8jaajMhPLuO",
+    "dzId": "G1HeI8jaajMhPLuO",
+    "dzPath": "/pages/detail/detail?shopUuid=G1HeI8jaajMhPLuO&shopType=75&shopStyle=bigpic",
+    "areaCode": "440306",
+    "latitude": 22.601414,
+    "longitude": 113.861563,
+    "orgName": "立志篮球训练基地（固戍校区）",
+    "orgAddr": "固戍一路67号置富广场1楼",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周一至周日 10:00-22:00",
+    "phone": "18170873785"
+  },
+  {
+    "orgId": "H2v51w8724czQ5qd",
+    "dzId": "H2v51w8724czQ5qd",
+    "dzPath": "/pages/detail/detail?shopUuid=H2v51w8724czQ5qd&shopType=75&shopStyle=bigpic",
+    "areaCode": "440304",
+    "latitude": 22.548443,
+    "longitude": 114.104213,
+    "orgName": "薪火阵营易建联少儿篮球培训中心",
+    "orgAddr": "红荔路1001号南厅（红岭地铁站B口步行130米）",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周一至周日 10:00-22:00",
+    "phone": "13728836163"
+  },
+  {
+    "orgId": 4026700,
+    "dzId": 4026700,
+    "dzPath": "/pages/detail/detail?shopUuid=4026700&shopType=45&shopStyle=bigpic",
+    "areaCode": "440307",
+    "latitude": 22.703698,
+    "longitude": 114.272575,
+    "orgName": "大浪社区篮球场",
+    "orgAddr": "南约大浪路25号",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：-",
+    "phone": ""
+  },
+  {
+    "orgId": "l7ffOl0fajf3PIYn",
+    "dzId": "l7ffOl0fajf3PIYn",
+    "dzPath": "/pages/detail/detail?shopUuid=l7ffOl0fajf3PIYn&shopType=45&shopStyle=bigpic",
+    "areaCode": "440306",
+    "latitude": 22.572057,
+    "longitude": 113.904517,
+    "orgName": "荣耀篮球公园（乐添广场店）",
+    "orgAddr": "大浪社区26区",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周一至周日 09:00-21:00",
+    "phone": "13217026927"
+  },
+  {
+    "orgId": "H7WpNULqAL79x1Jp",
+    "dzId": "H7WpNULqAL79x1Jp",
+    "dzPath": "/pages/detail/detail?shopUuid=H7WpNULqAL79x1Jp&shopType=45&shopStyle=multipic",
+    "areaCode": "440305",
+    "latitude": 22.543174,
+    "longitude": 113.911935,
+    "orgName": "辛巴篮球馆",
+    "orgAddr": "南山汽车站左100米",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：-",
+    "phone": ""
+  },
+  {
+    "orgId": "H7tjWvzR1ES68lre",
+    "dzId": "H7tjWvzR1ES68lre",
+    "dzPath": "/pages/detail/detail?shopUuid=H7tjWvzR1ES68lre&shopType=45&shopStyle=bigpic",
+    "areaCode": "440304",
+    "latitude": 22.553587,
+    "longitude": 114.070237,
+    "orgName": "莲花一村篮球场",
+    "orgAddr": "笋岗西路与莲花立交交叉口东南200米",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周一至周日 07:00-22:00",
+    "phone": ""
+  },
+  {
+    "orgId": "H1L6AB3JrfbCdd8y",
+    "dzId": "H1L6AB3JrfbCdd8y",
+    "dzPath": "/pages/detail/detail?shopUuid=H1L6AB3JrfbCdd8y&shopType=45&shopStyle=bigpic",
+    "areaCode": "440306",
+    "latitude": 22.632401,
+    "longitude": 113.834939,
+    "orgName": "后瑞社区篮球场",
+    "orgAddr": "后瑞新瑞一区三巷3号",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周一至周日 07:00-22:00",
+    "phone": "27502726"
+  },
+  {
+    "orgId": "l4votav1cWoQLlec",
+    "dzId": "l4votav1cWoQLlec",
+    "dzPath": "/pages/detail/detail?shopUuid=l4votav1cWoQLlec&shopType=75&shopStyle=bigpic",
+    "areaCode": "440309",
+    "latitude": 22.625348,
+    "longitude": 114.022339,
+    "orgName": "关键球员·室内篮球培训（龙华红山馆）",
+    "orgAddr": "中梅路润达圆庭4015",
+    "note": "“孩子在这里上课一段时间课了,感觉不错”",
+    "score": 3.4,
+    "tags": [
+      {
+        "value": "评分：3.4",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周二至周五 14:30-21:00  周六,周日 09:00-21:00",
+    "phone": "17888683677"
+  },
+  {
+    "orgId": 1232489879,
+    "dzId": 1232489879,
+    "dzPath": "/pages/detail/detail?shopUuid=1232489879&shopType=45&shopStyle=bigpic",
+    "areaCode": "440309",
+    "latitude": 22.678051,
+    "longitude": 113.988931,
+    "orgName": "乐里天台篮球场（大浪店）",
+    "orgAddr": "华兴路38号安宏基星曜产业园5楼天台（7-11室旁）",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：-",
+    "phone": "13531864301"
+  },
+  {
+    "orgId": "k9uhfyLueSQjrrLA",
+    "dzId": "k9uhfyLueSQjrrLA",
+    "dzPath": "/pages/detail/detail?shopUuid=k9uhfyLueSQjrrLA&shopType=75&shopStyle=bigpic",
+    "areaCode": "440308",
+    "latitude": 22.585537,
+    "longitude": 114.264273,
+    "orgName": "龙猫篮球（御景店）",
+    "orgAddr": "洪安三街御景佳园二期一栋一层25号",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周一至周日 10:00-22:00",
+    "phone": "13265568742"
+  },
+  {
+    "orgId": "k2qjsbb1Vf1m1Z3P",
+    "dzId": "k2qjsbb1Vf1m1Z3P",
+    "dzPath": "/pages/detail/detail?shopUuid=k2qjsbb1Vf1m1Z3P&shopType=45&shopStyle=bigpic",
+    "areaCode": "440304",
+    "latitude": 22.523203,
+    "longitude": 114.051624,
+    "orgName": "大宇篮球训练营（石厦店）",
+    "orgAddr": "石厦北一街深圳市福田区石厦学校中学部",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周一至周日 08:30-20:00",
+    "phone": "18922806942"
+  },
+  {
+    "orgId": "l7qmi147fLytTQNB",
+    "dzId": "l7qmi147fLytTQNB",
+    "dzPath": "/pages/detail/detail?shopUuid=l7qmi147fLytTQNB&shopType=45&shopStyle=bigpic",
+    "areaCode": "440305",
+    "latitude": 22.584865,
+    "longitude": 113.953616,
+    "orgName": "深圳职业技术学院南门篮球场",
+    "orgAddr": "西丽沙河西路4089号（近九祥岭公交站）",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周一至周日 06:00-24:00",
+    "phone": ""
+  },
+  {
+    "orgId": "G83voPEiklw9drr8",
+    "dzId": "G83voPEiklw9drr8",
+    "dzPath": "/pages/detail/detail?shopUuid=G83voPEiklw9drr8&shopType=45&shopStyle=bigpic",
+    "areaCode": "440307",
+    "latitude": 22.691317,
+    "longitude": 114.114997,
+    "orgName": "辅岐路篮球场（22店）",
+    "orgAddr": "辅岐路附近",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：-",
+    "phone": ""
+  },
+  {
+    "orgId": "k5tkUSCeKCHgme0h",
+    "dzId": "k5tkUSCeKCHgme0h",
+    "dzPath": "/pages/detail/detail?shopUuid=k5tkUSCeKCHgme0h&shopType=75&shopStyle=bigpic",
+    "areaCode": "440306",
+    "latitude": 22.685695,
+    "longitude": 113.952095,
+    "orgName": "成长篮球（石岩馆）",
+    "orgAddr": "水田社区宝石东路68号-3钢结构厂房C层",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周一至周日 08:00-22:00",
+    "phone": "13723429381"
+  },
+  {
+    "orgId": "G5lRVziedQFErwBu",
+    "dzId": "G5lRVziedQFErwBu",
+    "dzPath": "/pages/detail/detail?shopUuid=G5lRVziedQFErwBu&shopType=45&shopStyle=bigpic",
+    "areaCode": "440307",
+    "latitude": 22.69015,
+    "longitude": 114.28358,
+    "orgName": "宝龙篮球馆",
+    "orgAddr": "高科大道利亨隆工业区61-1",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周六,周日 09:00-22:00  周一至周五 15:00-22:00",
+    "phone": "18033416959"
+  },
+  {
+    "orgId": "l8Go4urm1snxA0Sa",
+    "dzId": "l8Go4urm1snxA0Sa",
+    "dzPath": "/pages/detail/detail?shopUuid=l8Go4urm1snxA0Sa&shopType=45&shopStyle=bigpic",
+    "areaCode": "440304",
+    "latitude": 22.542256,
+    "longitude": 114.039143,
+    "orgName": "PW篮球公园（香梅路店）",
+    "orgAddr": "香蜜南四街香蜜楼西30米",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周六,周日 08:00-22:00  周一至周五 15:00-22:00",
+    "phone": "17620490728"
+  },
+  {
+    "orgId": "G9ORD76HZF3q7Mfv",
+    "dzId": "G9ORD76HZF3q7Mfv",
+    "dzPath": "/pages/detail/detail?shopUuid=G9ORD76HZF3q7Mfv&shopType=45&shopStyle=bigpic",
+    "areaCode": "440305",
+    "latitude": 22.55789,
+    "longitude": 113.948292,
+    "orgName": "松坪山公园室外篮球场",
+    "orgAddr": "松坪山社区松坪山公园内（东南角）",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周一至周五 07:00-09:00 16:30-21:00  周六,周日 07:00-21:00",
+    "phone": ""
+  },
+  {
+    "orgId": "H4wtU3v6DRFjvPFQ",
+    "dzId": "H4wtU3v6DRFjvPFQ",
+    "dzPath": "/pages/detail/detail?shopUuid=H4wtU3v6DRFjvPFQ&shopType=45&shopStyle=bigpic",
+    "areaCode": "440305",
+    "latitude": 22.549042,
+    "longitude": 113.943282,
+    "orgName": "科兴科学园篮球场足球场",
+    "orgAddr": "粤海街道高新中一道科兴科学园",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周一至周日 全天",
+    "phone": "13600437372"
+  },
+  {
+    "orgId": "l78iYFpWm5Wiu9DB",
+    "dzId": "l78iYFpWm5Wiu9DB",
+    "dzPath": "/pages/detail/detail?shopUuid=l78iYFpWm5Wiu9DB&shopType=45&shopStyle=bigpic",
+    "areaCode": "440304",
+    "latitude": 22.556905,
+    "longitude": 114.045065,
+    "orgName": "景田村篮球场",
+    "orgAddr": "莲花路与景田路交汇处景田酒店一楼",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周一至周日 08:00-22:00",
+    "phone": ""
+  },
+  {
+    "orgId": "l8cz6SnulZpQQoyv",
+    "dzId": "l8cz6SnulZpQQoyv",
+    "dzPath": "/pages/detail/detail?shopUuid=l8cz6SnulZpQQoyv&shopType=45&shopStyle=bigpic",
+    "areaCode": "440311",
+    "latitude": 22.753783,
+    "longitude": 113.899243,
+    "orgName": "石围篮球场",
+    "orgAddr": "周家路",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周一至周日 08:30-11:30 17:00-22:30",
+    "phone": ""
+  },
+  {
+    "orgId": "G13OK7xGKi0Bs2wz",
+    "dzId": "G13OK7xGKi0Bs2wz",
+    "dzPath": "/pages/detail/detail?shopUuid=G13OK7xGKi0Bs2wz&shopType=45&shopStyle=bigpic",
+    "areaCode": "440305",
+    "latitude": 22.596127,
+    "longitude": 113.991557,
+    "orgName": "深圳大学室内篮球场",
+    "orgAddr": "深圳大学丽湖校区",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：-",
+    "phone": ""
+  },
+  {
+    "orgId": "l3J1YqhtzjKsrslU",
+    "dzId": "l3J1YqhtzjKsrslU",
+    "dzPath": "/pages/detail/detail?shopUuid=l3J1YqhtzjKsrslU&shopType=75&shopStyle=bigpic",
+    "areaCode": "440309",
+    "latitude": 22.672897,
+    "longitude": 113.994007,
+    "orgName": "星奥篮球培训（大浪校区）",
+    "orgAddr": "龙华区大浪街道华繁路84栋13号",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周二至周日 10:00-21:30",
+    "phone": "15919873259"
+  },
+  {
+    "orgId": "kadGoKGuJNStv10H",
+    "dzId": "kadGoKGuJNStv10H",
+    "dzPath": "/pages/detail/detail?shopUuid=kadGoKGuJNStv10H&shopType=45&shopStyle=multipic",
+    "areaCode": "440306",
+    "latitude": 22.574247,
+    "longitude": 113.921547,
+    "orgName": "SouthPark南方公园篮球场",
+    "orgAddr": "高新奇产业园一期BC栋7楼",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周一至周五 16:00-22:00  周六,周日 10:00-22:00",
+    "phone": "13310841338"
+  },
+  {
+    "orgId": "k8jsvcIbAJ6ESwu7",
+    "dzId": "k8jsvcIbAJ6ESwu7",
+    "dzPath": "/pages/detail/detail?shopUuid=k8jsvcIbAJ6ESwu7&shopType=75&shopStyle=bigpic",
+    "areaCode": "440310",
+    "latitude": 22.730644,
+    "longitude": 114.383984,
+    "orgName": "态度篮球（嘉邻中心店）",
+    "orgAddr": "锦绣西路56号嘉邻中心F4层",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周一至周日 08:30-22:00",
+    "phone": "13717128918"
+  },
+  {
+    "orgId": "lazIedp4pwrWqvlZ",
+    "dzId": "lazIedp4pwrWqvlZ",
+    "dzPath": "/pages/detail/detail?shopUuid=lazIedp4pwrWqvlZ&shopType=45&shopStyle=bigpic",
+    "areaCode": "440308",
+    "latitude": 22.554673,
+    "longitude": 114.232718,
+    "orgName": "叶屋村篮球场",
+    "orgAddr": "梧桐路2047-11号",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：-",
+    "phone": "25360701"
+  },
+  {
+    "orgId": "G9kaqlT3lIIhXm0y",
+    "dzId": "G9kaqlT3lIIhXm0y",
+    "dzPath": "/pages/detail/detail?shopUuid=G9kaqlT3lIIhXm0y&shopType=45&shopStyle=bigpic",
+    "areaCode": "440307",
+    "latitude": 22.766475,
+    "longitude": 114.308685,
+    "orgName": "星火体育篮球羽毛球培训中心（坪地店）",
+    "orgAddr": "湖田路25-4号",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周一至周日 10:00-22:00",
+    "phone": "18682437507"
+  },
+  {
+    "orgId": "G4irOnafrHMHPiTS",
+    "dzId": "G4irOnafrHMHPiTS",
+    "dzPath": "/pages/detail/detail?shopUuid=G4irOnafrHMHPiTS&shopType=45&shopStyle=bigpic",
+    "areaCode": "440309",
+    "latitude": 22.62987,
+    "longitude": 114.03819,
+    "orgName": "生涯体育Q-park篮球公园",
+    "orgAddr": "民治街道民治大道万众城家居广场A1区4楼天台",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周一至周日 09:00-22:30",
+    "phone": "18127033699"
+  },
+  {
+    "orgId": "G9jGwQe4xeTeIYMS",
+    "dzId": "G9jGwQe4xeTeIYMS",
+    "dzPath": "/pages/detail/detail?shopUuid=G9jGwQe4xeTeIYMS&shopType=45&shopStyle=bigpic",
+    "areaCode": "440305",
+    "latitude": 22.588281,
+    "longitude": 113.984041,
+    "orgName": "高比篮球俱乐部",
+    "orgAddr": "塘兴路集悦城桃源智谷A区17栋6楼",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：-",
+    "phone": "18925226573"
+  },
+  {
+    "orgId": "jEdLcRIVwt96M5cB",
+    "dzId": "jEdLcRIVwt96M5cB",
+    "dzPath": "/pages/detail/detail?shopUuid=jEdLcRIVwt96M5cB&shopType=75&shopStyle=bigpic",
+    "areaCode": "440309",
+    "latitude": 22.636491,
+    "longitude": 114.013941,
+    "orgName": "关键球员·室内少儿篮球培训（上塘校区）",
+    "orgAddr": "龙塘社区民塘路521号（上塘地铁站AD出口)ATMALL上塘L1",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周六,周日 09:00-21:00  周二至周五 14:30-21:00",
+    "phone": "18128834991"
+  },
+  {
+    "orgId": "H3qXfkywK8DwOmaX",
+    "dzId": "H3qXfkywK8DwOmaX",
+    "dzPath": "/pages/detail/detail?shopUuid=H3qXfkywK8DwOmaX&shopType=45&shopStyle=bigpic",
+    "areaCode": "440307",
+    "latitude": 22.651055,
+    "longitude": 114.117224,
+    "orgName": "塞兔科技篮球场",
+    "orgAddr": "甘李三路和甘李六路交叉口",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：-",
+    "phone": ""
+  },
+  {
+    "orgId": "G35btOvCxKevRmHw",
+    "dzId": "G35btOvCxKevRmHw",
+    "dzPath": "/pages/detail/detail?shopUuid=G35btOvCxKevRmHw&shopType=45&shopStyle=bigpic",
+    "areaCode": "440307",
+    "latitude": 22.735138,
+    "longitude": 114.237378,
+    "orgName": "龙飞篮球（回龙埔校区）",
+    "orgAddr": "回龙埔社区龙埔路76-1浩福超市二楼",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周一至周日 全天",
+    "phone": "13788449924"
+  },
+  {
+    "orgId": "H5mJH5YAsA2khxFl",
+    "dzId": "H5mJH5YAsA2khxFl",
+    "dzPath": "/pages/detail/detail?shopUuid=H5mJH5YAsA2khxFl&shopType=45&shopStyle=bigpic",
+    "areaCode": "440305",
+    "latitude": 22.54255,
+    "longitude": 113.9122,
+    "orgName": "创业广场篮球场·网球场",
+    "orgAddr": "深南大道南山汽车站内",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      },
+      {
+        "value": "杠铃操",
+        "type": 1
+      }
+    ],
+    "desc": "营业时间：周一至周日 06:00-22:30",
+    "phone": "15820353280"
+  },
+  {
+    "orgId": "k1WitPC446SygHHJ",
+    "dzId": "k1WitPC446SygHHJ",
+    "dzPath": "/pages/detail/detail?shopUuid=k1WitPC446SygHHJ&shopType=75&shopStyle=bigpic",
+    "areaCode": "440305",
+    "latitude": 22.49545,
+    "longitude": 113.939574,
+    "orgName": "吉动体育",
+    "orgAddr": "湾厦地铁站B出口恒裕香悦里1层L1-10501",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周一至周日 09:30-18:30",
+    "phone": "13714889990"
+  },
+  {
+    "orgId": "k1kitIMp4aM7hHXe",
+    "dzId": "k1kitIMp4aM7hHXe",
+    "dzPath": "/pages/detail/detail?shopUuid=k1kitIMp4aM7hHXe&shopType=75&shopStyle=bigpic",
+    "areaCode": "440305",
+    "latitude": 22.542071,
+    "longitude": 113.94236,
+    "orgName": "科技园顶峰篮球培训",
+    "orgAddr": "翠溪路5号",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周五至周日 09:00-18:00",
+    "phone": "15815506705"
+  },
+  {
+    "orgId": "l8BK7mtp6hI60Vm2",
+    "dzId": "l8BK7mtp6hI60Vm2",
+    "dzPath": "/pages/detail/detail?shopUuid=l8BK7mtp6hI60Vm2&shopType=45&shopStyle=bigpic",
+    "areaCode": "440306",
+    "latitude": 22.765168,
+    "longitude": 113.857568,
+    "orgName": "阳光体育篮球馆",
+    "orgAddr": "广东省深圳市宝安区松岗街道楼岗大道29-6号",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周一至周日 全天",
+    "phone": "18566768169"
+  },
+  {
+    "orgId": "k9FNjW5BsufDCzG4",
+    "dzId": "k9FNjW5BsufDCzG4",
+    "dzPath": "/pages/detail/detail?shopUuid=k9FNjW5BsufDCzG4&shopType=75&shopStyle=bigpic",
+    "areaCode": "440306",
+    "latitude": 22.784401,
+    "longitude": 113.833561,
+    "orgName": "巨星少儿篮球训练中心",
+    "orgAddr": "燕罗街道艺展四路满京华云著2期1号楼209室",
+    "note": "“对小朋友教学有经验”",
+    "score": 3.8,
+    "tags": [
+      {
+        "value": "评分：3.8",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周一至周日 10:00-20:30",
+    "phone": "0755-23310494"
+  },
+  {
+    "orgId": "l6sDqaUkqXuwJy7g",
+    "dzId": "l6sDqaUkqXuwJy7g",
+    "dzPath": "/pages/detail/detail?shopUuid=l6sDqaUkqXuwJy7g&shopType=45&shopStyle=bigpic",
+    "areaCode": "440306",
+    "latitude": 22.571739,
+    "longitude": 113.872073,
+    "orgName": "麻布社区篮球场",
+    "orgAddr": "海城路56号",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：-",
+    "phone": ""
+  },
+  {
+    "orgId": "k28L1kJudSzVqrhq",
+    "dzId": "k28L1kJudSzVqrhq",
+    "dzPath": "/pages/detail/detail?shopUuid=k28L1kJudSzVqrhq&shopType=45&shopStyle=bigpic",
+    "areaCode": "440309",
+    "latitude": 22.661554,
+    "longitude": 114.024323,
+    "orgName": "锦绣新村篮球场",
+    "orgAddr": "东环一路",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：-",
+    "phone": ""
+  },
+  {
+    "orgId": "k6D1UUQhBn3uANUH",
+    "dzId": "k6D1UUQhBn3uANUH",
+    "dzPath": "/pages/detail/detail?shopUuid=k6D1UUQhBn3uANUH&shopType=45&shopStyle=bigpic",
+    "areaCode": "440305",
+    "latitude": 22.597959,
+    "longitude": 113.991199,
+    "orgName": "深大丽湖风雨篮球场",
+    "orgAddr": "深圳大学丽湖校区",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周一至周日 全天",
+    "phone": ""
+  },
+  {
+    "orgId": "k2kksNpbGM15CqPv",
+    "dzId": "k2kksNpbGM15CqPv",
+    "dzPath": "/pages/detail/detail?shopUuid=k2kksNpbGM15CqPv&shopType=75&shopStyle=bigpic",
+    "areaCode": "440305",
+    "latitude": 22.485527,
+    "longitude": 113.914527,
+    "orgName": "海洋篮球场",
+    "orgAddr": "海上世界·汇港二期五楼（天台游乐场旁边）",
+    "note": "“场地挺大的,环境干净卫生,氛围不错”",
+    "score": 3.5,
+    "tags": [
+      {
+        "value": "评分：3.5",
+        "type": 2
+      },
+      {
+        "value": "南山区篮球培训热门榜第7名",
+        "type": 1
+      }
+    ],
+    "desc": "营业时间：周一至周日 10:00-22:00",
+    "phone": "13480991445"
+  },
+  {
+    "orgId": "laICFnAxwygpayEt",
+    "dzId": "laICFnAxwygpayEt",
+    "dzPath": "/pages/detail/detail?shopUuid=laICFnAxwygpayEt&shopType=75&shopStyle=bigpic",
+    "areaCode": "440309",
+    "latitude": 22.643505,
+    "longitude": 114.013325,
+    "orgName": "佑佑少儿篮球（龙华和平里店）",
+    "orgAddr": "和平路399号和平里花园1期3栋商铺87室",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周六,周日 08:00-20:00  周一至周五 15:00-20:00",
+    "phone": "18617125772"
+  },
+  {
+    "orgId": "l8WSqQzMgacEziob",
+    "dzId": "l8WSqQzMgacEziob",
+    "dzPath": "/pages/detail/detail?shopUuid=l8WSqQzMgacEziob&shopType=45&shopStyle=multipic",
+    "areaCode": "440305",
+    "latitude": 22.550228,
+    "longitude": 113.938736,
+    "orgName": "纪元体育高新篮球场",
+    "orgAddr": "科技中二路与高新中一道12号交界处",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周六,周日 09:00-12:00 14:00-22:00  周一至周五 16:00-22:00",
+    "phone": "18938972003"
+  },
+  {
+    "orgId": "laj3XJ62j9uRkuDG",
+    "dzId": "laj3XJ62j9uRkuDG",
+    "dzPath": "/pages/detail/detail?shopUuid=laj3XJ62j9uRkuDG&shopType=75&shopStyle=bigpic",
+    "areaCode": "440305",
+    "latitude": 22.534135,
+    "longitude": 113.922824,
+    "orgName": "关键球员·室内篮球培训（南山桃园七巧国馆）",
+    "orgAddr": "常兴南路45号（七巧国儿童中心二楼）",
+    "note": "“真心感恩遇到这么棒的机构和老师”",
+    "score": 3.4,
+    "tags": [
+      {
+        "value": "评分：3.4",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周二至周五 14:30-21:00  周六,周日 09:00-21:00",
+    "phone": "17888683677"
+  },
+  {
+    "orgId": "H4AP6hJcU87xqQ9h",
+    "dzId": "H4AP6hJcU87xqQ9h",
+    "dzPath": "/pages/detail/detail?shopUuid=H4AP6hJcU87xqQ9h&shopType=75&shopStyle=bigpic",
+    "areaCode": "440304",
+    "latitude": 22.567433,
+    "longitude": 114.042403,
+    "orgName": "东方启明星篮球培训（梅香校区）",
+    "orgAddr": "梅怡路与梅亭路交叉口西南60米",
+    "note": "“教练们都很专业,上课认真”",
+    "score": 3.4,
+    "tags": [
+      {
+        "value": "评分：3.4",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：-",
+    "phone": "15711205435"
+  },
+  {
+    "orgId": "k95UMsnlqaI7DI12",
+    "dzId": "k95UMsnlqaI7DI12",
+    "dzPath": "/pages/detail/detail?shopUuid=k95UMsnlqaI7DI12&shopType=45&shopStyle=multipic",
+    "areaCode": "440304",
+    "latitude": 22.563514,
+    "longitude": 114.060473,
+    "orgName": "精神时间屋",
+    "orgAddr": "上梅林中康南路8号雕塑家园",
+    "note": "“感谢训练师Dee哥全程细心严格的教学”",
+    "score": 3.9,
+    "tags": [
+      {
+        "value": "评分：3.9",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周一至周日 10:00-22:00",
+    "phone": "13243888046"
+  },
+  {
+    "orgId": "k3KT4lWxSgInxdrF",
+    "dzId": "k3KT4lWxSgInxdrF",
+    "dzPath": "/pages/detail/detail?shopUuid=k3KT4lWxSgInxdrF&shopType=45&shopStyle=bigpic",
+    "areaCode": "440311",
+    "latitude": 22.733721,
+    "longitude": 113.893381,
+    "orgName": "宏发高新产业园篮球场",
+    "orgAddr": "公明镇田寮村宏发高新产业园",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周一至周日 09:00-22:00",
+    "phone": ""
+  },
+  {
+    "orgId": "H9vvDKX7F2rhXFWY",
+    "dzId": "H9vvDKX7F2rhXFWY",
+    "dzPath": "/pages/detail/detail?shopUuid=H9vvDKX7F2rhXFWY&shopType=45&shopStyle=bigpic",
+    "areaCode": "440306",
+    "latitude": 22.685177,
+    "longitude": 113.807652,
+    "orgName": "篮球场小店（维客佳桥头店）",
+    "orgAddr": "桥头村灶下一巷14号",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：-",
+    "phone": ""
+  },
+  {
+    "orgId": "l20xWb40K1InaysV",
+    "dzId": "l20xWb40K1InaysV",
+    "dzPath": "/pages/detail/detail?shopUuid=l20xWb40K1InaysV&shopType=45&shopStyle=bigpic",
+    "areaCode": "440305",
+    "latitude": 22.546848,
+    "longitude": 113.950718,
+    "orgName": "科苑篮球场",
+    "orgAddr": "青梧路5号东1门南山外国语学校西南角一层",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：-",
+    "phone": "26637997"
+  },
+  {
+    "orgId": "l31R0QFXWVG0defA",
+    "dzId": "l31R0QFXWVG0defA",
+    "dzPath": "/pages/detail/detail?shopUuid=l31R0QFXWVG0defA&shopType=75&shopStyle=bigpic",
+    "areaCode": "440305",
+    "latitude": 22.586231,
+    "longitude": 113.963201,
+    "orgName": "训美篮球学院",
+    "orgAddr": "民企科技园A座7楼（平山小学对面天台）",
+    "note": "“很不错的培训机构”",
+    "score": 3.4,
+    "tags": [
+      {
+        "value": "评分：3.4",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周一至周日 10:00-22:00",
+    "phone": "18820256442"
+  },
+  {
+    "orgId": "EPoW2Ub6KE38ELqX",
+    "dzId": "EPoW2Ub6KE38ELqX",
+    "dzPath": "/pages/detail/detail?shopUuid=EPoW2Ub6KE38ELqX&shopType=45&shopStyle=bigpic",
+    "areaCode": "440304",
+    "latitude": 22.558881,
+    "longitude": 114.064581,
+    "orgName": "公交大厦篮球场",
+    "orgAddr": "莲花支路1号",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：-",
+    "phone": ""
+  },
+  {
+    "orgId": "k93aTHSJhdlvhLUO",
+    "dzId": "k93aTHSJhdlvhLUO",
+    "dzPath": "/pages/detail/detail?shopUuid=k93aTHSJhdlvhLUO&shopType=45&shopStyle=multipic",
+    "areaCode": "440309",
+    "latitude": 22.644934,
+    "longitude": 114.046974,
+    "orgName": "精英篮球公园",
+    "orgAddr": "龙华街道油松路99-4号盛波工业园顶楼",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周一至周日 10:00-22:00",
+    "phone": "13925222301"
+  },
+  {
+    "orgId": "H5s8rR4SJQxUDnAM",
+    "dzId": "H5s8rR4SJQxUDnAM",
+    "dzPath": "/pages/detail/detail?shopUuid=H5s8rR4SJQxUDnAM&shopType=45&shopStyle=bigpic",
+    "areaCode": "440309",
+    "latitude": 22.619617,
+    "longitude": 114.032173,
+    "orgName": "民旺天桥篮球场",
+    "orgAddr": "白松路与红玉路交叉口东北80米",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：-",
+    "phone": ""
+  },
+  {
+    "orgId": "G7XULxDYo80idIm9",
+    "dzId": "G7XULxDYo80idIm9",
+    "dzPath": "/pages/detail/detail?shopUuid=G7XULxDYo80idIm9&shopType=45&shopStyle=multipic",
+    "areaCode": "440307",
+    "latitude": 22.646333,
+    "longitude": 114.183353,
+    "orgName": "PT猛虎出笼天台篮球场",
+    "orgAddr": "埔厦路95号",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周一至周日 15:00-22:30",
+    "phone": "13928406982"
+  },
+  {
+    "orgId": "l3hdeCxETN2UHrv7",
+    "dzId": "l3hdeCxETN2UHrv7",
+    "dzPath": "/pages/detail/detail?shopUuid=l3hdeCxETN2UHrv7&shopType=75&shopStyle=bigpic",
+    "areaCode": "440306",
+    "latitude": 22.696583,
+    "longitude": 113.823325,
+    "orgName": "蔓延篮球训练营",
+    "orgAddr": "万丰村大洋田工业区24栋109室",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周一至周日 全天",
+    "phone": "15767128441"
+  },
+  {
+    "orgId": "l6alCguGn80Xlla4",
+    "dzId": "l6alCguGn80Xlla4",
+    "dzPath": "/pages/detail/detail?shopUuid=l6alCguGn80Xlla4&shopType=45&shopStyle=bigpic",
+    "areaCode": "440304",
+    "latitude": 22.563135,
+    "longitude": 114.05287,
+    "orgName": "荣耀篮球（梅林生活中心店）",
+    "orgAddr": "梅林生活中心B315",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：-",
+    "phone": ""
+  },
+  {
+    "orgId": "l4uaO0adEc4eUNLj",
+    "dzId": "l4uaO0adEc4eUNLj",
+    "dzPath": "/pages/detail/detail?shopUuid=l4uaO0adEc4eUNLj&shopType=45&shopStyle=bigpic",
+    "areaCode": "440305",
+    "latitude": 22.53011,
+    "longitude": 113.920216,
+    "orgName": "育尚篮球",
+    "orgAddr": "常兴路田厦统建楼5号楼三层",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周一至周日 09:00-21:00",
+    "phone": "13590200031"
+  },
+  {
+    "orgId": "k1KaQrtlvKIify9f",
+    "dzId": "k1KaQrtlvKIify9f",
+    "dzPath": "/pages/detail/detail?shopUuid=k1KaQrtlvKIify9f&shopType=75&shopStyle=bigpic",
+    "areaCode": "440309",
+    "latitude": 22.647529,
+    "longitude": 114.033468,
+    "orgName": "火恩斯青少儿篮球训练培训",
+    "orgAddr": "鸿荣路壹成中心第六区",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周一至周五 14:30-21:00  周六,周日 09:30-21:00",
+    "phone": "0755-21071371"
+  },
+  {
+    "orgId": "G4GyT8GpGKUMUnQF",
+    "dzId": "G4GyT8GpGKUMUnQF",
+    "dzPath": "/pages/detail/detail?shopUuid=G4GyT8GpGKUMUnQF&shopType=45&shopStyle=multipic",
+    "areaCode": "440305",
+    "latitude": 22.567427,
+    "longitude": 113.920051,
+    "orgName": "同乐体育公园篮球馆羽毛球B馆",
+    "orgAddr": "南头街道同乐社区同乐村191号",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周一至周日 09:00-22:00",
+    "phone": "15361098160"
+  },
+  {
+    "orgId": "H4UQ3favdz3ol291",
+    "dzId": "H4UQ3favdz3ol291",
+    "dzPath": "/pages/detail/detail?shopUuid=H4UQ3favdz3ol291&shopType=75&shopStyle=bigpic",
+    "areaCode": "440305",
+    "latitude": 22.58125,
+    "longitude": 113.94454,
+    "orgName": "冠篮体育",
+    "orgAddr": "留仙大道2088号",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周一至周日 10:00-22:00",
+    "phone": "15999688945"
+  },
+  {
+    "orgId": "H7OD2cvf5Pn6xdEk",
+    "dzId": "H7OD2cvf5Pn6xdEk",
+    "dzPath": "/pages/detail/detail?shopUuid=H7OD2cvf5Pn6xdEk&shopType=75&shopStyle=bigpic",
+    "areaCode": "440305",
+    "latitude": 22.487126,
+    "longitude": 113.938206,
+    "orgName": "浩哥篮球（澳城分馆）",
+    "orgAddr": "蛇口新街澳城花园一期A",
+    "note": "“认真的按照教练的示范做动作”",
+    "score": 3.4,
+    "tags": [
+      {
+        "value": "评分：3.4",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周一至周日 10:00-22:00",
+    "phone": "13823371941"
+  },
+  {
+    "orgId": "H6tfExWO0SKoNLpU",
+    "dzId": "H6tfExWO0SKoNLpU",
+    "dzPath": "/pages/detail/detail?shopUuid=H6tfExWO0SKoNLpU&shopType=45&shopStyle=multipic",
+    "areaCode": "440305",
+    "latitude": 22.51942,
+    "longitude": 113.92288,
+    "orgName": "南油篮球场羽毛球场",
+    "orgAddr": "南山大道中油大厦",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周一至周日 09:00-23:00",
+    "phone": "15820353280"
+  },
+  {
+    "orgId": "G5skBY2BTh6L0D3w",
+    "dzId": "G5skBY2BTh6L0D3w",
+    "dzPath": "/pages/detail/detail?shopUuid=G5skBY2BTh6L0D3w&shopType=45&shopStyle=bigpic",
+    "areaCode": "440306",
+    "latitude": 22.558792,
+    "longitude": 113.884444,
+    "orgName": "深圳荣耀篮球训练营",
+    "orgAddr": "罗田路宝安体育馆篮球馆东门",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周一至周日 全天",
+    "phone": "29558686"
+  },
+  {
+    "orgId": "k6YKaP9hf6QETQnf",
+    "dzId": "k6YKaP9hf6QETQnf",
+    "dzPath": "/pages/detail/detail?shopUuid=k6YKaP9hf6QETQnf&shopType=45&shopStyle=bigpic",
+    "areaCode": "440305",
+    "latitude": 22.487523,
+    "longitude": 113.923714,
+    "orgName": "顶峰篮球（蛇口店）",
+    "orgAddr": "公园南路10号",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周一至周日 10:00-22:00",
+    "phone": "13631552272"
+  },
+  {
+    "orgId": "k4HdcKIXqJTlsrrI",
+    "dzId": "k4HdcKIXqJTlsrrI",
+    "dzPath": "/pages/detail/detail?shopUuid=k4HdcKIXqJTlsrrI&shopType=45&shopStyle=bigpic",
+    "areaCode": "440307",
+    "latitude": 22.652509,
+    "longitude": 114.067199,
+    "orgName": "马蹄山篮球场",
+    "orgAddr": "坂雪岗大道7-17号",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：-",
+    "phone": ""
+  },
+  {
+    "orgId": "k7HMnnB0QufX4N3T",
+    "dzId": "k7HMnnB0QufX4N3T",
+    "dzPath": "/pages/detail/detail?shopUuid=k7HMnnB0QufX4N3T&shopType=45&shopStyle=bigpic",
+    "areaCode": "440308",
+    "latitude": 22.558544,
+    "longitude": 114.245474,
+    "orgName": "CBA领航者糖果篮球公园（盐田店）",
+    "orgAddr": "海景二路与海山东三街交叉口东北60米",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：-",
+    "phone": "22727035"
+  },
+  {
+    "orgId": "k46j896Wvcg7iewx",
+    "dzId": "k46j896Wvcg7iewx",
+    "dzPath": "/pages/detail/detail?shopUuid=k46j896Wvcg7iewx&shopType=75&shopStyle=bigpic",
+    "areaCode": "440307",
+    "latitude": 22.717666,
+    "longitude": 114.247906,
+    "orgName": "龙飞篮球培训（红立方校区）",
+    "orgAddr": "三馆东路三馆一城",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周二至周日 09:00-19:00",
+    "phone": "15821083238"
+  },
+  {
+    "orgId": "k5bm6TtpGGZU5kBO",
+    "dzId": "k5bm6TtpGGZU5kBO",
+    "dzPath": "/pages/detail/detail?shopUuid=k5bm6TtpGGZU5kBO&shopType=45&shopStyle=bigpic",
+    "areaCode": "440306",
+    "latitude": 22.729394,
+    "longitude": 113.831433,
+    "orgName": "新桥中心公园-篮球场",
+    "orgAddr": "新沙路164号",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：-",
+    "phone": ""
+  },
+  {
+    "orgId": "l51CtdvD7pVrRKoQ",
+    "dzId": "l51CtdvD7pVrRKoQ",
+    "dzPath": "/pages/detail/detail?shopUuid=l51CtdvD7pVrRKoQ&shopType=45&shopStyle=bigpic",
+    "areaCode": "440305",
+    "latitude": 22.505852,
+    "longitude": 113.928334,
+    "orgName": "南油文化广场篮球场",
+    "orgAddr": "东滨路4号南油文化广场",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周一至周日 09:00-22:00",
+    "phone": "15712017653"
+  },
+  {
+    "orgId": "l1zbXfbxKMaDAl68",
+    "dzId": "l1zbXfbxKMaDAl68",
+    "dzPath": "/pages/detail/detail?shopUuid=l1zbXfbxKMaDAl68&shopType=45&shopStyle=bigpic",
+    "areaCode": "440306",
+    "latitude": 22.675684,
+    "longitude": 113.823984,
+    "orgName": "白石厦篮球场",
+    "orgAddr": "福永街道白石厦路",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：-",
+    "phone": ""
+  },
+  {
+    "orgId": "l4JnnWxxrkOUXejK",
+    "dzId": "l4JnnWxxrkOUXejK",
+    "dzPath": "/pages/detail/detail?shopUuid=l4JnnWxxrkOUXejK&shopType=75&shopStyle=bigpic",
+    "areaCode": "440307",
+    "latitude": 22.693265,
+    "longitude": 114.117594,
+    "orgName": "小虎篮球少儿运动馆",
+    "orgAddr": "平湖街道岐阳路融湖中心城一期106-2",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周二至周日 14:00-22:00",
+    "phone": "13420912578"
+  },
+  {
+    "orgId": "l6dhJDfWiNlHLg3S",
+    "dzId": "l6dhJDfWiNlHLg3S",
+    "dzPath": "/pages/detail/detail?shopUuid=l6dhJDfWiNlHLg3S&shopType=45&shopStyle=bigpic",
+    "areaCode": "440305",
+    "latitude": 22.552226,
+    "longitude": 113.980526,
+    "orgName": "深诺篮球",
+    "orgAddr": "侨发路与侨深路交叉口北120米",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：-",
+    "phone": "13620945925"
+  },
+  {
+    "orgId": "l6cDxc3lW1AKSK0s",
+    "dzId": "l6cDxc3lW1AKSK0s",
+    "dzPath": "/pages/detail/detail?shopUuid=l6cDxc3lW1AKSK0s&shopType=75&shopStyle=bigpic",
+    "areaCode": "440306",
+    "latitude": 22.60562,
+    "longitude": 113.84549,
+    "orgName": "QT篮球俱乐部",
+    "orgAddr": "宝安大道与航程大道交叉路口北侧（西想安居家园)",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周一至周日 10:00-22:00",
+    "phone": "18807030278"
+  },
+  {
+    "orgId": "H5qwe9o6n6oe4xgf",
+    "dzId": "H5qwe9o6n6oe4xgf",
+    "dzPath": "/pages/detail/detail?shopUuid=H5qwe9o6n6oe4xgf&shopType=75&shopStyle=bigpic",
+    "areaCode": "440306",
+    "latitude": 22.737163,
+    "longitude": 113.812313,
+    "orgName": "吉诺队长篮球俱乐部（沙井店）",
+    "orgAddr": "环镇路199号卓悦时光购物中心3楼",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周一至周日 10:00-22:00",
+    "phone": "15361638716"
+  },
+  {
+    "orgId": "GaNouHGzvV0gnNPh",
+    "dzId": "GaNouHGzvV0gnNPh",
+    "dzPath": "/pages/detail/detail?shopUuid=GaNouHGzvV0gnNPh&shopType=45&shopStyle=bigpic",
+    "areaCode": "440306",
+    "latitude": 22.715783,
+    "longitude": 113.810167,
+    "orgName": "拓生体育篮球馆",
+    "orgAddr": "沙井西环路与沙井南环路交叉口",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：-",
+    "phone": ""
+  },
+  {
+    "orgId": "G6cbboNrAeH1GqBB",
+    "dzId": "G6cbboNrAeH1GqBB",
+    "dzPath": "/pages/detail/detail?shopUuid=G6cbboNrAeH1GqBB&shopType=45&shopStyle=bigpic",
+    "areaCode": "440306",
+    "latitude": 22.56072,
+    "longitude": 113.88447,
+    "orgName": "宝青篮球场足球场",
+    "orgAddr": "罗田路宝安体育中心",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周一至周日 10:00-22:00",
+    "phone": "13600437372"
+  },
+  {
+    "orgId": "HaJZNvZLiDcOqEW5",
+    "dzId": "HaJZNvZLiDcOqEW5",
+    "dzPath": "/pages/detail/detail?shopUuid=HaJZNvZLiDcOqEW5&shopType=45&shopStyle=bigpic",
+    "areaCode": "440303",
+    "latitude": 22.563091,
+    "longitude": 114.169063,
+    "orgName": "关键球员（莲塘店）",
+    "orgAddr": "中国广东省深圳市罗湖区华润万家3楼关键球员（仙湖路地铁站B2口步行210米）",
+    "note": "",
+    "score": 0,
+    "tags": [
+      {
+        "value": "评分：-",
+        "type": 2
+      }
+    ],
+    "desc": "营业时间：周六,周日 09:00-20:30  周二至周五 02:30-20:30",
+    "phone": ""
   }
 ]
