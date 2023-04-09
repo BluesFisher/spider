@@ -172,8 +172,6 @@ const getMtData = async () => {
 const setMtElement = () => {
   let res = fs.readJSONSync(mtFile) || {};
   res = res.map((item) => {
-    const v = item.tags[0].value.replace("评分：", "");
-
     return {
       ...item,
       mtId: item.orgId,
