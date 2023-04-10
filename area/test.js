@@ -160,7 +160,7 @@ const MT = {
     // filterMtId();
     // const { data } = fs.readJSONSync(srcFile) || {};
     let res = [];
-    for (let index = 0; index < 30; index++) {
+    for (let index = 30; index < 40; index++) {
       const offset = index * 32;
       const data = await this.getMtSearch(offset);
 
@@ -195,7 +195,7 @@ const MT = {
 
     for (let i = 0; i < notInMt.length; i++) {
       const item = notInMt[i];
-      const data = await getMtSearch(item);
+      const data = await this.getMtSearch(0, item);
       if (!data?.[0]) {
         console.log("getDiffMtData mt fail: ", item);
       } else {
@@ -419,7 +419,7 @@ const DZ = {
   async getDiffDzData() {
     const { notInDz = [] } = fs.readJSONSync(notFile) || {};
 
-    for (let i = 0; i < 1; i++) {
+    for (let i = 0; i < notInDz.length; i++) {
       const item = notInDz[i];
       const data = await this.getDzList(0, item);
       if (!data?.[0]?.shopInfo) {
@@ -507,7 +507,7 @@ const compare = () => {
 
 // MT.getMtData();
 // MT.setMtElement();
-MT.filterMtId();
+// MT.filterMtId();
 // MT.getDiffMtData();
 // MT.getMtSearch();
 

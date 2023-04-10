@@ -5635,7 +5635,19 @@
     "phone": "0755-22745780/13714734917",
     "areaCode": "440308",
     "score": 0,
-    "mtId": 592978838
+    "mtId": 592978838,
+    "dzInfo": {
+      "dzId": "k3u7wEXXAnLPuoSv",
+      "dzPath": "/pages/detail/detail?shopUuid=k3u7wEXXAnLPuoSv&shopType=45&shopStyle=multipic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -10840,7 +10852,19 @@
     "longitude": 113.8621,
     "desc": "营业时间：-",
     "score": 0,
-    "mtId": 1814257188
+    "mtId": 1814257188,
+    "dzInfo": {
+      "dzId": "k4eJjFnh3kUSBPZS",
+      "dzPath": "/pages/detail/detail?shopUuid=k4eJjFnh3kUSBPZS&shopType=45&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -10859,7 +10883,19 @@
     "longitude": 114.0924,
     "desc": "营业时间：-",
     "score": 0,
-    "mtId": 1080775714
+    "mtId": 1080775714,
+    "dzInfo": {
+      "dzId": "k27293IPW10C41Qr",
+      "dzPath": "/pages/detail/detail?shopUuid=k27293IPW10C41Qr&shopType=45&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -10878,7 +10914,19 @@
     "longitude": 113.8647,
     "desc": "营业时间：周一至周日 06:00-23:00",
     "score": 0,
-    "mtId": 1763568386
+    "mtId": 1763568386,
+    "dzInfo": {
+      "dzId": "GamPvOgaVWTIFUky",
+      "dzPath": "/pages/detail/detail?shopUuid=GamPvOgaVWTIFUky&shopType=45&shopStyle=multipic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -10897,7 +10945,19 @@
     "longitude": 113.9214,
     "desc": "营业时间：周一至周日 09:00-22:00",
     "score": 0,
-    "mtId": 1443892205
+    "mtId": 1443892205,
+    "dzInfo": {
+      "dzId": "laR88ipdb43maRJS",
+      "dzPath": "/pages/detail/detail?shopUuid=laR88ipdb43maRJS&shopType=45&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -10916,7 +10976,19 @@
     "longitude": 113.9303,
     "desc": "营业时间：周一至周日 10:00-22:00",
     "score": 3,
-    "mtId": 1955391410
+    "mtId": 1955391410,
+    "dzInfo": {
+      "dzId": "k29gjYbPMmkVxrQw",
+      "dzPath": "/pages/detail/detail?shopUuid=k29gjYbPMmkVxrQw&shopType=75&shopStyle=bigpic",
+      "note": "“场馆介绍中挺多老师的”",
+      "score": 3.4,
+      "tags": [
+        {
+          "value": "评分：3.4",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -10935,7 +11007,19 @@
     "longitude": 114.0688,
     "desc": "营业时间：周一至周日 10:00-22:00",
     "score": 0,
-    "mtId": 946142654
+    "mtId": 946142654,
+    "dzInfo": {
+      "dzId": "k54usrcWxRsCYo8k",
+      "dzPath": "/pages/detail/detail?shopUuid=k54usrcWxRsCYo8k&shopType=75&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -10954,7 +11038,19 @@
     "longitude": 114.1928,
     "desc": "营业时间：周一至周日 10:00-22:00",
     "score": 0,
-    "mtId": 1548521333
+    "mtId": 1548521333,
+    "dzInfo": {
+      "dzId": "l6HGCpNNltDkQsEg",
+      "dzPath": "/pages/detail/detail?shopUuid=l6HGCpNNltDkQsEg&shopType=75&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -11004,7 +11100,19 @@
     "phone": "13316554756",
     "areaCode": "440306",
     "score": 0,
-    "mtId": 1513732861
+    "mtId": 1513732861,
+    "dzInfo": {
+      "dzId": "jzx2xX6tfMBoZF7w",
+      "dzPath": "/pages/detail/detail?shopUuid=jzx2xX6tfMBoZF7w&shopType=75&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -11054,7 +11162,19 @@
     "phone": "13760367653",
     "areaCode": "440305",
     "score": 0,
-    "mtId": 1027372183
+    "mtId": 1027372183,
+    "dzInfo": {
+      "dzId": "k63cpkVUo5B52hsG",
+      "dzPath": "/pages/detail/detail?shopUuid=k63cpkVUo5B52hsG&shopType=45&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -11077,7 +11197,19 @@
     "phone": "13428740144",
     "areaCode": "440305",
     "score": 0,
-    "mtId": 971976407
+    "mtId": 971976407,
+    "dzInfo": {
+      "dzId": "k2DIritXxITZvhBO",
+      "dzPath": "/pages/detail/detail?shopUuid=k2DIritXxITZvhBO&shopType=45&shopStyle=multipic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -11127,7 +11259,19 @@
     "phone": "15820353280",
     "areaCode": "440304",
     "score": 0,
-    "mtId": 1581314320
+    "mtId": 1581314320,
+    "dzInfo": {
+      "dzId": "G5iHhaj4f6pjqqc3",
+      "dzPath": "/pages/detail/detail?shopUuid=G5iHhaj4f6pjqqc3&shopType=45&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -11177,7 +11321,19 @@
     "phone": "13641428248",
     "areaCode": "440304",
     "score": 0,
-    "mtId": 1169909260
+    "mtId": 1169909260,
+    "dzInfo": {
+      "dzId": "G4cgydTl7omiWrdp",
+      "dzPath": "/pages/detail/detail?shopUuid=G4cgydTl7omiWrdp&shopType=45&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -11277,7 +11433,19 @@
     "longitude": 114.1049,
     "desc": "营业时间：周一至周日 10:00-20:00",
     "score": 0,
-    "mtId": 1446176856
+    "mtId": 1446176856,
+    "dzInfo": {
+      "dzId": "H7Tubqk8ZfI0e8Nc",
+      "dzPath": "/pages/detail/detail?shopUuid=H7Tubqk8ZfI0e8Nc&shopType=75&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -11296,7 +11464,19 @@
     "longitude": 113.8199,
     "desc": "营业时间：-",
     "score": 0,
-    "mtId": 82124897
+    "mtId": 82124897,
+    "dzInfo": {
+      "dzId": "G4izjM27rOzEc7En",
+      "dzPath": "/pages/detail/detail?shopUuid=G4izjM27rOzEc7En&shopType=45&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -11315,7 +11495,19 @@
     "longitude": 114.2233,
     "desc": "营业时间：周一至周日 10:00-22:00",
     "score": 0,
-    "mtId": 1812642761
+    "mtId": 1812642761,
+    "dzInfo": {
+      "dzId": "k2JSQhBVjkKzi4Gv",
+      "dzPath": "/pages/detail/detail?shopUuid=k2JSQhBVjkKzi4Gv&shopType=45&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -11334,7 +11526,19 @@
     "longitude": 113.9475,
     "desc": "营业时间：周一至周日 09:00-22:00",
     "score": 0,
-    "mtId": 1542227931
+    "mtId": 1542227931,
+    "dzInfo": {
+      "dzId": "G5aBGaVR4wxDi71D",
+      "dzPath": "/pages/detail/detail?shopUuid=G5aBGaVR4wxDi71D&shopType=45&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -11388,7 +11592,19 @@
     "longitude": 114.0689,
     "desc": "营业时间：-",
     "score": 0,
-    "mtId": 1467851395
+    "mtId": 1467851395,
+    "dzInfo": {
+      "dzId": "l8cYzaJuWCz5CqsR",
+      "dzPath": "/pages/detail/detail?shopUuid=l8cYzaJuWCz5CqsR&shopType=45&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -11407,7 +11623,19 @@
     "longitude": 114.3563,
     "desc": "营业时间：-",
     "score": 0,
-    "mtId": 1570684862
+    "mtId": 1570684862,
+    "dzInfo": {
+      "dzId": "FWgop8AyjrCo4yqF",
+      "dzPath": "/pages/detail/detail?shopUuid=FWgop8AyjrCo4yqF&shopType=75&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -11426,7 +11654,19 @@
     "longitude": 113.8575,
     "desc": "营业时间：周一至周日 09:00-22:00",
     "score": 0,
-    "mtId": 150253228
+    "mtId": 150253228,
+    "dzInfo": {
+      "dzId": "H3LvrGEhLelw3Tqt",
+      "dzPath": "/pages/detail/detail?shopUuid=H3LvrGEhLelw3Tqt&shopType=45&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -11476,7 +11716,19 @@
     "phone": "18002557930",
     "areaCode": "440310",
     "score": 0,
-    "mtId": 861311609
+    "mtId": 861311609,
+    "dzInfo": {
+      "dzId": "lahP20vXN711Fpx1",
+      "dzPath": "/pages/detail/detail?shopUuid=lahP20vXN711Fpx1&shopType=45&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -11495,7 +11747,19 @@
     "phone": "4006660980",
     "areaCode": "440306",
     "score": 3,
-    "mtId": 168533026
+    "mtId": 168533026,
+    "dzInfo": {
+      "dzId": "G9a2WAeUXSeyC2QX",
+      "dzPath": "/pages/detail/detail?shopUuid=G9a2WAeUXSeyC2QX&shopType=75&shopStyle=bigpic",
+      "note": "",
+      "score": 3.4,
+      "tags": [
+        {
+          "value": "评分：3.4",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -11514,7 +11778,19 @@
     "phone": "",
     "areaCode": "440304",
     "score": 0,
-    "mtId": 150286741
+    "mtId": 150286741,
+    "dzInfo": {
+      "dzId": "G1KgSMtjZVvreuJn",
+      "dzPath": "/pages/detail/detail?shopUuid=G1KgSMtjZVvreuJn&shopType=45&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -11533,7 +11809,19 @@
     "phone": "13697455095",
     "areaCode": "440306",
     "score": 0,
-    "mtId": 1649807332
+    "mtId": 1649807332,
+    "dzInfo": {
+      "dzId": "l31zwPtLl2ix9PH6",
+      "dzPath": "/pages/detail/detail?shopUuid=l31zwPtLl2ix9PH6&shopType=45&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -11552,7 +11840,19 @@
     "phone": "",
     "areaCode": "440305",
     "score": 0,
-    "mtId": 150252357
+    "mtId": 150252357,
+    "dzInfo": {
+      "dzId": "l3TLoFjXW1Zi7kSx",
+      "dzPath": "/pages/detail/detail?shopUuid=l3TLoFjXW1Zi7kSx&shopType=45&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -11571,7 +11871,19 @@
     "phone": "18218367763",
     "areaCode": "440304",
     "score": 0,
-    "mtId": 1626788975
+    "mtId": 1626788975,
+    "dzInfo": {
+      "dzId": "l66LZa4oelKrgF1Q",
+      "dzPath": "/pages/detail/detail?shopUuid=l66LZa4oelKrgF1Q&shopType=75&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -11621,7 +11933,19 @@
     "phone": "15323470311",
     "areaCode": "440305",
     "score": 0,
-    "mtId": 194162457
+    "mtId": 194162457,
+    "dzInfo": {
+      "dzId": "EPYeyZsbuMQRPs5R",
+      "dzPath": "/pages/detail/detail?shopUuid=EPYeyZsbuMQRPs5R&shopType=75&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -11671,7 +11995,19 @@
     "phone": "18319437778",
     "areaCode": "440303",
     "score": 0,
-    "mtId": 1040183480
+    "mtId": 1040183480,
+    "dzInfo": {
+      "dzId": "G8Ci9yCbLtMt12gI",
+      "dzPath": "/pages/detail/detail?shopUuid=G8Ci9yCbLtMt12gI&shopType=45&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -11690,7 +12026,19 @@
     "longitude": 114.2335,
     "desc": "营业时间：-",
     "score": 0,
-    "mtId": 1501555376
+    "mtId": 1501555376,
+    "dzInfo": {
+      "dzId": "H6MXOGWqqQV6JIOT",
+      "dzPath": "/pages/detail/detail?shopUuid=H6MXOGWqqQV6JIOT&shopType=45&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -11709,7 +12057,19 @@
     "longitude": 114.0911,
     "desc": "营业时间：-",
     "score": 0,
-    "mtId": 154008047
+    "mtId": 154008047,
+    "dzInfo": {
+      "dzId": "H3OJA7NCX2XcIZuB",
+      "dzPath": "/pages/detail/detail?shopUuid=H3OJA7NCX2XcIZuB&shopType=45&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -11728,7 +12088,19 @@
     "longitude": 113.9202,
     "desc": "营业时间：周一至周日 08:30-21:00",
     "score": 0,
-    "mtId": 1032369570
+    "mtId": 1032369570,
+    "dzInfo": {
+      "dzId": "G4iMniMWDHTheUwF",
+      "dzPath": "/pages/detail/detail?shopUuid=G4iMniMWDHTheUwF&shopType=45&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -11747,7 +12119,19 @@
     "longitude": 114.2751,
     "desc": "营业时间：周一至周五 16:00-21:00  周六,周日 08:30-21:30",
     "score": 0,
-    "mtId": 732966269
+    "mtId": 732966269,
+    "dzInfo": {
+      "dzId": "laqOCzlIV4LdAG9C",
+      "dzPath": "/pages/detail/detail?shopUuid=laqOCzlIV4LdAG9C&shopType=45&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -11766,7 +12150,19 @@
     "longitude": 114.2291,
     "desc": "营业时间：-",
     "score": 0,
-    "mtId": 1736901198
+    "mtId": 1736901198,
+    "dzInfo": {
+      "dzId": "H3Zs33qpvTMHhPiY",
+      "dzPath": "/pages/detail/detail?shopUuid=H3Zs33qpvTMHhPiY&shopType=45&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -11785,7 +12181,19 @@
     "longitude": 114.2788,
     "desc": "营业时间：-",
     "score": 0,
-    "mtId": 1621459862
+    "mtId": 1621459862,
+    "dzInfo": {
+      "dzId": "l8dcgz5kOMcFqNHC",
+      "dzPath": "/pages/detail/detail?shopUuid=l8dcgz5kOMcFqNHC&shopType=75&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -11823,7 +12231,19 @@
     "longitude": 113.8541,
     "desc": "营业时间：周二至周五 14:30-21:00  周六,周日 09:00-21:00",
     "score": 0,
-    "mtId": 794690672
+    "mtId": 794690672,
+    "dzInfo": {
+      "dzId": "lavRVQdUF9BCoyMY",
+      "dzPath": "/pages/detail/detail?shopUuid=lavRVQdUF9BCoyMY&shopType=75&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -11842,7 +12262,19 @@
     "longitude": 114.4224,
     "desc": "营业时间：周一至周日 09:00-22:00",
     "score": 0,
-    "mtId": 75989813
+    "mtId": 75989813,
+    "dzInfo": {
+      "dzId": "k7sElzlNT5Dtfggj",
+      "dzPath": "/pages/detail/detail?shopUuid=k7sElzlNT5Dtfggj&shopType=45&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -11861,7 +12293,19 @@
     "longitude": 113.8947,
     "desc": "营业时间：周一至周日 08:00-22:00",
     "score": 0,
-    "mtId": 582947477
+    "mtId": 582947477,
+    "dzInfo": {
+      "dzId": "G3pd3THUVReJRy6y",
+      "dzPath": "/pages/detail/detail?shopUuid=G3pd3THUVReJRy6y&shopType=45&shopStyle=multipic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -11880,7 +12324,19 @@
     "phone": "",
     "areaCode": "440305",
     "score": 0,
-    "mtId": 1052412273
+    "mtId": 1052412273,
+    "dzInfo": {
+      "dzId": "GaRSX1IfWhXFhBFW",
+      "dzPath": "/pages/detail/detail?shopUuid=GaRSX1IfWhXFhBFW&shopType=75&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -11899,7 +12355,19 @@
     "phone": "",
     "areaCode": "440304",
     "score": 0,
-    "mtId": 177733509
+    "mtId": 177733509,
+    "dzInfo": {
+      "dzId": "k27293IPW10C41Qr",
+      "dzPath": "/pages/detail/detail?shopUuid=k27293IPW10C41Qr&shopType=45&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -11918,7 +12386,19 @@
     "phone": "",
     "areaCode": "440310",
     "score": 0,
-    "mtId": 1312849673
+    "mtId": 1312849673,
+    "dzInfo": {
+      "dzId": "EgRYjaiE3IFaqTvZ",
+      "dzPath": "/pages/detail/detail?shopUuid=EgRYjaiE3IFaqTvZ&shopType=45&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -11937,7 +12417,19 @@
     "phone": "",
     "areaCode": "440304",
     "score": 0,
-    "mtId": 73772279
+    "mtId": 73772279,
+    "dzInfo": {
+      "dzId": "k3YLH67UNfcvF4UO",
+      "dzPath": "/pages/detail/detail?shopUuid=k3YLH67UNfcvF4UO&shopType=45&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -11956,7 +12448,19 @@
     "phone": "13025485670",
     "areaCode": "440307",
     "score": 0,
-    "mtId": 1061118183
+    "mtId": 1061118183,
+    "dzInfo": {
+      "dzId": "l8M3QUL98zPs90JM",
+      "dzPath": "/pages/detail/detail?shopUuid=l8M3QUL98zPs90JM&shopType=75&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -12006,7 +12510,19 @@
     "phone": "",
     "areaCode": "440311",
     "score": 0,
-    "mtId": 987916663
+    "mtId": 987916663,
+    "dzInfo": {
+      "dzId": "H7wJqDFgWYg2teil",
+      "dzPath": "/pages/detail/detail?shopUuid=H7wJqDFgWYg2teil&shopType=45&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -12025,7 +12541,19 @@
     "phone": "",
     "areaCode": "440306",
     "score": 0,
-    "mtId": 564238317
+    "mtId": 564238317,
+    "dzInfo": {
+      "dzId": "G9JRucEz2WrMAMvR",
+      "dzPath": "/pages/detail/detail?shopUuid=G9JRucEz2WrMAMvR&shopType=45&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -12044,7 +12572,19 @@
     "phone": "",
     "areaCode": "440305",
     "score": 0,
-    "mtId": 181978989
+    "mtId": 181978989,
+    "dzInfo": {
+      "dzId": "H2XUu6XHbHqsRGFK",
+      "dzPath": "/pages/detail/detail?shopUuid=H2XUu6XHbHqsRGFK&shopType=45&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -12063,7 +12603,19 @@
     "phone": "",
     "areaCode": "440304",
     "score": 0,
-    "mtId": 91241184
+    "mtId": 91241184,
+    "dzInfo": {
+      "dzId": "k7nErhYm1rG4HQ9B",
+      "dzPath": "/pages/detail/detail?shopUuid=k7nErhYm1rG4HQ9B&shopType=45&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -12113,7 +12665,19 @@
     "longitude": 114.303,
     "desc": "营业时间：周一至周日 08:30-22:00",
     "score": 0,
-    "mtId": 1370972838
+    "mtId": 1370972838,
+    "dzInfo": {
+      "dzId": "H4M1WunukamscjRX",
+      "dzPath": "/pages/detail/detail?shopUuid=H4M1WunukamscjRX&shopType=75&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -12163,7 +12727,19 @@
     "longitude": 114.2281,
     "desc": "营业时间：-",
     "score": 0,
-    "mtId": 1403232133
+    "mtId": 1403232133,
+    "dzInfo": {
+      "dzId": "k5hjQy1GrHJeRqtV",
+      "dzPath": "/pages/detail/detail?shopUuid=k5hjQy1GrHJeRqtV&shopType=75&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -12182,7 +12758,19 @@
     "longitude": 113.9065,
     "desc": "营业时间：-",
     "score": 0,
-    "mtId": 574677331
+    "mtId": 574677331,
+    "dzInfo": {
+      "dzId": "l313SWCmb0N9My4Y",
+      "dzPath": "/pages/detail/detail?shopUuid=l313SWCmb0N9My4Y&shopType=45&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -12205,7 +12793,23 @@
     "longitude": 113.9481,
     "desc": "营业时间：周一至周日 14:30-22:00",
     "score": 0,
-    "mtId": 1953286377
+    "mtId": 1953286377,
+    "dzInfo": {
+      "dzId": "l4NqEwyFXQOfSZtH",
+      "dzPath": "/pages/detail/detail?shopUuid=l4NqEwyFXQOfSZtH&shopType=45&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        },
+        {
+          "value": "付费停车",
+          "type": 1
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -12286,7 +12890,19 @@
     "longitude": 114.2319,
     "desc": "营业时间：周一至周日 10:00-22:00",
     "score": 0,
-    "mtId": 577845306
+    "mtId": 577845306,
+    "dzInfo": {
+      "dzId": "GaPIVn1z15zeeSpQ",
+      "dzPath": "/pages/detail/detail?shopUuid=GaPIVn1z15zeeSpQ&shopType=75&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -12305,7 +12921,19 @@
     "longitude": 114.2583,
     "desc": "营业时间：周一至周日 全天",
     "score": 0,
-    "mtId": 1241818134
+    "mtId": 1241818134,
+    "dzInfo": {
+      "dzId": "G7yC4syMjnmFCOTy",
+      "dzPath": "/pages/detail/detail?shopUuid=G7yC4syMjnmFCOTy&shopType=45&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -12324,7 +12952,19 @@
     "phone": "",
     "areaCode": "440307",
     "score": 0,
-    "mtId": 1489797812
+    "mtId": 1489797812,
+    "dzInfo": {
+      "dzId": "H9s2NfZPPHM7KLE2",
+      "dzPath": "/pages/detail/detail?shopUuid=H9s2NfZPPHM7KLE2&shopType=45&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -12343,7 +12983,19 @@
     "phone": "19128323328",
     "areaCode": "440305",
     "score": 0,
-    "mtId": 1365263137
+    "mtId": 1365263137,
+    "dzInfo": {
+      "dzId": "l6ONDpuRlFPJaAmP",
+      "dzPath": "/pages/detail/detail?shopUuid=l6ONDpuRlFPJaAmP&shopType=45&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -12362,7 +13014,19 @@
     "phone": "",
     "areaCode": "440305",
     "score": 0,
-    "mtId": 562404381
+    "mtId": 562404381,
+    "dzInfo": {
+      "dzId": "H5uGXpLSrRRCj9PH",
+      "dzPath": "/pages/detail/detail?shopUuid=H5uGXpLSrRRCj9PH&shopType=45&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -12412,7 +13076,19 @@
     "phone": "13380322867",
     "areaCode": "440306",
     "score": 0,
-    "mtId": 1429172177
+    "mtId": 1429172177,
+    "dzInfo": {
+      "dzId": "l9wuX0fiCf3GjM5x",
+      "dzPath": "/pages/detail/detail?shopUuid=l9wuX0fiCf3GjM5x&shopType=45&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -12431,7 +13107,19 @@
     "phone": "0755-25989398",
     "areaCode": "440304",
     "score": 0,
-    "mtId": 83918602
+    "mtId": 83918602,
+    "dzInfo": {
+      "dzId": "Ha2sYmfjZTCfcrMI",
+      "dzPath": "/pages/detail/detail?shopUuid=Ha2sYmfjZTCfcrMI&shopType=45&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -12450,7 +13138,19 @@
     "phone": "",
     "areaCode": "440311",
     "score": 0,
-    "mtId": 605853755
+    "mtId": 605853755,
+    "dzInfo": {
+      "dzId": "l9GNkvvwtjttF6DF",
+      "dzPath": "/pages/detail/detail?shopUuid=l9GNkvvwtjttF6DF&shopType=45&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -12469,7 +13169,19 @@
     "phone": "13714298862",
     "areaCode": "440306",
     "score": 0,
-    "mtId": 1578228423
+    "mtId": 1578228423,
+    "dzInfo": {
+      "dzId": "iqzvKGPQEFmisuA3",
+      "dzPath": "/pages/detail/detail?shopUuid=iqzvKGPQEFmisuA3&shopType=75&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -12488,7 +13200,19 @@
     "phone": "",
     "areaCode": "440304",
     "score": 0,
-    "mtId": 1729463224
+    "mtId": 1729463224,
+    "dzInfo": {
+      "dzId": "H9rYWMxdGILYy4zF",
+      "dzPath": "/pages/detail/detail?shopUuid=H9rYWMxdGILYy4zF&shopType=45&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -12538,7 +13262,19 @@
     "longitude": 113.8969,
     "desc": "营业时间：-",
     "score": 0,
-    "mtId": 1395612562
+    "mtId": 1395612562,
+    "dzInfo": {
+      "dzId": "l31zwPtLl2ix9PH6",
+      "dzPath": "/pages/detail/detail?shopUuid=l31zwPtLl2ix9PH6&shopType=45&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -12557,7 +13293,19 @@
     "longitude": 114.0665,
     "desc": "营业时间：周一至周日 10:00-22:00",
     "score": 0,
-    "mtId": 975446461
+    "mtId": 975446461,
+    "dzInfo": {
+      "dzId": "k85MpmkJNBOl1ijL",
+      "dzPath": "/pages/detail/detail?shopUuid=k85MpmkJNBOl1ijL&shopType=45&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -12607,7 +13355,19 @@
     "longitude": 113.9383,
     "desc": "营业时间：周一至周日 10:00-22:00",
     "score": 3,
-    "mtId": 1706513461
+    "mtId": 1706513461,
+    "dzInfo": {
+      "dzId": "k4FSRqD0R2OgqWRR",
+      "dzPath": "/pages/detail/detail?shopUuid=k4FSRqD0R2OgqWRR&shopType=75&shopStyle=bigpic",
+      "note": "",
+      "score": 3.3,
+      "tags": [
+        {
+          "value": "评分：3.3",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -12626,7 +13386,19 @@
     "longitude": 114.0325,
     "desc": "营业时间：-",
     "score": 0,
-    "mtId": 1439476399
+    "mtId": 1439476399,
+    "dzInfo": {
+      "dzId": "G49IneJAR6PgR6TG",
+      "dzPath": "/pages/detail/detail?shopUuid=G49IneJAR6PgR6TG&shopType=45&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -12645,7 +13417,19 @@
     "longitude": 114.0914,
     "desc": "营业时间：周一至周日 08:30-23:00",
     "score": 0,
-    "mtId": 150256649
+    "mtId": 150256649,
+    "dzInfo": {
+      "dzId": "GanbSpN3HA2T1whR",
+      "dzPath": "/pages/detail/detail?shopUuid=GanbSpN3HA2T1whR&shopType=45&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -12683,7 +13467,19 @@
     "longitude": 114.0923,
     "desc": "营业时间：周一至周日 08:30-22:00",
     "score": 0,
-    "mtId": 1862766243
+    "mtId": 1862766243,
+    "dzInfo": {
+      "dzId": "k7tGYdPI69c3tndj",
+      "dzPath": "/pages/detail/detail?shopUuid=k7tGYdPI69c3tndj&shopType=75&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -12702,7 +13498,19 @@
     "longitude": 114.0186,
     "desc": "营业时间：周六,周日 08:30-12:00 13:30-17:00  周一至周五 16:30-20:00",
     "score": 0,
-    "mtId": 1426745135
+    "mtId": 1426745135,
+    "dzInfo": {
+      "dzId": "ErAZciNhH1oZdYKD",
+      "dzPath": "/pages/detail/detail?shopUuid=ErAZciNhH1oZdYKD&shopType=45&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -12721,7 +13529,19 @@
     "longitude": 113.8603,
     "desc": "营业时间：周一至周日 10:00-22:00",
     "score": 0,
-    "mtId": 971396238
+    "mtId": 971396238,
+    "dzInfo": {
+      "dzId": "k7ODuEdOgQRy4yjO",
+      "dzPath": "/pages/detail/detail?shopUuid=k7ODuEdOgQRy4yjO&shopType=75&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -12740,7 +13560,19 @@
     "phone": "18038072066",
     "areaCode": "440309",
     "score": 0,
-    "mtId": 1820276014
+    "mtId": 1820276014,
+    "dzInfo": {
+      "dzId": "l9RZ5kne2xvMMQN7",
+      "dzPath": "/pages/detail/detail?shopUuid=l9RZ5kne2xvMMQN7&shopType=75&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -12778,7 +13610,19 @@
     "phone": "14776063318",
     "areaCode": "440305",
     "score": 0,
-    "mtId": 738414013
+    "mtId": 738414013,
+    "dzInfo": {
+      "dzId": "H3X2aOOEkwE47Ll6",
+      "dzPath": "/pages/detail/detail?shopUuid=H3X2aOOEkwE47Ll6&shopType=45&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -12797,7 +13641,19 @@
     "phone": "",
     "areaCode": "440311",
     "score": 0,
-    "mtId": 1239499364
+    "mtId": 1239499364,
+    "dzInfo": {
+      "dzId": "H9Sld5geSMQA2ieh",
+      "dzPath": "/pages/detail/detail?shopUuid=H9Sld5geSMQA2ieh&shopType=45&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -12816,7 +13672,19 @@
     "phone": "",
     "areaCode": "440309",
     "score": 0,
-    "mtId": 74619964
+    "mtId": 74619964,
+    "dzInfo": {
+      "dzId": "k6GbioXOPEDFl5Nc",
+      "dzPath": "/pages/detail/detail?shopUuid=k6GbioXOPEDFl5Nc&shopType=45&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -12885,7 +13753,19 @@
     "phone": "13823321721",
     "areaCode": "440305",
     "score": 0,
-    "mtId": 1024032240
+    "mtId": 1024032240,
+    "dzInfo": {
+      "dzId": "G6XzkKu8F4P44cdy",
+      "dzPath": "/pages/detail/detail?shopUuid=G6XzkKu8F4P44cdy&shopType=45&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -12985,7 +13865,19 @@
     "longitude": 113.8627,
     "desc": "营业时间：-",
     "score": 0,
-    "mtId": 1247576962
+    "mtId": 1247576962,
+    "dzInfo": {
+      "dzId": "l6uOBPNH8UqDnUVi",
+      "dzPath": "/pages/detail/detail?shopUuid=l6uOBPNH8UqDnUVi&shopType=75&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -13004,7 +13896,19 @@
     "longitude": 113.9255,
     "desc": "营业时间：周一至周日 09:00-21:00",
     "score": 3.5,
-    "mtId": 184202171
+    "mtId": 184202171,
+    "dzInfo": {
+      "dzId": "EvM4JkdUdSoJBTNh",
+      "dzPath": "/pages/detail/detail?shopUuid=EvM4JkdUdSoJBTNh&shopType=75&shopStyle=bigpic",
+      "note": "“一个很好的团建课程,都很喜欢很有意思”",
+      "score": 3.5,
+      "tags": [
+        {
+          "value": "评分：3.5",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -13023,7 +13927,19 @@
     "longitude": 114.1489,
     "desc": "营业时间：周一至周日 13:00-21:00",
     "score": 0,
-    "mtId": 1677758360
+    "mtId": 1677758360,
+    "dzInfo": {
+      "dzId": "G699S2W5UAcYgEPS",
+      "dzPath": "/pages/detail/detail?shopUuid=G699S2W5UAcYgEPS&shopType=10&shopStyle=flatpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -13042,7 +13958,19 @@
     "longitude": 113.9743,
     "desc": "营业时间：-",
     "score": 0,
-    "mtId": 1597354238
+    "mtId": 1597354238,
+    "dzInfo": {
+      "dzId": "l4KNEhi7xglmYy9W",
+      "dzPath": "/pages/detail/detail?shopUuid=l4KNEhi7xglmYy9W&shopType=45&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -13061,7 +13989,19 @@
     "longitude": 114.0362,
     "desc": "营业时间：周一至周日 10:00-22:00",
     "score": 0,
-    "mtId": 868178776
+    "mtId": 868178776,
+    "dzInfo": {
+      "dzId": "k8j4EtOHF6GbuT8h",
+      "dzPath": "/pages/detail/detail?shopUuid=k8j4EtOHF6GbuT8h&shopType=45&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -13080,7 +14020,19 @@
     "longitude": 114.3097,
     "desc": "营业时间：-",
     "score": 0,
-    "mtId": 164237548
+    "mtId": 164237548,
+    "dzInfo": {
+      "dzId": "H4CMliJNdX7SxLjX",
+      "dzPath": "/pages/detail/detail?shopUuid=H4CMliJNdX7SxLjX&shopType=45&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -13099,7 +14051,19 @@
     "longitude": 113.9643,
     "desc": "营业时间：周一至周日 10:00-22:00",
     "score": 0,
-    "mtId": 679767287
+    "mtId": 679767287,
+    "dzInfo": {
+      "dzId": "H4UYbrBkX833XrW1",
+      "dzPath": "/pages/detail/detail?shopUuid=H4UYbrBkX833XrW1&shopType=75&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -13168,7 +14132,19 @@
     "phone": "",
     "areaCode": "440307",
     "score": 0,
-    "mtId": 154087166
+    "mtId": 154087166,
+    "dzInfo": {
+      "dzId": "l9WKYv3IKuUYaPJR",
+      "dzPath": "/pages/detail/detail?shopUuid=l9WKYv3IKuUYaPJR&shopType=45&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -13222,7 +14198,19 @@
     "phone": "18688945970",
     "areaCode": "440307",
     "score": 0,
-    "mtId": 1840009204
+    "mtId": 1840009204,
+    "dzInfo": {
+      "dzId": "H4Wis1KKXX56zxA0",
+      "dzPath": "/pages/detail/detail?shopUuid=H4Wis1KKXX56zxA0&shopType=75&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -13241,7 +14229,19 @@
     "phone": "0755-27031699/28611911",
     "areaCode": "440307",
     "score": 0,
-    "mtId": 89925661
+    "mtId": 89925661,
+    "dzInfo": {
+      "dzId": "H2pXCuIIAeAynT0P",
+      "dzPath": "/pages/detail/detail?shopUuid=H2pXCuIIAeAynT0P&shopType=45&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -13291,7 +14291,19 @@
     "phone": "19925234106",
     "areaCode": "440309",
     "score": 0,
-    "mtId": 815107628
+    "mtId": 815107628,
+    "dzInfo": {
+      "dzId": "E8LFUisXlzHZ4ULz",
+      "dzPath": "/pages/detail/detail?shopUuid=E8LFUisXlzHZ4ULz&shopType=45&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -13310,7 +14322,19 @@
     "phone": "",
     "areaCode": "440307",
     "score": 0,
-    "mtId": 1781232141
+    "mtId": 1781232141,
+    "dzInfo": {
+      "dzId": "Fymsf2tKcaE6U4Nq",
+      "dzPath": "/pages/detail/detail?shopUuid=Fymsf2tKcaE6U4Nq&shopType=75&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -13360,7 +14384,19 @@
     "phone": "19129343567",
     "areaCode": "440304",
     "score": 0,
-    "mtId": 606405952
+    "mtId": 606405952,
+    "dzInfo": {
+      "dzId": "l5jWo7IoNBEyxFxb",
+      "dzPath": "/pages/detail/detail?shopUuid=l5jWo7IoNBEyxFxb&shopType=75&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -13379,7 +14415,19 @@
     "phone": "",
     "areaCode": "440306",
     "score": 0,
-    "mtId": 85300661
+    "mtId": 85300661,
+    "dzInfo": {
+      "dzId": "H3pZqa2myQSJrvc9",
+      "dzPath": "/pages/detail/detail?shopUuid=H3pZqa2myQSJrvc9&shopType=45&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -13417,7 +14465,19 @@
     "longitude": 114.0146,
     "desc": "营业时间：周一至周日 10:00-22:00",
     "score": 0,
-    "mtId": 1629988314
+    "mtId": 1629988314,
+    "dzInfo": {
+      "dzId": "k8IhoC5zMrWcA6oi",
+      "dzPath": "/pages/detail/detail?shopUuid=k8IhoC5zMrWcA6oi&shopType=75&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -13436,7 +14496,19 @@
     "longitude": 114.0434,
     "desc": "营业时间：周一至周日 08:00-21:30",
     "score": 0,
-    "mtId": 76237299
+    "mtId": 76237299,
+    "dzInfo": {
+      "dzId": "G8bKcvfww9Rmu5Ut",
+      "dzPath": "/pages/detail/detail?shopUuid=G8bKcvfww9Rmu5Ut&shopType=45&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -13486,7 +14558,19 @@
     "longitude": 113.9129,
     "desc": "营业时间：-",
     "score": 0,
-    "mtId": 1147276083
+    "mtId": 1147276083,
+    "dzInfo": {
+      "dzId": "k76hBBywGtdqI7zW",
+      "dzPath": "/pages/detail/detail?shopUuid=k76hBBywGtdqI7zW&shopType=75&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -13505,7 +14589,19 @@
     "longitude": 114.1855,
     "desc": "营业时间：-",
     "score": 0,
-    "mtId": 1588801346
+    "mtId": 1588801346,
+    "dzInfo": {
+      "dzId": "G49691iIjLMWPVoy",
+      "dzPath": "/pages/detail/detail?shopUuid=G49691iIjLMWPVoy&shopType=75&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -13555,7 +14651,19 @@
     "longitude": 113.9054,
     "desc": "营业时间：-",
     "score": 0,
-    "mtId": 1276237236
+    "mtId": 1276237236,
+    "dzInfo": {
+      "dzId": "G9bYSWrwWMsEbEwT",
+      "dzPath": "/pages/detail/detail?shopUuid=G9bYSWrwWMsEbEwT&shopType=75&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -13605,7 +14713,19 @@
     "longitude": 113.8913,
     "desc": "营业时间：-",
     "score": 0,
-    "mtId": 1217205113
+    "mtId": 1217205113,
+    "dzInfo": {
+      "dzId": "H8CI82LvmZlK0w9P",
+      "dzPath": "/pages/detail/detail?shopUuid=H8CI82LvmZlK0w9P&shopType=45&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -13624,7 +14744,19 @@
     "phone": "13670073951",
     "areaCode": "440305",
     "score": 0,
-    "mtId": 1974157127
+    "mtId": 1974157127,
+    "dzInfo": {
+      "dzId": "H4TcCSMQY309d06O",
+      "dzPath": "/pages/detail/detail?shopUuid=H4TcCSMQY309d06O&shopType=75&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -13643,7 +14775,19 @@
     "phone": "19129343567",
     "areaCode": "440304",
     "score": 0,
-    "mtId": 1455539268
+    "mtId": 1455539268,
+    "dzInfo": {
+      "dzId": "l7uxBsDxD5UbwLDq",
+      "dzPath": "/pages/detail/detail?shopUuid=l7uxBsDxD5UbwLDq&shopType=75&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -13681,7 +14825,19 @@
     "phone": "19129343567",
     "areaCode": "440304",
     "score": 0,
-    "mtId": 1998712514
+    "mtId": 1998712514,
+    "dzInfo": {
+      "dzId": "l2x10ILzevJ2T682",
+      "dzPath": "/pages/detail/detail?shopUuid=l2x10ILzevJ2T682&shopType=75&shopStyle=bigpic",
+      "note": "",
+      "score": 3.4,
+      "tags": [
+        {
+          "value": "评分：3.4",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -13700,7 +14856,19 @@
     "phone": "15112385948",
     "areaCode": "440306",
     "score": 0,
-    "mtId": 1347690119
+    "mtId": 1347690119,
+    "dzInfo": {
+      "dzId": "H1IwewxfJ58pgNK8",
+      "dzPath": "/pages/detail/detail?shopUuid=H1IwewxfJ58pgNK8&shopType=75&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -13719,7 +14887,19 @@
     "phone": "13413509684",
     "areaCode": "440306",
     "score": 0,
-    "mtId": 1423388657
+    "mtId": 1423388657,
+    "dzInfo": {
+      "dzId": "k7MTIBcd4U5EYciP",
+      "dzPath": "/pages/detail/detail?shopUuid=k7MTIBcd4U5EYciP&shopType=75&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -13738,7 +14918,19 @@
     "phone": "19926454577",
     "areaCode": "440305",
     "score": 0,
-    "mtId": 851419355
+    "mtId": 851419355,
+    "dzInfo": {
+      "dzId": "H9PFYotfykpiKClu",
+      "dzPath": "/pages/detail/detail?shopUuid=H9PFYotfykpiKClu&shopType=45&shopStyle=multipic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -13757,7 +14949,19 @@
     "phone": "15019226406",
     "areaCode": "440307",
     "score": 0,
-    "mtId": 1253748325
+    "mtId": 1253748325,
+    "dzInfo": {
+      "dzId": "k5ESQz1yik1CS9AM",
+      "dzPath": "/pages/detail/detail?shopUuid=k5ESQz1yik1CS9AM&shopType=45&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -13807,7 +15011,19 @@
     "phone": "",
     "areaCode": "440304",
     "score": 0,
-    "mtId": 1876599382
+    "mtId": 1876599382,
+    "dzInfo": {
+      "dzId": "H51EdrT6xfavDAdi",
+      "dzPath": "/pages/detail/detail?shopUuid=H51EdrT6xfavDAdi&shopType=45&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -13845,7 +15061,19 @@
     "longitude": 113.8844,
     "desc": "营业时间：周一至周日 10:00-22:00",
     "score": 0,
-    "mtId": 1768106108
+    "mtId": 1768106108,
+    "dzInfo": {
+      "dzId": "G8eYroZIpkvBdYCA",
+      "dzPath": "/pages/detail/detail?shopUuid=G8eYroZIpkvBdYCA&shopType=45&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -13864,7 +15092,19 @@
     "longitude": 114.0599,
     "desc": "营业时间：-",
     "score": 0,
-    "mtId": 1690114711
+    "mtId": 1690114711,
+    "dzInfo": {
+      "dzId": "l54DqL1epuTGxwj2",
+      "dzPath": "/pages/detail/detail?shopUuid=l54DqL1epuTGxwj2&shopType=45&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -15030,13 +16270,13 @@
     "score": 0,
     "mtId": 908800168,
     "dzInfo": {
-      "dzId": "l90ojFRF7C2WI6U2",
-      "dzPath": "/pages/detail/detail?shopUuid=l90ojFRF7C2WI6U2&shopType=75&shopStyle=bigpic",
+      "dzId": "G7yC4syMjnmFCOTy",
+      "dzPath": "/pages/detail/detail?shopUuid=G7yC4syMjnmFCOTy&shopType=45&shopStyle=bigpic",
       "note": "",
-      "score": 3.5,
+      "score": 0,
       "tags": [
         {
-          "value": "评分：3.5",
+          "value": "评分：-",
           "type": 2
         }
       ]
@@ -15281,7 +16521,19 @@
     "longitude": 113.8988,
     "desc": "营业时间：周六,周日 08:00-21:00  周一至周五 14:00-21:00",
     "score": 3,
-    "mtId": 1179613662
+    "mtId": 1179613662,
+    "dzInfo": {
+      "dzId": "jzx2xX6tfMBoZF7w",
+      "dzPath": "/pages/detail/detail?shopUuid=jzx2xX6tfMBoZF7w&shopType=75&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        }
+      ]
+    }
   },
   {
     "note": "",
@@ -23239,6 +24491,84 @@
         {
           "value": "龙岗区健身中心热门榜第3名",
           "type": 1
+        }
+      ]
+    }
+  },
+  {
+    "tags": [
+      {
+        "type": 2,
+        "value": "评分：3.0"
+      },
+      {
+        "type": 1,
+        "value": "有充电宝"
+      },
+      {
+        "type": 1,
+        "value": "免费WiFi"
+      }
+    ],
+    "orgName": "海超专业成人青少年篮球培训（南山店）",
+    "mtId": 950384709,
+    "phone": "4000303096-89756",
+    "desc": "营业时间：周一至周日 10:00-22:00",
+    "areaCode": "440305",
+    "longitude": 113.9291,
+    "note": "¥1起，成人省级联赛运动员私教一对二-¥430，6-18精英班篮球体验课-¥19.9，成人篮球一级运动员私教课-¥280，【篮球】篮球知识咨询-¥1，【篮球】成人私教一对一课程-¥280，6-18基础班篮球体验课-¥19.9，成人篮球省级联赛运动员私教一对一-¥280，成人篮球省级联赛运动员私教一对一-¥280，6-18篮球私教课程一对一-¥280，成人私教体验课【一级运动员教学】-¥280",
+    "orgAddr": "南山区南山书城",
+    "score": 3,
+    "orgId": 950384709,
+    "latitude": 22.5188,
+    "dzInfo": {
+      "dzId": "l1uIwaO777WdAfcE",
+      "dzPath": "/pages/detail/detail?shopUuid=l1uIwaO777WdAfcE&shopType=75&shopStyle=multipic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
+        },
+        {
+          "value": "2位认证老师",
+          "type": 1
+        },
+        {
+          "value": "近地铁站",
+          "type": 1
+        }
+      ]
+    }
+  },
+  {
+    "tags": [
+      {
+        "type": 2,
+        "value": "评分：-"
+      }
+    ],
+    "orgName": "(荷坳服务区)篮球场",
+    "mtId": 89925661,
+    "phone": "0755-27031699/28611911",
+    "desc": "营业时间：",
+    "areaCode": "440307",
+    "longitude": 114.2178,
+    "note": "",
+    "orgAddr": "龙岗区园山街道荷坳服务区",
+    "score": 0,
+    "orgId": 89925661,
+    "latitude": 22.6764,
+    "dzInfo": {
+      "dzId": "H2pXCuIIAeAynT0P",
+      "dzPath": "/pages/detail/detail?shopUuid=H2pXCuIIAeAynT0P&shopType=45&shopStyle=bigpic",
+      "note": "",
+      "score": 0,
+      "tags": [
+        {
+          "value": "评分：-",
+          "type": 2
         }
       ]
     }
