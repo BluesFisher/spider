@@ -1,6 +1,6 @@
 {
   "notInDz": [
-    "蓝郡篮球馆",
+    "蓝郡篮球馆（蓝郡公寓店）",
     "篮球俱乐部",
     "薪火阵营易建联篮球训练中心（光明店）",
     "立志篮球训练基地",
@@ -234,5 +234,138 @@
     "冠尊少儿篮球俱乐部",
     "SONBO篮球体适能培训（龙华总部校区）",
     "中航健身会（嘉御山分店）"
+  ],
+  "notInMt": [],
+  "mtSameName": [
+    {
+      "orgName": "顶峰篮球俱乐部",
+      "latitude": 22.791,
+      "longitude": 113.8951
+    },
+    {
+      "orgName": "顶峰篮球俱乐部",
+      "latitude": 22.6891,
+      "longitude": 114.0383
+    },
+    {
+      "orgName": "荣耀篮球训练营",
+      "latitude": 22.5693,
+      "longitude": 113.8569
+    },
+    {
+      "orgName": "荣耀篮球训练营",
+      "latitude": 22.5735,
+      "longitude": 113.8904
+    },
+    {
+      "orgName": "篮球场",
+      "latitude": 22.6085,
+      "longitude": 114.1018
+    },
+    {
+      "orgName": "篮球场",
+      "latitude": 22.582,
+      "longitude": 113.9165
+    },
+    {
+      "orgName": "篮球场",
+      "latitude": 22.6722,
+      "longitude": 113.7992
+    },
+    {
+      "orgName": "篮球场",
+      "latitude": 22.6137,
+      "longitude": 113.8455
+    },
+    {
+      "orgName": "篮球场",
+      "latitude": 22.6949,
+      "longitude": 114.2854
+    },
+    {
+      "orgName": "篮球场",
+      "latitude": 22.5437,
+      "longitude": 113.9189
+    },
+    {
+      "orgName": "篮球场",
+      "latitude": 22.5831,
+      "longitude": 113.9009
+    },
+    {
+      "orgName": "海浪篮球",
+      "latitude": 22.7271,
+      "longitude": 114.2344
+    },
+    {
+      "orgName": "海浪篮球",
+      "latitude": 22.7109,
+      "longitude": 114.2583
+    },
+    {
+      "orgName": "海晴篮球俱乐部",
+      "latitude": 22.6391,
+      "longitude": 114.1759
+    },
+    {
+      "orgName": "海晴篮球俱乐部",
+      "latitude": 22.7223,
+      "longitude": 114.2231
+    },
+    {
+      "orgName": "柯比篮球",
+      "latitude": 22.5711,
+      "longitude": 114.064
+    },
+    {
+      "orgName": "柯比篮球",
+      "latitude": 22.6238,
+      "longitude": 114.0392
+    },
+    {
+      "orgName": "林书豪-李群篮球联盟",
+      "latitude": 22.5818,
+      "longitude": 113.8665
+    },
+    {
+      "orgName": "林书豪-李群篮球联盟",
+      "latitude": 22.6885,
+      "longitude": 113.9367
+    },
+    {
+      "orgName": "林书豪-李群篮球联盟",
+      "latitude": 22.5908,
+      "longitude": 113.999
+    },
+    {
+      "orgName": "吉动体育",
+      "latitude": 22.49,
+      "longitude": 113.9424
+    },
+    {
+      "orgName": "吉动体育",
+      "latitude": 22.4863,
+      "longitude": 113.9151
+    },
+    {
+      "orgName": "吉动体育",
+      "latitude": 22.49,
+      "longitude": 113.9185
+    },
+    {
+      "orgName": "吉动体育",
+      "latitude": 22.4954,
+      "longitude": 113.9395
+    },
+    {
+      "orgName": "卓程体育文化",
+      "latitude": 22.6108,
+      "longitude": 113.8434
+    },
+    {
+      "orgName": "卓程体育文化",
+      "latitude": 22.5489,
+      "longitude": 113.8988
+    }
   ]
 }

@@ -38,321 +38,405 @@ const parseLocation = (item) =>
     );
   });
 
-/**
- * 获取美团球场详细信息
- * @param {*} id
- * @returns
- */
-const getMtDetail = (id) =>
-  new Promise((resolve) => {
-    request(
-      `https://i.meituan.com/nibmp/mva/gateway-proxy/poiext/shopbaseinfo?clientType=2&shopId=${id}&source=1&cityId=30`,
-      (err, res) => {
-        if (!err && res.statusCode === 200) {
-          const { data } = JSON.parse(res.body || "{}");
-          const tags =
-            data?.shopTags?.map((item) => ({ value: item, type: 1 })) || [];
+/* ------------------------ mt ------------------------ */
+const MT = {
+  /**
+   * 获取美团球场详细信息
+   * @param {*} id
+   * @returns
+   */
+  getMtDetail(id) {
+    return new Promise((resolve) => {
+      request(
+        `https://i.meituan.com/nibmp/mva/gateway-proxy/poiext/shopbaseinfo?clientType=2&shopId=${id}&source=1&cityId=30`,
+        (err, res) => {
+          if (!err && res.statusCode === 200) {
+            const { data } = JSON.parse(res.body || "{}");
+            const tags =
+              data?.shopTags?.map((item) => ({ value: item, type: 1 })) || [];
 
-          resolve({ tags, desc: `营业时间：${data.businessHours}` });
-        } else {
-          console.log("getMtDetail err: ", id, err);
+            resolve({ tags, desc: `营业时间：${data.businessHours}` });
+          } else {
+            console.log("getMtDetail err: ", id, err);
 
-          resolve({ tags: [], desc: "" });
+            resolve({ tags: [], desc: "" });
+          }
         }
-      }
-    );
-  });
-
-/**
- * 过滤美团重复的id
- */
-const filterMtId = () => {
-  const res = fs.readJSONSync(mtFile) || [];
-  let idList = [];
-  const result = res.filter((item) => {
-    const isFilter = !idList.includes(item.orgId);
-    idList = [...new Set([...idList, item.orgId])];
-
-    return isFilter;
-  });
-  console.log("file content: ", result.length);
-  fs.writeJsonSync(mtFile, result, { spaces: 2 });
-};
-
-const dealMtData = async (item) => {
-  const { areaCode, orgAddr } = await parseLocation(item);
-  const { tags, desc } = await getMtDetail(item.id);
-  let note = "";
-
-  if (item.lowestprice) {
-    note += `¥${item.lowestprice}起`;
-  }
-
-  item.deals &&
-    item.deals.forEach((v) => {
-      note += `，${v.title}-¥${v.price}`;
+      );
     });
+  },
 
-  return {
-    orgId: item.id,
-    areaCode,
-    latitude: item.latitude,
-    longitude: item.longitude,
-    orgName: item.title,
-    orgAddr,
-    note,
-    score: item.avgscore,
-    tags: [{ value: `评分：${item.avgscore || "-"}`, type: 2 }, ...tags],
-    desc,
-    phone: "",
-  };
-};
+  /**
+   * 过滤美团重复的id
+   */
+  filterMtId() {
+    const res = fs.readJSONSync(mtFile) || [];
+    let idList = [];
+    const result = res.filter((item) => {
+      const isFilter = !idList.includes(item.orgId);
+      idList = [...new Set([...idList, item.orgId])];
 
-const getMtSearch = (keyword = "篮球场") =>
-  new Promise((resolve) => {
-    request.get(
-      `https://apimobile.meituan.com/group/v4/poi/pcsearch/30?uuid=858ebe70fba8447f8468.1680836575.1.0.0&userid=92956443&limit=32&offset=0&cateId=-1&q=${encodeURIComponent(
-        keyword
-      )}&token=AgHNI0lHbrCRWt0Q_RdZTmvwUQi2F7agSHtAXb7M6bQikcEhwk91xtvqBwx1aUbBd8UJyHqTy-2EWQAAAAC2FwAAe42T8ycY8VcawP1NqkEfqynyFNDbzq3cHbDlfEQXTjbt50U-GqerNsElz1QSqcOs`,
-      {
-        headers: {
-          Cookie:
-            "ga=GA1.1.1431178464.1676274558; _ga_LYVVHCWVNG=GS1.1.1676274557.1.1.1676274801.0.0.0; uuid=858ebe70fba8447f8468.1680836575.1.0.0; _lxsdk_cuid=18759aac3a0c8-0ef42e79fcca48-1e525634-1ea000-18759aac3a0c8; WEBDFPID=6u6y29ux278256w5zwu53308w3024vy381240zzx128979580w294u04-1996196577248-1680836576526GUASGOI75613c134b6a252faa6802015be905511013; rvct=30; ci=30; _lx_utm=utm_source%3DBaidu%26utm_medium%3Dorganic; __mta=51164822.1680836580734.1681009323229.1681041076244.4; qruuid=3f36d399-823c-42dd-9271-00a00c2289bd; token2=AgHIIrPknCwaEn0kGO2Oh_OCvfWdRip_yuwfAOYftlOWS8pa9j5UqcEfUsw83BD0Q_fPn6ccaS1PWAAAAAC2FwAAeKRACxUmVcROfTje1xUp4tGREVNxv67fjRHfYuZv5VnphbqQTrsf8pwYd_K8gHsN; oops=AgHIIrPknCwaEn0kGO2Oh_OCvfWdRip_yuwfAOYftlOWS8pa9j5UqcEfUsw83BD0Q_fPn6ccaS1PWAAAAAC2FwAAeKRACxUmVcROfTje1xUp4tGREVNxv67fjRHfYuZv5VnphbqQTrsf8pwYd_K8gHsN; lt=AgHIIrPknCwaEn0kGO2Oh_OCvfWdRip_yuwfAOYftlOWS8pa9j5UqcEfUsw83BD0Q_fPn6ccaS1PWAAAAAC2FwAAeKRACxUmVcROfTje1xUp4tGREVNxv67fjRHfYuZv5VnphbqQTrsf8pwYd_K8gHsN; u=92956443; n=yz112287812; firstTime=1681042331225; unc=yz112287812; _lxsdk_s=18765d9f9d7-fdd-247-a87%7C%7C11",
-          Host: "apimobile.meituan.com",
-          Origin: "https://sz.meituan.com",
-          Pragma: "no-cache",
-          Referer: "https://sz.meituan.com/",
-          "User-Agent":
-            " Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
+      return isFilter;
+    });
+    console.log("file content: ", result.length);
+    fs.writeJsonSync(mtFile, result, { spaces: 2 });
+  },
+
+  async dealMtData(item) {
+    const { areaCode, orgAddr } = await parseLocation(item);
+    const { tags, desc } = await this.getMtDetail(item.id);
+    let note = "";
+    let avgscoreShow = `评分：${item.avgscore}`;
+
+    if (item.lowestprice) {
+      note += `¥${item.lowestprice}起`;
+    }
+
+    if (item.avgscore === 0) {
+      avgscoreShow = `评分：-`;
+    } else if (`${item.avgscore}`.length === 1) {
+      avgscoreShow = `评分：${item.avgscore}.0`;
+    }
+
+    item.deals &&
+      item.deals.forEach((v) => {
+        note += `，${v.title}-¥${v.price}`;
+      });
+
+    return {
+      orgId: item.id,
+      mtId: item.id,
+      areaCode,
+      latitude: item.latitude,
+      longitude: item.longitude,
+      orgName: item.title,
+      orgAddr,
+      note,
+      score: item.avgscore,
+      tags: [{ value: avgscoreShow, type: 2 }, ...tags],
+      desc,
+      phone: "",
+    };
+  },
+
+  getMtSearch(offset = 0, keyword = "篮球场") {
+    const key = { 深圳市: 30, 广州市: 20 }["广州市"];
+    return new Promise((resolve) => {
+      request.get(
+        `https://apimobile.meituan.com/group/v4/poi/pcsearch/${key}?uuid=858ebe70fba8447f8468.1680836575.1.0.0&userid=3933147557&limit=32&offset=${offset}&cateId=-1&q=${encodeURIComponent(
+          keyword
+        )}&token=AgGeIzjjm83bB8OmCKag5O8oGKJByTN_99OY49jwPG0WhUN3xUOZ7mg2qwMk0YpV_Qv9IhqXDGdcxwAAAAC2FwAAeKs0mikJ_CFrHiXfnebmV1yyONq6x51ya77XfHss7aGps2SJanTPWnUMreIzuc-y`,
+        {
+          headers: {
+            Cookie:
+              "_ga=GA1.1.1431178464.1676274558; _ga_LYVVHCWVNG=GS1.1.1676274557.1.1.1676274801.0.0.0; uuid=858ebe70fba8447f8468.1680836575.1.0.0; _lxsdk_cuid=18759aac3a0c8-0ef42e79fcca48-1e525634-1ea000-18759aac3a0c8; WEBDFPID=6u6y29ux278256w5zwu53308w3024vy381240zzx128979580w294u04-1996196577248-1680836576526GUASGOI75613c134b6a252faa6802015be905511013; _lx_utm=utm_source%3DBaidu%26utm_medium%3Dorganic; iuuid=9F9F60BE215DAE299A4AB3A09C2032680D9F3FEA1DBA83B9BCDAE2C7A0753EC2; qruuid=9a7151a4-e008-4d2e-9828-35b954d2b2aa; token2=AgGeIzjjm83bB8OmCKag5O8oGKJByTN_99OY49jwPG0WhUN3xUOZ7mg2qwMk0YpV_Qv9IhqXDGdcxwAAAAC2FwAAeKs0mikJ_CFrHiXfnebmV1yyONq6x51ya77XfHss7aGps2SJanTPWnUMreIzuc-y; oops=AgGeIzjjm83bB8OmCKag5O8oGKJByTN_99OY49jwPG0WhUN3xUOZ7mg2qwMk0YpV_Qv9IhqXDGdcxwAAAAC2FwAAeKs0mikJ_CFrHiXfnebmV1yyONq6x51ya77XfHss7aGps2SJanTPWnUMreIzuc-y; lt=AgGeIzjjm83bB8OmCKag5O8oGKJByTN_99OY49jwPG0WhUN3xUOZ7mg2qwMk0YpV_Qv9IhqXDGdcxwAAAAC2FwAAeKs0mikJ_CFrHiXfnebmV1yyONq6x51ya77XfHss7aGps2SJanTPWnUMreIzuc-y; u=3933147557; n=bIs495463988; _lxsdk=9F9F60BE215DAE299A4AB3A09C2032680D9F3FEA1DBA83B9BCDAE2C7A0753EC2; unc=bIs495463988; ci=20; rvct=20%2C30; firstTime=1681103642511; _lxsdk_s=187697a9f53-6a9-4f1-881%7C%7C140",
+            Host: "apimobile.meituan.com",
+            Origin: "https://sz.meituan.com",
+            Pragma: "no-cache",
+            Referer: "https://sz.meituan.com/",
+            "User-Agent":
+              " Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
+          },
         },
-      },
-      (err, res) => {
-        if (!err && res.statusCode === 200) {
-          const { data } = JSON.parse(res.body || "{}");
-          console.log("getMtSearch ok: ", keyword);
-          resolve(data.searchResult);
-        } else {
-          console.log("getMtSearch err: ", err, res);
+        (err, res) => {
+          if (!err && res.statusCode === 200) {
+            const { data } = JSON.parse(res.body || "{}");
+            console.log("getMtSearch ok: ", keyword, offset);
+            resolve(data.searchResult);
+          } else {
+            console.log("getMtSearch err: ", err, res);
 
-          resolve({});
+            resolve({});
+          }
         }
+      );
+    });
+  },
+
+  /**
+   * 获取美团信息
+   */
+  async getMtData() {
+    // filterMtId();
+    // const { data } = fs.readJSONSync(srcFile) || {};
+    let res = [];
+    for (let index = 0; index < 30; index++) {
+      const offset = index * 32;
+      const data = await this.getMtSearch(offset);
+
+      for (let i = 0; i < data?.length; i++) {
+        const item = data[i];
+        const result = await this.dealMtData(item);
+
+        res.push(result);
+
+        console.log("ok: ", { id: item.id, i });
+
+        if (i > 0 && i % 10 === 0) {
+          const text = fs.readJSONSync(mtFile);
+          fs.writeJsonSync(mtFile, [...text, ...res], { spaces: 2 });
+          res = [];
+        }
+
+        await sleep();
       }
-    );
-  });
 
-/**
- * 获取美团信息
- */
-const getMtData = async () => {
-  filterMtId();
-  const { data } = fs.readJSONSync(srcFile) || {};
-  let res = [];
-
-  for (let i = 0; i < data.searchResult?.length; i++) {
-    const item = data.searchResult[i];
-    const result = await dealMtData(item);
-
-    res.push(result);
-
-    console.log("ok: ", { id: item.id, i });
-
-    if (i > 0 && i % 10 === 0) {
       const text = fs.readJSONSync(mtFile);
       fs.writeJsonSync(mtFile, [...text, ...res], { spaces: 2 });
       res = [];
     }
+  },
 
-    await sleep();
-  }
+  /**
+   * 获取不在大众点评里的美团
+   */
+  async getDiffMtData() {
+    const { notInMt = [] } = fs.readJSONSync(notFile) || {};
 
-  const text = fs.readJSONSync(mtFile);
-  fs.writeJSON(mtFile, [...text, ...res], { spaces: 2 });
-};
-
-const setMtElement = () => {
-  let res = fs.readJSONSync(mtFile) || {};
-  res = res.map((item) => {
-    return {
-      ...item,
-      mtId: item.orgId,
-    };
-  });
-  console.log("file content: ", res.length);
-  fs.writeJsonSync(mtFile, res, { spaces: 2 });
-};
-
-/**
- * 获取大众点评篮球场详细信息，h5的headers
- * @param {*} item
- * @returns
- */
-const getDzDetail = (item) =>
-  new Promise((resolve) => {
-    request.get(
-      `https://mapi.dianping.com/mapi/wechat/shop.bin?shopUuid=${item.shopUuid}&shopuuid=${item.shopUuid}`,
-      {
-        headers: {
-          Cookie:
-            "seouser_ab=ugcdetail%3AA%3A1; _lxsdk_cuid=18759a1439bc8-08b58ca907344d-1e525634-1ea000-18759a1439bc8; _lxsdk=18759a1439bc8-08b58ca907344d-1e525634-1ea000-18759a1439bc8; _hc.v=962e2f7f-8566-5bdc-3a6f-07457415888d.1680835955; WEBDFPID=zvw58853xw5u518vz5w5y704w1v0495w81240z85z7x979589wwy522z-1996195955101-1680835953717GGSAQEA75613c134b6a252faa6802015be905513328; fspop=test; cy=7; cye=shenzhen; _lx_utm=utm_source%3Dgoogle%26utm_medium%3Dorganic; Hm_lvt_602b80cf8079ae6591966cc70a3940e7=1680918479; s_ViewType=10; dper=563a4af6dd681d5a2dda291cad1aaff022d8d712f3de7a42344246637734a31c670e1bec687aa17aa5d22d7820834244aa9d3a9186c4ee0b73aaa03578a544e2; qruuid=402aca2a-bae9-4379-b121-e7e662400798; ll=7fd06e815b796be3df069dec7836c3df; Hm_lpvt_602b80cf8079ae6591966cc70a3940e7=1680960824",
-          Host: "mapi.dianping.com",
-        },
-      },
-      (err, res) => {
-        if (!err && res.statusCode === 200) {
-          const { address, phoneNos, geoPoint, recentBizTime } = JSON.parse(
-            res.body || "{}"
-          );
-
-          resolve({
-            orgAddr: address,
-            phone: phoneNos?.[0] || "",
-            latitude: geoPoint?.lat,
-            longitude: geoPoint?.lng,
-            desc: `营业时间：${
-              recentBizTime?.title?.replace(/\n/g, " ") || "-"
-            }`,
-          });
-        } else {
-          console.log("getDzDetail err: ", item.shopUuid, err);
-
-          resolve({
-            orgAddr: "",
-            phone: "",
-            latitude: "",
-            longitude: "",
-            desc: "",
-          });
-        }
+    for (let i = 0; i < notInMt.length; i++) {
+      const item = notInMt[i];
+      const data = await getMtSearch(item);
+      if (!data?.[0]) {
+        console.log("getDiffMtData mt fail: ", item);
+      } else {
+        const result = await this.dealMtData(data?.[0]);
+        const text = fs.readJSONSync(mtFile);
+        fs.writeJsonSync(mtFile, [...text, result], { spaces: 2 });
+        console.log("getDiffMtData mt ok: ", item);
       }
-    );
-  });
-
-/**
- * 获取大众点评列表， 小程序的headers
- * @param {*} index
- * @returns
- */
-const getDzList = (index = 0, keyword = "篮球场") =>
-  new Promise((resolve) => {
-    request.get(
-      `https://m.dianping.com/wxmapi/search?cityId=7&locateCityid=7&lat=22.60956144876099&lng=114.12653115188573&myLat=22.60956144876099&myLng=114.12653115188573&keyword=${encodeURIComponent(
-        keyword
-      )}&start=${index * 10}`,
-      {
-        headers: {
-          Host: "m.dianping.com",
-          wechatversion: "8.0.34",
-          "content-type": "application/json",
-          channel: "weixin",
-          openidPlt: "oPpUI0darwIbMvZxLeG8CgYWzZHY",
-          sdkversion: "2.30.4",
-          openid: "mWq3fmLuGZDgPhqFgvu_25T8UYXJVaa2VngiSW5_vwY",
-          token:
-            "b963fed050cf864c818b026f82760f0bde998200db16ffa700a83c40c18c5d2207b3f760b3e5b34e70380f54efb11f06e2bbeaa578297c9720fedb746378c43de991d71d16bae49cc80c0a5af23d28b99a11a27fa69232ec91d4634b8159f995",
-          platform: "Android",
-          platformversion: "15.5",
-          dpid: "mWq3fmLuGZDgPhqFgvu_25T8UYXJVaa2VngiSW5_vwY",
-          minaname: "dianping-wxapp",
-          minaversion: "9.30.1",
-          channelversion: "8.0.34",
-          Referer:
-            "https://servicewechat.com/wx734c1ad7b3562129/391/page-frame.html",
-          "User-Agent":
-            "Mozilla/5.0 (iPhone; CPU iPhone OS 15_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.34(0x18002230) NetType/WIFI Language/zh_CN",
-        },
-      },
-      (err, res) => {
-        if (!err && res.statusCode === 200) {
-          const { data } = JSON.parse(res.body || "{}");
-          console.log("getDzList ok: ", index);
-          resolve(data.list);
-        } else {
-          console.log("getDzList err: ", index, err, res);
-
-          resolve([]);
-        }
-      }
-    );
-  });
-
-const dealDzData = async (item) => {
-  const { orgAddr, phone, latitude, longitude, desc } = await getDzDetail(item);
-  const { areaCode } = await parseLocation({ latitude, longitude });
-  let note = item.recommendReason?.text || "";
-
-  const tags = (item.tagList || []).map((v) => ({
-    value: v.text,
-    type: v.textColor === "#B15E2C" ? 2 : 1,
-  }));
-
-  return {
-    orgId: item.shopUuid,
-    dzId: item.shopUuid,
-    dzPath: item.navData?.url,
-    areaCode,
-    latitude: latitude,
-    longitude: longitude,
-    orgName: item.name + (item.branchName ? `（${item.branchName}）` : ""),
-    orgAddr,
-    note,
-    score: +item.starScore,
-    tags: [
-      {
-        value: `评分：${`${item.starScore}`.slice(0, -1) || "-"}`,
-        type: 2,
-      },
-      ...tags,
-    ],
-    desc,
-    phone,
-  };
-};
-
-/**
- * 获取大众点评篮球场信息
- */
-const getDzData = async () => {
-  for (let index = 40; index < 60; index++) {
-    const data = (await getDzList(index)) || [];
-    let res = [];
-
-    for (let i = 0; i < data.length; i++) {
-      const item = data[i].shopInfo;
-      const result = await dealDzData(item);
-
-      res.push(result);
-
-      console.log("ok: ", { id: item.shopUuid, i, index });
 
       await sleep();
     }
+  },
 
-    const text = fs.readJSONSync(dzFile);
-    fs.writeJsonSync(dzFile, [...text, ...res], { spaces: 2 });
-  }
+  setMtElement() {
+    let res = fs.readJSONSync(mtFile) || {};
+    res = res.map((item) => {
+      if (item.score === 0) {
+        item.tags[0].value = `评分：-`;
+      } else if (`${item.score}`.length === 1) {
+        item.tags[0].value = `评分：${item.score}.0`;
+      }
+
+      return {
+        ...item,
+        mtId: item.orgId,
+      };
+    });
+    console.log("file content: ", res.length);
+    fs.writeJsonSync(mtFile, res, { spaces: 2 });
+  },
 };
+/* ------------------------ mt ------------------------ */
 
-const filterDz = () => {
-  let dz = fs.readJSONSync(dzFile) || {};
-  let dzRes = [];
+/* ------------------------ dz ------------------------ */
 
-  dz.forEach((item) => {
-    if (!["贰木眼镜"].some((v) => item.orgName.includes(v))) {
-      dzRes.push(item);
+const DZ = {
+  headers: {
+    wechatversion: "8.0.34",
+    channel: "weixin",
+    openidPlt: "oPpUI0S36sRzCeTW65UvK9ACTIAM",
+    sdkversion: "2.30.4",
+    openid: "gOlaMhukk0FfO6NnG6to3duXaM6SOdsv1JWT8XLcBvc",
+    platform: "Android",
+    platformversion: "15.5",
+    dpid: "gOlaMhukk0FfO6NnG6to3duXaM6SOdsv1JWT8XLcBvc",
+    minaname: "dianping-wxapp",
+    appName: 'dianping-wxapp',
+    minaversion: "9.30.1",
+    channelversion: "8.0.34",
+    appVersion: '9.30.1',
+    sdkversion: '2.30.2',
+    token:
+      "7af4354783a4a126c4794808b4fd7cf7a053ab98aa93b9488a29bb3f8b9072fbdbc95f13875b611e9b37adf73325c7aee0ad95c7bbbe80b7f6cffaa498acf2d60b4753cada74f91a9bf36066c04796c7b0a233bbdaf9c37e4fa28e7c377347c2",
+    Referer: "https://servicewechat.com/wx734c1ad7b3562129/391/page-frame.html",
+    "User-Agent":
+      "Mozilla/5.0 (iPhone; CPU iPhone OS 15_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.34(0x18002230) NetType/WIFI Language/zh_CN",
+  },
+  /**
+   * 获取大众点评篮球场详细信息，h5的headers
+   * @param {*} item
+   * @returns
+   */
+  getDzDetail(item) {
+    return new Promise((resolve) => {
+      request.get(
+        `https://mapi.dianping.com/mapi/wechat/shop.bin?shopUuid=${item.shopUuid}&shopuuid=${item.shopUuid}`,
+        {
+          headers: {
+            Host: "mapi.dianping.com",
+            ...this.headers,
+            isMicroMessenger: true,
+          },
+        },
+        (err, res) => {
+          if (!err && res.statusCode === 200) {
+            const { address, phoneNos, geoPoint, recentBizTime } = JSON.parse(
+              res.body || "{}"
+            );
+
+            resolve({
+              orgAddr: address,
+              phone: phoneNos?.[0] || "",
+              latitude: geoPoint?.lat,
+              longitude: geoPoint?.lng,
+              desc: `营业时间：${
+                recentBizTime?.title?.replace(/\n/g, " ") || "-"
+              }`,
+            });
+          } else {
+            console.log("getDzDetail err: ", item.shopUuid, err, res);
+
+            resolve({
+              orgAddr: "",
+              phone: "",
+              latitude: "",
+              longitude: "",
+              desc: "",
+            });
+          }
+        }
+      );
+    });
+  },
+
+  /**
+   * 获取大众点评列表， 小程序的headers
+   * @param {*} index
+   * @returns
+   */
+  getDzList(index = 0, keyword = "篮球场") {
+    return new Promise((resolve) => {
+      request.get(
+        `https://m.dianping.com/wxmapi/search?cityId=7&locateCityid=7&lat=22.60956144876099&lng=114.12653115188573&myLat=22.60956144876099&myLng=114.12653115188573&keyword=${encodeURIComponent(
+          keyword
+        )}&start=${index * 10}`,
+        {
+          headers: {
+            Host: "m.dianping.com",
+            ...this.headers,
+          },
+        },
+        (err, res) => {
+          if (!err && res.statusCode === 200) {
+            const { data } = JSON.parse(res.body || "{}");
+            console.log("getDzList ok: ", index, keyword);
+            resolve(data.list);
+          } else {
+            console.log("getDzList err: ", index, err, res);
+
+            resolve([]);
+          }
+        }
+      );
+    });
+  },
+
+  async dealDzData(item) {
+    const { orgAddr, phone, latitude, longitude, desc } = await this.getDzDetail(
+      item
+    );
+    const { areaCode } = await parseLocation({ latitude, longitude });
+    let note = item.recommendReason?.text || "";
+
+    const tags = (item.tagList || []).map((v) => ({
+      value: v.text,
+      type: v.textColor === "#B15E2C" ? 2 : 1,
+    }));
+
+    return {
+      orgId: item.shopUuid,
+      dzId: item.shopUuid,
+      dzPath: item.navData?.url,
+      areaCode,
+      latitude: latitude,
+      longitude: longitude,
+      orgName: item.name + (item.branchName ? `（${item.branchName}）` : ""),
+      orgAddr,
+      note,
+      score: +item.starScore,
+      tags: [
+        {
+          value: `评分：${`${item.starScore}`.slice(0, -1) || "-"}`,
+          type: 2,
+        },
+        ...tags,
+      ],
+      desc,
+      phone,
+    };
+  },
+
+  /**
+   * 获取大众点评篮球场信息
+   */
+  async getDzData() {
+    for (let index = 40; index < 60; index++) {
+      const data = (await this.getDzList(index)) || [];
+      let res = [];
+
+      for (let i = 0; i < data.length; i++) {
+        const item = data[i].shopInfo;
+        const result = await this.dealDzData(item);
+
+        res.push(result);
+
+        console.log("ok: ", { id: item.shopUuid, i, index });
+
+        await sleep();
+      }
+
+      const text = fs.readJSONSync(dzFile);
+      fs.writeJsonSync(dzFile, [...text, ...res], { spaces: 2 });
     }
-  });
+  },
 
-  let idList = [];
-  dzRes = dzRes.filter((item) => {
-    const isFilter = !idList.includes(item.orgId);
-    idList = [...new Set([...idList, item.orgId])];
+  filterDz() {
+    let dz = fs.readJSONSync(dzFile) || {};
+    let dzRes = [];
 
-    return isFilter;
-  });
+    dz.forEach((item) => {
+      if (!["贰木眼镜"].some((v) => item.orgName.includes(v))) {
+        dzRes.push(item);
+      }
+    });
 
-  dz = dzRes;
-  fs.writeJsonSync(dzFile, dzRes, { spaces: 2 });
+    let idList = [];
+    dzRes = dzRes.filter((item) => {
+      const isFilter = !idList.includes(item.orgId);
+      idList = [...new Set([...idList, item.orgId])];
+
+      return isFilter;
+    });
+
+    dz = dzRes;
+    fs.writeJsonSync(dzFile, dzRes, { spaces: 2 });
+  },
+
+  /**
+   * 获取不在美团里的大众点评
+   */
+  async getDiffDzData() {
+    const { notInDz = [] } = fs.readJSONSync(notFile) || {};
+
+    for (let i = 0; i < 1; i++) {
+      const item = notInDz[i];
+      const data = await this.getDzList(0, item);
+      if (!data?.[0]?.shopInfo) {
+        console.log("getDiffDzData fail err: ", item);
+      } else {
+        const result = await this.dealDzData(data?.[0]?.shopInfo);
+        const text = fs.readJSONSync(dzFile);
+        fs.writeJsonSync(dzFile, [...text, result], { spaces: 2 });
+        console.log("getDiffDzData dz ok: ", item);
+      }
+
+      await sleep();
+    }
+  },
 };
+
+/* ------------------------ dz ------------------------ */
 
 const compare = () => {
   let mt = fs.readJSONSync(mtFile) || {};
@@ -360,18 +444,41 @@ const compare = () => {
   let notInDz = [];
   let notInMt = [];
   let mtSameName = [];
+  let combine = [];
 
   mt.forEach((item) => {
-    if (!dz.find((v) => v.orgName === item.orgName)) {
-      notInDz.push(item.orgName);
-    }
-
     if (mt.filter((v) => v.orgName === item.orgName)?.length > 1) {
       mtSameName.push({
         orgName: item.orgName,
         latitude: item.latitude,
         longitude: item.longitude,
       });
+    }
+
+    const latMatch = dz.find(
+      (v) =>
+        `${v.latitude}`.startsWith(`${item.latitude}`) &&
+        `${v.longitude}`.startsWith(`${item.longitude}`)
+    );
+    const nameMatch = dz.find((v) => v.orgName === item.orgName);
+    let resultMatch = latMatch || nameMatch;
+
+    if (resultMatch) {
+      resultMatch = JSON.parse(JSON.stringify(latMatch || nameMatch));
+      const desc = item.desc || resultMatch.desc;
+      const phone = item.phone || resultMatch.phone;
+      delete resultMatch.orgId;
+      delete resultMatch.latitude;
+      delete resultMatch.longitude;
+      delete resultMatch.orgName;
+      delete resultMatch.orgAddr;
+      delete resultMatch.areaCode;
+      delete resultMatch.desc;
+      delete resultMatch.phone;
+      combine.push({ ...item, desc, phone, dzInfo: resultMatch });
+    } else {
+      combine.push(item);
+      notInDz.push(item.orgName);
     }
   });
 
@@ -381,7 +488,7 @@ const compare = () => {
     }
   });
 
-  mtSameName = mtSameName.sort((a, b) => a.orgName <= b.orgName ? 1 : -1);
+  mtSameName = mtSameName.sort((a, b) => (a.orgName <= b.orgName ? 1 : -1));
 
   console.log(
     "notInDz: ",
@@ -389,60 +496,22 @@ const compare = () => {
     "notInMt: ",
     notInMt.length,
     "mtSameName: ",
-    mtSameName.length
+    mtSameName.length,
+    "combine: ",
+    combine.length
   );
 
   fs.writeJsonSync(notFile, { notInDz, notInMt, mtSameName }, { spaces: 2 });
+  fs.writeJsonSync("./combine.json", combine, { spaces: 2 });
 };
 
-/**
- * 获取不在美团里的大众点评
- */
-const getDiffDzData = async () => {
-  const { notInDz = [] } = fs.readJSONSync(notFile) || {};
+// MT.getMtData();
+// MT.setMtElement();
+MT.filterMtId();
+// MT.getDiffMtData();
+// MT.getMtSearch();
 
-  for (let i = 0; i < 1; i++) {
-    const item = notInDz[i];
-    const data = await getDzList(0, item);
-    if (!data?.[0]?.shopInfo) {
-      console.log("getDiffDzData fail err: ", item);
-    } else {
-      const result = await dealDzData(data?.[0]?.shopInfo);
-      const text = fs.readJSONSync(dzFile);
-      fs.writeJsonSync(dzFile, [...text, result], { spaces: 2 });
-      console.log("getDiffDzData dz ok: ", item);
-    }
+// DZ.getDzData();
+// DZ.getDiffDzData();
 
-    await sleep();
-  }
-};
-
-/**
- * 获取不在大众点评里的美团
- */
-const getDiffMtData = async () => {
-  const { notInMt = [] } = fs.readJSONSync(notFile) || {};
-
-  for (let i = 0; i < notInMt.length; i++) {
-    const item = notInMt[i];
-    const data = await getMtSearch(item);
-    if (!data?.[0]) {
-      console.log("getDiffMtData mt fail: ", item);
-    } else {
-      const result = await dealMtData(data?.[0]);
-      const text = fs.readJSONSync(mtFile);
-      fs.writeJsonSync(mtFile, [...text, result], { spaces: 2 });
-      console.log("getDiffMtData mt ok: ", item);
-    }
-
-    await sleep();
-  }
-};
-
-// getMtData();
-// setMtElement()
-// getDzData();
-compare();
-// getDiffDzData();
-// getDiffMtData();
-// filterMtId()
+// compare();
