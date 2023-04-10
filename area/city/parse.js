@@ -18,3 +18,17 @@ const getAreaItems = () => {
 
   fs.writeJsonSync(path.resolve(__dirname, "./area-city.json"), cityInfo, { spaces: 2 });
 };
+
+const addAllDistrict = () => {
+  const res = fs.readJSONSync(areaItemsFile) || {};
+
+  res.forEach((item) => {
+    item.children.forEach((child) => {
+      child.children.unshift({ value: child.value, label: "全城" })
+    });
+  });
+
+  fs.writeJsonSync(path.resolve(__dirname, "./area-all-distr.json"), res, { spaces: 2 });
+};
+
+addAllDistrict()

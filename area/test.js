@@ -4,8 +4,6 @@ const request = require("request");
 
 const mtFile = path.resolve(__dirname, "./area-mt.json");
 const dzFile = path.resolve(__dirname, "./area-dz.json");
-const resFile = path.resolve(__dirname, "./area-res.json");
-const srcFile = path.resolve(__dirname, "./area.json");
 const notFile = path.resolve(__dirname, "./not.json");
 
 const sleep = () =>
@@ -182,6 +180,8 @@ const MT = {
       const text = fs.readJSONSync(mtFile);
       fs.writeJsonSync(mtFile, [...text, ...res], { spaces: 2 });
       res = [];
+
+      await sleep();
     }
   },
 
@@ -503,9 +503,9 @@ const compare = () => {
   fs.writeJsonSync("./combine.json", combine, { spaces: 2 });
 };
 
-MT.getMtData();
+// MT.getMtData();
 // MT.setMtElement();
-// MT.filterMtId();
+MT.filterMtId();
 // MT.getDiffMtData();
 // MT.getMtSearch();
 
