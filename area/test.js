@@ -38,6 +38,14 @@ const parseLocation = (item) =>
 
 /* ------------------------ mt ------------------------ */
 const MT = {
+  key: {
+    深圳市: 30,
+    广州市: 20,
+    佛山市: 92,
+    东莞市: 91,
+    上海市: 10,
+    北京市: 1,
+  }["上海市"],
   /**
    * 获取美团球场详细信息
    * @param {*} id
@@ -118,10 +126,11 @@ const MT = {
   },
 
   getMtSearch(offset = 0, keyword = "篮球场") {
-    const key = { 深圳市: 30, 广州市: 20, 佛山市: 92 }["佛山市"];
     return new Promise((resolve) => {
       request.get(
-        `https://apimobile.meituan.com/group/v4/poi/pcsearch/${key}?uuid=858ebe70fba8447f8468.1680836575.1.0.0&userid=3933147557&limit=32&offset=${offset}&cateId=-1&q=${encodeURIComponent(
+        `https://apimobile.meituan.com/group/v4/poi/pcsearch/${
+          this.key
+        }?uuid=858ebe70fba8447f8468.1680836575.1.0.0&userid=3933147557&limit=32&offset=${offset}&cateId=-1&q=${encodeURIComponent(
           keyword
         )}&token=AgGeIzjjm83bB8OmCKag5O8oGKJByTN_99OY49jwPG0WhUN3xUOZ7mg2qwMk0YpV_Qv9IhqXDGdcxwAAAAC2FwAAeKs0mikJ_CFrHiXfnebmV1yyONq6x51ya77XfHss7aGps2SJanTPWnUMreIzuc-y`,
         {
@@ -155,6 +164,7 @@ const MT = {
    * 获取美团信息
    */
   async getMtData() {
+    let allId = [];
     let res = [];
     for (let index = 0; index < 40; index++) {
       const offset = index * 32;
@@ -162,9 +172,14 @@ const MT = {
 
       for (let i = 0; i < data?.length; i++) {
         const item = data[i];
+        if (allId.includes(item.id)) {
+          console.log("repeat: ", { id: item.id, i });
+          continue;
+        }
         const result = await this.dealMtData(item);
 
         res.push(result);
+        allId.push(item.id);
 
         console.log("ok: ", { id: item.id, i });
 
@@ -183,6 +198,7 @@ const MT = {
 
       await sleep();
     }
+    this.filterMtId();
   },
 
   /**
@@ -240,11 +256,11 @@ const DZ = {
     platformversion: "15.5",
     dpid: "gOlaMhukk0FfO6NnG6to3duXaM6SOdsv1JWT8XLcBvc",
     minaname: "dianping-wxapp",
-    appName: 'dianping-wxapp',
+    appName: "dianping-wxapp",
     minaversion: "9.30.1",
     channelversion: "8.0.34",
-    appVersion: '9.30.1',
-    sdkversion: '2.30.2',
+    appVersion: "9.30.1",
+    sdkversion: "2.30.2",
     token:
       "7af4354783a4a126c4794808b4fd7cf7a053ab98aa93b9488a29bb3f8b9072fbdbc95f13875b611e9b37adf73325c7aee0ad95c7bbbe80b7f6cffaa498acf2d60b4753cada74f91a9bf36066c04796c7b0a233bbdaf9c37e4fa28e7c377347c2",
     Referer: "https://servicewechat.com/wx734c1ad7b3562129/391/page-frame.html",
@@ -331,9 +347,8 @@ const DZ = {
   },
 
   async dealDzData(item) {
-    const { orgAddr, phone, latitude, longitude, desc } = await this.getDzDetail(
-      item
-    );
+    const { orgAddr, phone, latitude, longitude, desc } =
+      await this.getDzDetail(item);
     const { areaCode } = await parseLocation({ latitude, longitude });
     let note = item.recommendReason?.text || "";
 
@@ -503,9 +518,9 @@ const compare = () => {
   fs.writeJsonSync("./combine.json", combine, { spaces: 2 });
 };
 
-// MT.getMtData();
+MT.getMtData();
 // MT.setMtElement();
-MT.filterMtId();
+// MT.filterMtId();
 // MT.getDiffMtData();
 // MT.getMtSearch();
 
