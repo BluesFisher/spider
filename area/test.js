@@ -120,7 +120,7 @@ const MT = {
   },
 
   getMtSearch(offset = 0, keyword = "篮球场") {
-    const key = { 深圳市: 30, 广州市: 20 }["广州市"];
+    const key = { 深圳市: 30, 广州市: 20, 佛山市: 92 }["佛山市"];
     return new Promise((resolve) => {
       request.get(
         `https://apimobile.meituan.com/group/v4/poi/pcsearch/${key}?uuid=858ebe70fba8447f8468.1680836575.1.0.0&userid=3933147557&limit=32&offset=${offset}&cateId=-1&q=${encodeURIComponent(
@@ -157,10 +157,8 @@ const MT = {
    * 获取美团信息
    */
   async getMtData() {
-    // filterMtId();
-    // const { data } = fs.readJSONSync(srcFile) || {};
     let res = [];
-    for (let index = 30; index < 40; index++) {
+    for (let index = 0; index < 40; index++) {
       const offset = index * 32;
       const data = await this.getMtSearch(offset);
 
@@ -505,7 +503,7 @@ const compare = () => {
   fs.writeJsonSync("./combine.json", combine, { spaces: 2 });
 };
 
-// MT.getMtData();
+MT.getMtData();
 // MT.setMtElement();
 // MT.filterMtId();
 // MT.getDiffMtData();
