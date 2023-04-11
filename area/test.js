@@ -39,15 +39,24 @@ const parseLocation = (item) =>
 /* ------------------------ mt ------------------------ */
 const MT = {
   key: {
-    北京市: 1,
-    上海市: 10,
-    广州市: 20,
-    深圳市: 30,
-    天津市: 40,
-    杭州市: 50,
-    东莞市: 91,
-    佛山市: 92,
-    test: 50,
+    // 北京市: 1,
+    // 上海市: 10,
+    // 广州市: 20,
+    // 深圳市: 30,
+    // 天津市: 40,
+    // 西安市: 42,
+    // 重庆市: 45,
+    // 杭州市: 50,
+    南京市: 55,
+    // 武汉市: 57,
+    成都市: 59,
+    // 青岛市: 60,
+    // 长沙市: 70,
+    // 苏州市: 80,
+    // 大庆市: 90,
+    // 东莞市: 91,
+    // 佛山市: 92,
+    test: 45,
   }["test"],
   /**
    * 获取美团球场详细信息
@@ -408,7 +417,7 @@ const DZ = {
       const text = fs.readJSONSync(dzFile);
       fs.writeJsonSync(dzFile, [...text, ...res], { spaces: 2 });
     }
-    
+
     await sleep();
   },
 
@@ -526,13 +535,13 @@ const compare = () => {
   fs.writeJsonSync("./combine.json", combine, { spaces: 2 });
 };
 
-// MT.getMtData();
+MT.getMtData();
 // MT.setMtElement();
 // MT.filterMtId();
 // MT.getDiffMtData();
 // MT.getMtSearch();
 
-DZ.getDzData();
+// DZ.getDzData();
 // DZ.getDiffDzData();
 
 // compare();
