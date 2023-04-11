@@ -39,13 +39,16 @@ const parseLocation = (item) =>
 /* ------------------------ mt ------------------------ */
 const MT = {
   key: {
-    深圳市: 30,
-    广州市: 20,
-    佛山市: 92,
-    东莞市: 91,
-    上海市: 10,
     北京市: 1,
-  }["上海市"],
+    上海市: 10,
+    广州市: 20,
+    深圳市: 30,
+    天津市: 40,
+    杭州市: 50,
+    东莞市: 91,
+    佛山市: 92,
+    test: 50,
+  }["test"],
   /**
    * 获取美团球场详细信息
    * @param {*} id
@@ -246,6 +249,7 @@ const MT = {
 /* ------------------------ dz ------------------------ */
 
 const DZ = {
+  key: { 深圳市: 7, test: 1 }['test'],
   headers: {
     wechatversion: "8.0.34",
     channel: "weixin",
@@ -322,7 +326,9 @@ const DZ = {
   getDzList(index = 0, keyword = "篮球场") {
     return new Promise((resolve) => {
       request.get(
-        `https://m.dianping.com/wxmapi/search?cityId=7&locateCityid=7&lat=22.60956144876099&lng=114.12653115188573&myLat=22.60956144876099&myLng=114.12653115188573&keyword=${encodeURIComponent(
+        `https://m.dianping.com/wxmapi/search?cityId=${
+          this.key
+        }&locateCityid=7&lat=22.60956144876099&lng=114.12653115188573&myLat=22.60956144876099&myLng=114.12653115188573&keyword=${encodeURIComponent(
           keyword
         )}&start=${index * 10}`,
         {
@@ -384,7 +390,7 @@ const DZ = {
    * 获取大众点评篮球场信息
    */
   async getDzData() {
-    for (let index = 40; index < 60; index++) {
+    for (let index = 0; index < 60; index++) {
       const data = (await this.getDzList(index)) || [];
       let res = [];
 
@@ -402,6 +408,8 @@ const DZ = {
       const text = fs.readJSONSync(dzFile);
       fs.writeJsonSync(dzFile, [...text, ...res], { spaces: 2 });
     }
+    
+    await sleep();
   },
 
   filterDz() {
@@ -518,13 +526,13 @@ const compare = () => {
   fs.writeJsonSync("./combine.json", combine, { spaces: 2 });
 };
 
-MT.getMtData();
+// MT.getMtData();
 // MT.setMtElement();
 // MT.filterMtId();
 // MT.getDiffMtData();
 // MT.getMtSearch();
 
-// DZ.getDzData();
+DZ.getDzData();
 // DZ.getDiffDzData();
 
 // compare();
