@@ -38,13 +38,17 @@ class Request(object):
         ua = UserAgent(path=location)
         return ua.random
 
-    def set_request(self, url):
+    def set_request(self, url, header = {}):
         print 'Request', url
         if not url:
             return {'text': ''}
 
         # proxy = { 'http': 'http://' + proxy_list[random.randint(0,len(proxy_list) - 1)] }
         # res = requests.get(url, headers=headers, proxies=proxy)
-        headers = {'user-agent': self.get_header(), 'uuid': '18769cad536c8-99cbc551763ec0-0-0-18769cad53671','token': 'AgFFIoi4MU9H6jaCFs0aHbj2E30_fDpviUUdisKljXecTBwmwhBaRP8JyLrf6DZnCwUiGF0mZWW45wAAAACdFwAAYYlBVX6UyWDiMpW0P6PBZXeoUSB_64knIoRe5zAg_GXV_-wutpYSVIpi8WeC4iz0', 'openId': 'oJVP50LYNkqkX72yEXJFlf5zn8No', 'clientversion': '2.30.4', 'M-TRACEID': '-8590739251504865070', 'openIdCipher': 'AwQAAABJAgAAAAEAAAAyAAAAPLgC95WH3MyqngAoyM/hf1hEoKrGdo0pJ5DI44e1wGF9AT3PH7Wes03actC2n/GVnwfURonD78PewMUppAAAADgFMCg3gbWu0plOxXXvQUYEnaATk0lUjottqLDQclwZaoxXvSHGO1wLg6R1meAkxvfUXMifpxkmGg==', 'Referer': 'https://servicewechat.com/wxde8ac0a21135c07d/1130/page-frame.html'}
+
+        # mt header
+
+        headers = {'user-agent': self.get_header()}
+        headers.update(header)
         res = requests.get(url, headers=headers)
         return res
