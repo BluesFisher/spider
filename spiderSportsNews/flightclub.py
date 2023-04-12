@@ -6,6 +6,7 @@ from common.json_func import JsonFunc
 from bs4 import element
 from bs4 import BeautifulSoup
 from common.request import Request
+import urllib
 import time
 import os
 import sys
@@ -105,10 +106,11 @@ def get_news_list(url):
 def get_news():
     file_path = PATH + '/flightclub'
     file_got_path = PATH + '/flightclub_path'
-    search_url = 'https://www.flightclub.cn/sneaker/search/%E7%A7%91%E6%AF%94'
+    search_key = urllib.quote('詹姆斯') # 科比
+    search_url = 'https://www.flightclub.cn/sneaker/search/' + search_key
     file_items = []
     flie_got = []
-
+  
     with open(file_path + '.json') as fp:
         data = fp.read()
         file_items = eval(data)

@@ -239,4 +239,7 @@ class CommonFunc(object):
         finally:
             time.sleep(5)
             return res
-        
+    
+    def get_network_img(self, url):
+        res = Request().set_request(url)
+        return res.content
