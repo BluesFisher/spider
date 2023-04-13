@@ -58,7 +58,8 @@ def save_img(url):
     if not url:
         return
     
-    img_path = IMG_ROOT_PATH + str(img_index) + '.jpg'
+    file_type = '.gif' if '.gif' in url else '.jpg'
+    img_path = IMG_ROOT_PATH + str(img_index) + file_type
     img = CommonFunc().get_network_img(url)
     read_path = '/nbaJson/pic/news/' + date_format + '/'
 
@@ -66,7 +67,7 @@ def save_img(url):
         fp.write(img)
         img_index = img_index + 1
 
-    return read_path + str(img_index - 1) + '.jpg'
+    return read_path + str(img_index - 1) + file_type
 
 def already_got_news():
     global file_got_path

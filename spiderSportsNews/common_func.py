@@ -147,7 +147,8 @@ class CommonFunc(object):
                 if 'IMG_' in item['placeholder']:
                   file_items.append({'type': 'img', 'value': detail['imgurl']})
                 if 'TXT_' in item['placeholder']:
-                  file_items.append({'type': 'p', 'value': detail['content']})
+                  if ' ' != detail['content']:
+                    file_items.append({'type': 'p', 'value': detail['content']})
                 if 'VIDEO_' in item['placeholder']:
                   file_items.append({'type': 'img', 'value': detail['image']})
 

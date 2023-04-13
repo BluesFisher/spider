@@ -593,38 +593,44 @@ const filterName = () => {
 const genJs = () => {
   const dir = path.resolve(__dirname, "./basketball");
   const list = fs.readdirSync(dir);
-  const combine = ['440300']
-  const jsRes = {}
+  const combine = ["440300"];
+  const jsRes = {};
 
   list.forEach((p) => {
-    const file = `${dir}/${p}/${combine.includes(p) ? 'combine' : 'area-mt'}.json`;
+    const file = `${dir}/${p}/${
+      combine.includes(p) ? "combine" : "area-mt"
+    }.json`;
     const data = fs.readJSONSync(file) || [];
 
-    jsRes[p] = data
+    jsRes[p] = data;
   });
 
-  fs.writeFileSync(jsResFile, `module.exports={sportArea: ${JSON.stringify(jsRes)}};`)
+  fs.writeFileSync(
+    jsResFile,
+    `module.exports={sportArea: ${JSON.stringify(jsRes)}};`
+  );
 };
 
 const flghtClubSort = (type) => {
-  const file = path.resolve(__dirname, "../data/sportsNews/flightclub.json");
+  const filePath = { nab: "nba_news" }[type] || "flightclub";
+  const file = path.resolve(__dirname, `../data/sportsNews/${filePath}.json`);
   const data = fs.readJSONSync(file) || [];
-  let temp = []
-  const name = []
+  let temp = [];
+  const name = [];
 
   // nba news
-  if (type === 'nba') {
-    data.forEach(item => {
-      const title = item.find(v => v.type === 'title')?.value
+  if (type === "nba") {
+    data.forEach((item) => {
+      const title = item.find((v) => v.type === "title")?.value;
       if (!name.includes(title)) {
-        name.push(title)
-        temp.push(item)
+        name.push(title);
+        temp.push(item);
       }
-    })
+    });
   }
 
   if (!temp.length) {
-    temp = data
+    temp = data;
   }
 
   fs.writeJsonSync(
