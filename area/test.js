@@ -5,6 +5,7 @@ const request = require("request");
 const mtFile = path.resolve(__dirname, "./area-mt.json");
 const dzFile = path.resolve(__dirname, "./area-dz.json");
 const notFile = path.resolve(__dirname, "./not.json");
+const FILTER = ['蛋糕', '鲜花']
 
 const sleep = () =>
   new Promise((resolve) => {
@@ -47,16 +48,28 @@ const MT = {
     // 西安市: 42,
     // 重庆市: 45,
     // 杭州市: 50,
+    // 宁波市: 51,
+    // 无锡市: 52,
     // 南京市: 55,
     // 武汉市: 57,
     // 成都市: 59,
     // 青岛市: 60,
+    // 厦门市: 62,
     // 长沙市: 70,
+    // 郑州市: 73,
+    // 石家庄市: 76,
     // 苏州市: 80,
+    // 保定市: 84,
     // 大庆市: 90,
     // 东莞市: 91,
     // 佛山市: 92,
-    test: 59,
+    // 哈尔滨市: 105,
+    // 温州市: 112,
+    // 邯郸市: 123,
+    // 赣州市: 217,
+    潍坊市: 224,
+    // 临沂市: 230,
+    test: 217
   }["test"],
   /**
    * 获取美团球场详细信息
@@ -188,6 +201,12 @@ const MT = {
           console.log("repeat: ", { id: item.id, i });
           continue;
         }
+
+        if (FILTER.find(v => item.title.includes(v))) {
+          console.log("jump: ", { orgName: item.title, i });
+          continue;
+        }
+
         const result = await this.dealMtData(item);
 
         res.push(result);
@@ -535,7 +554,19 @@ const compare = () => {
   fs.writeJsonSync("./combine.json", combine, { spaces: 2 });
 };
 
-MT.getMtData();
+const filterName = () => {
+  const dir = path.resolve(__dirname, "./basketball");
+  const list = fs.readdirSync(dir)
+
+  list.forEach(p => {
+    const file = `${dir}/${p}/area-mt.json`
+    const data = fs.readJSONSync(file) || []
+
+    fs.writeJsonSync(file, data.filter(v => !FILTER.find(a => v.orgName.includes(a))), { spaces: 2 });
+  })
+}
+
+// MT.getMtData();
 // MT.setMtElement();
 // MT.filterMtId();
 // MT.getDiffMtData();
@@ -545,3 +576,4 @@ MT.getMtData();
 // DZ.getDiffDzData();
 
 // compare();
+filterName()
