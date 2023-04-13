@@ -161,7 +161,7 @@ def get_news(search_key):
 
 
 if __name__ == '__main__':
-    search_key = urllib.quote('勒布朗') # 科比,勒布朗,詹姆斯
+    search_key = urllib.quote('欧文') # 科比,勒布朗,詹姆斯,欧文
     get_news(search_key) 
     
     # res = get_flightclub_detail('https://www.flightclub.cn/news/a/sneaker/2023/0217/73937.html')

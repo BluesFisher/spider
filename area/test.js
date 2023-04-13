@@ -5,7 +5,7 @@ const request = require("request");
 const mtFile = path.resolve(__dirname, "./area-mt.json");
 const dzFile = path.resolve(__dirname, "./area-dz.json");
 const notFile = path.resolve(__dirname, "./not.json");
-const FILTER = ['蛋糕', '鲜花']
+const FILTER = ["蛋糕", "鲜花", "洗衣", "洗鞋", "甜品", "烘焙", "洗护", "花艺"];
 
 const sleep = () =>
   new Promise((resolve) => {
@@ -37,6 +37,18 @@ const parseLocation = (item) =>
     );
   });
 
+/**
+ * 判断是否过滤
+ * @param {*} item
+ * @returns
+ */
+const isJumpItem = (item) => {
+  return FILTER.find(
+    (a) =>
+      item.orgName.includes(a) || item.tags.find((tag) => tag.value.includes(a))
+  );
+};
+
 /* ------------------------ mt ------------------------ */
 const MT = {
   key: {
@@ -67,9 +79,9 @@ const MT = {
     // 温州市: 112,
     // 邯郸市: 123,
     // 赣州市: 217,
-    潍坊市: 224,
+    // 潍坊市: 224,
     // 临沂市: 230,
-    test: 217
+    test: 224,
   }["test"],
   /**
    * 获取美团球场详细信息
@@ -202,12 +214,12 @@ const MT = {
           continue;
         }
 
-        if (FILTER.find(v => item.title.includes(v))) {
-          console.log("jump: ", { orgName: item.title, i });
+        const result = await this.dealMtData(item);
+
+        if (isJumpItem(result)) {
+          console.log("jump: ", { orgName: result.orgName, i });
           continue;
         }
-
-        const result = await this.dealMtData(item);
 
         res.push(result);
         allId.push(item.id);
@@ -277,7 +289,7 @@ const MT = {
 /* ------------------------ dz ------------------------ */
 
 const DZ = {
-  key: { 深圳市: 7, test: 1 }['test'],
+  key: { 深圳市: 7, test: 1 }["test"],
   headers: {
     wechatversion: "8.0.34",
     channel: "weixin",
@@ -554,17 +566,24 @@ const compare = () => {
   fs.writeJsonSync("./combine.json", combine, { spaces: 2 });
 };
 
+/**
+ * 过滤掉不需要的选项
+ */
 const filterName = () => {
   const dir = path.resolve(__dirname, "./basketball");
-  const list = fs.readdirSync(dir)
+  const list = fs.readdirSync(dir);
 
-  list.forEach(p => {
-    const file = `${dir}/${p}/area-mt.json`
-    const data = fs.readJSONSync(file) || []
+  list.forEach((p) => {
+    const file = `${dir}/${p}/area-mt.json`;
+    const data = fs.readJSONSync(file) || [];
 
-    fs.writeJsonSync(file, data.filter(v => !FILTER.find(a => v.orgName.includes(a))), { spaces: 2 });
-  })
-}
+    fs.writeJsonSync(
+      file,
+      data.filter((v) => !isJumpItem(v)),
+      { spaces: 2 }
+    );
+  });
+};
 
 // MT.getMtData();
 // MT.setMtElement();
@@ -576,4 +595,4 @@ const filterName = () => {
 // DZ.getDiffDzData();
 
 // compare();
-filterName()
+filterName();
