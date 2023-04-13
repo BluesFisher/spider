@@ -19,8 +19,9 @@ sys.setdefaultencoding('utf8')
 
 # import json
 
-file_dict = []
 PATH = PAR_DIR + '/data/sportsNews'
+file_path = PATH + '/flightclub'
+file_got_path = PATH + '/flightclub_path'
 
 def parse_flight(contents, type_in):
     res = []
@@ -31,7 +32,7 @@ def parse_flight(contents, type_in):
             res = res + res_item
         elif item.name == 'div' and ('class' not in item.attrs or 'ga_banner' not in item.attrs['class']):
             if 'style' not in item.attrs or 'text-align: right;' not in item.attrs['style']:
-                res_item = parse_flight(item.contents, 'test')
+                res_item = parse_flight(item.contents, '')
                 res = res + res_item
         elif item.name == 'img':
             img_src = ''
@@ -57,6 +58,9 @@ def parse_flight(contents, type_in):
         elif item.name != None and item.name.startswith('h'):
             string = item.text.replace('\n', '').replace('\r', '，')
             res.append({ "type": "p", "value": string, "fontWeight": 800 }) 
+        elif item.name == 'p':
+            res_item = parse_flight(item.contents, '')
+            res = res + res_item
     return res
 
 
@@ -74,7 +78,7 @@ def get_flightclub_detail(url):
         items.append({"type": "title", "value": title})
         pub_time = soup.find('div', class_='news_info left pure-u-1 pure-u-md-4-24').find(
             'div', class_='body').div.text.split(' ')[0]
-        items.append({"type": "auth", "value": "FLIGHTCLUB中文站 | " + pub_time})
+        items.append({"type": "auth", "value": "FC中文站 | " + pub_time})
 
         contents = soup.find('div', class_='content').contents
         parse_items = parse_flight(contents, 'all')
@@ -84,6 +88,7 @@ def get_flightclub_detail(url):
         result_i = 0
 
         while i < len(parse_items):
+            # print parse_items[i], i, len(parse_items)
             if '' == parse_items[i]['value'].replace(' ', ''):
                 i += 1
                 continue
@@ -105,8 +110,7 @@ def get_flightclub_detail(url):
         time.sleep(5)
         return items
 
-
-def get_news_list(url):
+def get_news_list(url, class_name):
     try:
         file_items = []
         res = Request().set_request(url)
@@ -116,11 +120,19 @@ def get_news_list(url):
             return
 
         soup = BeautifulSoup(res.text, "html.parser")
-        url_list = soup.find_all('div', class_='news_item normal pure-g')
+        url_list = soup.find_all('div', class_=class_name)
+
+        if class_name == '':
+            url_list = soup.find_all('a')
 
         for item in url_list:
-            path = item.find('a').attrs['href']
-            file_items.append('https://www.flightclub.cn' + path)
+            a = item.find('a')
+            if a == None:
+                a = item
+            path = a.attrs['href']
+
+            if '/news/a/sneaker' in path:
+                file_items.append('https://www.flightclub.cn' + path)
 
         print 'get_news_list ok: ', url
     except IOError:
@@ -128,42 +140,56 @@ def get_news_list(url):
     finally:
         return file_items
 
-
-def get_news(search_key):
-    file_path = PATH + '/flightclub'
-    file_got_path = PATH + '/flightclub_path'
-    search_url = 'https://www.flightclub.cn/sneaker/search/' + search_key
-    file_items = []
+def already_got_news():
+    global file_got_path
     flie_got = []
-  
-    with open(file_path + '.json') as fp:
-        data = fp.read()
-        file_items = eval(data)
 
     with open(file_got_path + '.json') as fp:
         data = fp.read()
         flie_got = eval(data)
 
+    return flie_got
+
+def deal_news_list(url_list):
+    global file_path
+    global file_got_path
+    file_items = []
+    flie_got = already_got_news()
+  
+    with open(file_path + '.json') as fp:
+        data = fp.read()
+        file_items = eval(data)
+
+    for url in url_list:
+        if url not in flie_got:
+            res = get_flightclub_detail(url)
+            file_items.append(res)
+            JsonFunc().save_json(file_items, file_path)
+        
+            flie_got.append(url)
+            JsonFunc().save_json(flie_got, file_got_path)
+        else:
+            print 'repeat: ', url 
+
+def get_search_news():
+    search_key = urllib.quote('库里') # 科比,勒布朗,詹姆斯,欧文,麦迪
+    search_url = 'https://www.flightclub.cn/sneaker/search/' + search_key
+
     for i in range(2):
         index = i * 20
         indexStr = '' if index == 0 else ('/' + str(index))
-        url_list = get_news_list(search_url + indexStr)
-        for url in url_list:
-            if url not in flie_got:
-              res = get_flightclub_detail(url)
-              file_items.append(res)
-              JsonFunc().save_json(file_items, file_path)
-          
-              flie_got.append(url)
-              JsonFunc().save_json(flie_got, file_got_path)
-            else:
-              print 'repeat: ', url  
+        url_list = get_news_list(search_url + indexStr, 'news_item normal pure-g')
+        deal_news_list(url_list)  
+
+def get_hot_news():
+    url = 'https://www.flightclub.cn/'
+    url_list = get_news_list(url, '')
+    deal_news_list(url_list)
 
 
 if __name__ == '__main__':
-    # search_key = urllib.quote('麦迪') # 科比,勒布朗,詹姆斯,欧文,麦迪
-    # get_news(search_key) 
+    # get_search_news() 
+    # get_hot_news()
     
-    res = get_flightclub_detail('https://www.flightclub.cn/news/a/sneaker/2016/0213/29168.html')
-    JsonFunc().save_json(res, PATH + '/flightclub')
+    JsonFunc().save_json(get_flightclub_detail('https://www.flightclub.cn/news/a/sneaker/2023/0412/75142.html'), PATH + '/flightclub')
     

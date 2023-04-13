@@ -6,6 +6,7 @@ const dayjs = require("dayjs");
 const mtFile = path.resolve(__dirname, "./area-mt.json");
 const dzFile = path.resolve(__dirname, "./area-dz.json");
 const notFile = path.resolve(__dirname, "./not.json");
+const jsResFile = path.resolve(__dirname, "./jsRes.js");
 const FILTER = ["蛋糕", "鲜花", "洗衣", "洗鞋", "甜品", "烘焙", "洗护", "花艺"];
 
 const sleep = () =>
@@ -586,13 +587,49 @@ const filterName = () => {
   });
 };
 
-const flghtClubSort = () => {
+/**
+ * 生成node调用的文件
+ */
+const genJs = () => {
+  const dir = path.resolve(__dirname, "./basketball");
+  const list = fs.readdirSync(dir);
+  const combine = ['440300']
+  const jsRes = {}
+
+  list.forEach((p) => {
+    const file = `${dir}/${p}/${combine.includes(p) ? 'combine' : 'area-mt'}.json`;
+    const data = fs.readJSONSync(file) || [];
+
+    jsRes[p] = data
+  });
+
+  fs.writeFileSync(jsResFile, `module.exports={sportArea: ${JSON.stringify(jsRes)}};`)
+};
+
+const flghtClubSort = (type) => {
   const file = path.resolve(__dirname, "../data/sportsNews/flightclub.json");
   const data = fs.readJSONSync(file) || [];
+  let temp = []
+  const name = []
+
+  // nba news
+  if (type === 'nba') {
+    data.forEach(item => {
+      const title = item.find(v => v.type === 'title')?.value
+      if (!name.includes(title)) {
+        name.push(title)
+        temp.push(item)
+      }
+    })
+  }
+
+  if (!temp.length) {
+    temp = data
+  }
 
   fs.writeJsonSync(
     file,
-    data.sort((a, b) => {
+    temp.sort((a, b) => {
       const aV = a.find((item) => item.type === "auth").value;
       const bV = b.find((item) => item.type === "auth").value;
 
@@ -613,4 +650,5 @@ const flghtClubSort = () => {
 
 // compare();
 // filterName();
-flghtClubSort();
+// flghtClubSort();
+// genJs()
