@@ -1,6 +1,7 @@
 const fs = require("fs-extra");
 const path = require("path");
 const request = require("request");
+const dayjs = require("dayjs");
 
 const mtFile = path.resolve(__dirname, "./area-mt.json");
 const dzFile = path.resolve(__dirname, "./area-dz.json");
@@ -585,6 +586,22 @@ const filterName = () => {
   });
 };
 
+const flghtClubSort = () => {
+  const file = path.resolve(__dirname, "../data/sportsNews/flightclub.json");
+  const data = fs.readJSONSync(file) || [];
+
+  fs.writeJsonSync(
+    file,
+    data.sort((a, b) => {
+      const aV = a.find((item) => item.type === "auth").value;
+      const bV = b.find((item) => item.type === "auth").value;
+
+      return dayjs(aV.split("|")[1].trim()) - dayjs(bV.split("|")[1].trim());
+    }),
+    { spaces: 2 }
+  );
+};
+
 // MT.getMtData();
 // MT.setMtElement();
 // MT.filterMtId();
@@ -595,4 +612,5 @@ const filterName = () => {
 // DZ.getDiffDzData();
 
 // compare();
-filterName();
+// filterName();
+flghtClubSort();

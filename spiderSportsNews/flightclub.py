@@ -87,7 +87,7 @@ def get_flightclub_detail(url):
             if '' == parse_items[i]['value'].replace(' ', ''):
                 i += 1
                 continue
-            if (result_i != 0 and (parse_items[i]['type'] == 'text' or parse_items[i]['value'].startswith('，') or parse_items[i]['value'].startswith(' '))):
+            if (result_i != 0 and result_i != len(parse_items) - 1 and (parse_items[i]['type'] == 'text' or parse_items[i]['value'].startswith('，') or parse_items[i]['value'].startswith(' '))):
                 result[result_i - 1]['value'] = result[result_i - 1]['value'] + parse_items[i]['value'] + parse_items[i + 1]['value']
                 i += 2
             elif (result_i != 0 and result[result_i - 1]['value'].endswith('】')):
@@ -161,9 +161,9 @@ def get_news(search_key):
 
 
 if __name__ == '__main__':
-    search_key = urllib.quote('欧文') # 科比,勒布朗,詹姆斯,欧文
-    get_news(search_key) 
+    # search_key = urllib.quote('麦迪') # 科比,勒布朗,詹姆斯,欧文,麦迪
+    # get_news(search_key) 
     
-    # res = get_flightclub_detail('https://www.flightclub.cn/news/a/sneaker/2023/0217/73937.html')
-    # JsonFunc().save_json(res, PATH + '/flightclub')
+    res = get_flightclub_detail('https://www.flightclub.cn/news/a/sneaker/2016/0213/29168.html')
+    JsonFunc().save_json(res, PATH + '/flightclub')
     

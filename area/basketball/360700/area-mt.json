@@ -1,344 +1,344 @@
 [
   {
-    "orgId": 1297841185,
+    "tags": [
+      {
+        "type": 2,
+        "value": "评分：3.5"
+      }
+    ],
+    "orgAddr": "章贡区长征大道1号九方购物中心F5楼",
     "mtId": 1297841185,
+    "phone": "15807691713",
+    "desc": "营业时间：周一至周日 10:00-22:00",
     "areaCode": "360702",
-    "latitude": 25.8356,
     "longitude": 114.936,
+    "note": "",
     "orgName": "华蒙星少儿篮球俱乐部九方馆",
-    "orgAddr": "江西省赣州市章贡区广场南路",
-    "note": "",
     "score": 3.5,
-    "tags": [
-      {
-        "value": "评分：3.5",
-        "type": 2
-      }
-    ],
-    "desc": "营业时间：周一至周日 10:00-22:00",
-    "phone": ""
+    "orgId": 1297841185,
+    "latitude": 25.8356
   },
   {
-    "orgId": 1078077945,
+    "tags": [
+      {
+        "type": 2,
+        "value": "评分：-"
+      }
+    ],
+    "orgAddr": "章贡区尚学大道赣南师范大学（黄金校区)",
     "mtId": 1078077945,
+    "phone": "",
+    "desc": "营业时间：",
     "areaCode": "360702",
-    "latitude": 25.7988,
     "longitude": 114.8839,
+    "note": "",
     "orgName": "赣南师范大学西苑篮球场",
-    "orgAddr": "江西省赣州市章贡区逸夫路",
-    "note": "",
     "score": 0,
-    "tags": [
-      {
-        "value": "评分：-",
-        "type": 2
-      }
-    ],
-    "desc": "营业时间：",
-    "phone": ""
+    "orgId": 1078077945,
+    "latitude": 25.7988
   },
   {
-    "orgId": 153919981,
+    "tags": [
+      {
+        "type": 2,
+        "value": "评分：-"
+      }
+    ],
+    "orgAddr": "章贡区开心幼儿园附近（村头）",
     "mtId": 153919981,
+    "phone": "",
+    "desc": "营业时间：",
     "areaCode": "360702",
-    "latitude": 25.7433,
     "longitude": 114.8155,
+    "note": "",
     "orgName": "开心幼儿园篮球场",
-    "orgAddr": "江西省赣州市章贡区",
-    "note": "",
     "score": 0,
-    "tags": [
-      {
-        "value": "评分：-",
-        "type": 2
-      }
-    ],
-    "desc": "营业时间：",
-    "phone": ""
+    "orgId": 153919981,
+    "latitude": 25.7433
   },
   {
-    "orgId": 1994318656,
+    "tags": [
+      {
+        "type": 2,
+        "value": "评分：-"
+      }
+    ],
+    "orgAddr": "章贡区客家大道181号客家一美食城21层",
     "mtId": 1994318656,
+    "phone": "0797-8226768",
+    "desc": "营业时间：",
     "areaCode": "360702",
-    "latitude": 25.8338,
     "longitude": 114.917,
+    "note": "",
     "orgName": "李宁STR篮球馆",
-    "orgAddr": "江西省赣州市章贡区客家大道",
-    "note": "",
     "score": 0,
-    "tags": [
-      {
-        "value": "评分：-",
-        "type": 2
-      }
-    ],
-    "desc": "营业时间：",
-    "phone": ""
+    "orgId": 1994318656,
+    "latitude": 25.8338
   },
   {
-    "orgId": 1178923510,
+    "tags": [
+      {
+        "type": 2,
+        "value": "评分：-"
+      }
+    ],
+    "orgAddr": "章贡区虔东大道与虎岗路交叉口西北240米",
     "mtId": 1178923510,
+    "phone": "",
+    "desc": "营业时间：",
     "areaCode": "360702",
-    "latitude": 25.8623,
     "longitude": 114.9631,
+    "note": "",
     "orgName": "浩克篮球公园",
-    "orgAddr": "江西省赣州市章贡区华荣路",
-    "note": "",
     "score": 0,
-    "tags": [
-      {
-        "value": "评分：-",
-        "type": 2
-      }
-    ],
-    "desc": "营业时间：",
-    "phone": ""
+    "orgId": 1178923510,
+    "latitude": 25.8623
   },
   {
-    "orgId": 898861396,
+    "tags": [
+      {
+        "type": 2,
+        "value": "评分：-"
+      }
+    ],
+    "orgAddr": "章贡区建材市场二街28号",
     "mtId": 898861396,
+    "phone": "18770756053",
+    "desc": "营业时间：周一至周日 10:00-22:00",
     "areaCode": "360702",
-    "latitude": 25.8366,
     "longitude": 114.9081,
+    "note": "",
     "orgName": "23号球馆",
-    "orgAddr": "江西省赣州市章贡区金元路",
-    "note": "",
     "score": 0,
-    "tags": [
-      {
-        "value": "评分：-",
-        "type": 2
-      }
-    ],
-    "desc": "营业时间：周一至周日 10:00-22:00",
-    "phone": ""
+    "orgId": 898861396,
+    "latitude": 25.8366
   },
   {
-    "orgId": 1167973897,
+    "tags": [
+      {
+        "type": 2,
+        "value": "评分：-"
+      }
+    ],
+    "orgAddr": "章贡区起点壹中心",
     "mtId": 1167973897,
-    "areaCode": "360702",
-    "latitude": 25.82,
-    "longitude": 114.9228,
-    "orgName": "虔弘体育篮球培训中心",
-    "orgAddr": "江西省赣州市章贡区章江路",
-    "note": "",
-    "score": 0,
-    "tags": [
-      {
-        "value": "评分：-",
-        "type": 2
-      }
-    ],
+    "phone": "18601630858",
     "desc": "营业时间：周一至周日 全天",
-    "phone": ""
+    "areaCode": "360702",
+    "longitude": 114.9228,
+    "note": "",
+    "orgName": "虔弘体育篮球培训中心",
+    "score": 0,
+    "orgId": 1167973897,
+    "latitude": 25.82
   },
   {
-    "orgId": 1504663857,
+    "tags": [
+      {
+        "type": 2,
+        "value": "评分：-"
+      }
+    ],
+    "orgAddr": "章贡区梅江路与全南路交叉口南20米",
     "mtId": 1504663857,
+    "phone": "0797-8236768",
+    "desc": "营业时间：周一至周日 09:00-22:00",
     "areaCode": "360702",
-    "latitude": 25.818,
     "longitude": 114.9396,
+    "note": "",
     "orgName": "安踏STR篮球公园乐速章江馆",
-    "orgAddr": "江西省赣州市章贡区全南路",
-    "note": "",
     "score": 0,
-    "tags": [
-      {
-        "value": "评分：-",
-        "type": 2
-      }
-    ],
-    "desc": "营业时间：周一至周日 09:00-22:00",
-    "phone": ""
+    "orgId": 1504663857,
+    "latitude": 25.818
   },
   {
-    "orgId": 1723898223,
+    "tags": [
+      {
+        "type": 2,
+        "value": "评分：-"
+      }
+    ],
+    "orgAddr": "于都县银海大厦旁大型收费停车场内进30米",
     "mtId": 1723898223,
+    "phone": "0797-6218808",
+    "desc": "营业时间：",
     "areaCode": "360731",
-    "latitude": 25.9596,
     "longitude": 115.4133,
+    "note": "",
     "orgName": "新空气篮球公园",
-    "orgAddr": "江西省赣州市于都县濂溪路112-1号",
-    "note": "",
     "score": 0,
-    "tags": [
-      {
-        "value": "评分：-",
-        "type": 2
-      }
-    ],
-    "desc": "营业时间：",
-    "phone": ""
+    "orgId": 1723898223,
+    "latitude": 25.9596
   },
   {
-    "orgId": 1999133501,
+    "tags": [
+      {
+        "type": 2,
+        "value": "评分：-"
+      }
+    ],
+    "orgAddr": "章贡区滨江大道与涌泉路交汇处东南侧锦晖广场F3层",
     "mtId": 1999133501,
+    "phone": "13063422697/17370147247",
+    "desc": "营业时间：周一至周日 10:00-22:00",
     "areaCode": "360702",
-    "latitude": 25.8282,
     "longitude": 114.8971,
+    "note": "",
     "orgName": "华蒙星篮球（锦晖广场店）",
-    "orgAddr": "江西省赣州市章贡区滨江路",
-    "note": "",
     "score": 0,
-    "tags": [
-      {
-        "value": "评分：-",
-        "type": 2
-      }
-    ],
-    "desc": "营业时间：周一至周日 10:00-22:00",
-    "phone": ""
+    "orgId": 1999133501,
+    "latitude": 25.8282
   },
   {
-    "orgId": 160188801,
+    "tags": [
+      {
+        "type": 2,
+        "value": "评分：-"
+      }
+    ],
+    "orgAddr": "章贡区经济技术开发区金岭西路73号丰田4S店旁",
     "mtId": 160188801,
-    "areaCode": "360702",
-    "latitude": 25.8386,
-    "longitude": 114.8831,
-    "orgName": "黄金联谊俱乐部.羽毛球篮球培训基地",
-    "orgAddr": "江西省赣州市章贡区金禅路",
-    "note": "",
-    "score": 0,
-    "tags": [
-      {
-        "value": "评分：-",
-        "type": 2
-      }
-    ],
+    "phone": "0797-5555261/18507070760",
     "desc": "营业时间：周一至周日 09:00-22:00",
-    "phone": ""
+    "areaCode": "360702",
+    "longitude": 114.8831,
+    "note": "",
+    "orgName": "黄金联谊俱乐部.羽毛球篮球培训基地",
+    "score": 0,
+    "orgId": 160188801,
+    "latitude": 25.8386
   },
   {
-    "orgId": 1288517615,
-    "mtId": 1288517615,
-    "areaCode": "360702",
-    "latitude": 25.8024,
-    "longitude": 114.9256,
+    "tags": [
+      {
+        "type": 2,
+        "value": "评分：-"
+      }
+    ],
     "orgName": "梦幻球路",
-    "orgAddr": "江西省赣州市章贡区九曲河路",
-    "note": "",
-    "score": 0,
-    "tags": [
-      {
-        "value": "评分：-",
-        "type": 2
-      }
-    ],
+    "mtId": 1288517615,
+    "phone": "15170753483",
     "desc": "营业时间：周一至周日 10:00-22:00",
-    "phone": ""
-  },
-  {
-    "orgId": 1326138037,
-    "mtId": 1326138037,
     "areaCode": "360702",
-    "latitude": 25.8352,
-    "longitude": 114.8937,
+    "longitude": 114.9256,
+    "note": "",
+    "orgAddr": "章贡区九曲河路华欣小区7栋二楼商铺",
+    "score": 0,
+    "orgId": 1288517615,
+    "latitude": 25.8024
+  },
+  {
+    "tags": [
+      {
+        "type": 2,
+        "value": "评分：-"
+      }
+    ],
     "orgName": "厚翼篮球馆",
-    "orgAddr": "江西省赣州市章贡区金环路",
-    "note": "",
-    "score": 0,
-    "tags": [
-      {
-        "value": "评分：-",
-        "type": 2
-      }
-    ],
+    "mtId": 1326138037,
+    "phone": "",
     "desc": "营业时间：",
-    "phone": ""
+    "areaCode": "360702",
+    "longitude": 114.8937,
+    "note": "",
+    "orgAddr": "章贡区金辉路南3号鲲伍体育3楼",
+    "score": 0,
+    "orgId": 1326138037,
+    "latitude": 25.8352
   },
   {
-    "orgId": 1341919894,
-    "mtId": 1341919894,
-    "areaCode": "360781",
-    "latitude": 25.8871,
-    "longitude": 116.0228,
+    "tags": [
+      {
+        "type": 2,
+        "value": "评分：-"
+      }
+    ],
     "orgName": "乐尚24号球馆",
-    "orgAddr": "江西省赣州市瑞金市龙珠北路",
-    "note": "",
-    "score": 0,
-    "tags": [
-      {
-        "value": "评分：-",
-        "type": 2
-      }
-    ],
+    "mtId": 1341919894,
+    "phone": "15216105455",
     "desc": "营业时间：",
-    "phone": ""
+    "areaCode": "360781",
+    "longitude": 116.0228,
+    "note": "",
+    "orgAddr": "瑞金市龙珠北路瑞金市红都幼儿园西侧约80米",
+    "score": 0,
+    "orgId": 1341919894,
+    "latitude": 25.8871
   },
   {
-    "orgId": 1492302022,
-    "mtId": 1492302022,
-    "areaCode": "360704",
-    "latitude": 25.8617,
-    "longitude": 115.0116,
+    "tags": [
+      {
+        "type": 2,
+        "value": "评分：-"
+      }
+    ],
     "orgName": "迈克飞人少儿篮球俱乐部",
-    "orgAddr": "江西省赣州市赣县区梅林大街",
-    "note": "",
-    "score": 0,
-    "tags": [
-      {
-        "value": "评分：-",
-        "type": 2
-      }
-    ],
+    "mtId": 1492302022,
+    "phone": "15279729845",
     "desc": "营业时间：",
-    "phone": ""
-  },
-  {
-    "orgId": 1276893450,
-    "mtId": 1276893450,
     "areaCode": "360704",
-    "latitude": 25.8519,
-    "longitude": 115.0049,
+    "longitude": 115.0116,
+    "note": "",
+    "orgAddr": "赣县区梅林大街星州润达城金街2J-号",
+    "score": 0,
+    "orgId": 1492302022,
+    "latitude": 25.8617
+  },
+  {
+    "tags": [
+      {
+        "type": 2,
+        "value": "评分：-"
+      }
+    ],
     "orgName": "爱尚学",
-    "orgAddr": "江西省赣州市赣县区城南大道",
-    "note": "",
-    "score": 0,
-    "tags": [
-      {
-        "value": "评分：-",
-        "type": 2
-      }
-    ],
+    "mtId": 1276893450,
+    "phone": "18720771580",
     "desc": "营业时间：",
-    "phone": ""
+    "areaCode": "360704",
+    "longitude": 115.0049,
+    "note": "",
+    "orgAddr": "赣县区金桥国际A座8号",
+    "score": 0,
+    "orgId": 1276893450,
+    "latitude": 25.8519
   },
   {
-    "orgId": 907251908,
-    "mtId": 907251908,
-    "areaCode": "360730",
-    "latitude": 26.4725,
-    "longitude": 116.0186,
+    "tags": [
+      {
+        "type": 2,
+        "value": "评分：-"
+      }
+    ],
     "orgName": "酷比篮球学校",
-    "orgAddr": "江西省赣州市宁都县解放西路7-7号",
-    "note": "",
-    "score": 0,
-    "tags": [
-      {
-        "value": "评分：-",
-        "type": 2
-      }
-    ],
+    "mtId": 907251908,
+    "phone": "13677979090",
     "desc": "营业时间：",
-    "phone": ""
+    "areaCode": "360730",
+    "longitude": 116.0186,
+    "note": "",
+    "orgAddr": "宁都县解放西路2号",
+    "score": 0,
+    "orgId": 907251908,
+    "latitude": 26.4725
   },
   {
-    "orgId": 193628881,
-    "mtId": 193628881,
-    "areaCode": "360734",
-    "latitude": 24.98,
-    "longitude": 115.6399,
-    "orgName": "寻乌县体育中心篮球馆",
-    "orgAddr": "江西省赣州市寻乌县文峰街",
-    "note": "",
-    "score": 0,
     "tags": [
       {
-        "value": "评分：-",
-        "type": 2
+        "type": 2,
+        "value": "评分：-"
       }
     ],
+    "orgName": "寻乌县体育中心篮球馆",
+    "mtId": 193628881,
+    "phone": "",
     "desc": "营业时间：",
-    "phone": ""
+    "areaCode": "360734",
+    "longitude": 115.6399,
+    "note": "",
+    "orgAddr": "寻乌县新东大道",
+    "score": 0,
+    "orgId": 193628881,
+    "latitude": 24.98
   }
 ]
