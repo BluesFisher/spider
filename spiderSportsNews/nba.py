@@ -33,7 +33,7 @@ os.makedirs(IMG_PIC_DIR)
 os.makedirs(IMG_ROOT_PATH)
 
 def get_news_list():
-    url = 'https://china.nba.cn/cms/v1/news/list?column_id=13&last_id=0&page_num=20&page_size=40'
+    url = 'https://china.nba.cn/cms/v1/news/list?column_id=13&last_id=0&page_num=20&page_size=20'
     id_list = CommonFunc().get_nba_news_list(url, [])
     return id_list
 

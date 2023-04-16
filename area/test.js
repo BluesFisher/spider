@@ -656,5 +656,5 @@ const flghtClubSort = (type) => {
 
 // compare();
 // filterName();
-// flghtClubSort();
+// flghtClubSort('nba');
 // genJs()

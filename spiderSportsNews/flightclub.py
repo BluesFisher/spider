@@ -189,7 +189,7 @@ def get_hot_news():
 
 if __name__ == '__main__':
     # get_search_news() 
-    # get_hot_news()
+    get_hot_news()
     
-    JsonFunc().save_json(get_flightclub_detail('https://www.flightclub.cn/news/a/sneaker/2023/0412/75142.html'), PATH + '/flightclub')
+    # JsonFunc().save_json(get_flightclub_detail('https://www.flightclub.cn/news/a/sneaker/2023/0412/75142.html'), PATH + '/flightclub')
     
