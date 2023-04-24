@@ -618,16 +618,14 @@ const flghtClubSort = (type) => {
   let temp = [];
   const name = [];
 
-  // nba news
-  if (type === "nba") {
-    data.forEach((item) => {
-      const title = item.find((v) => v.type === "title")?.value;
-      if (!name.includes(title)) {
-        name.push(title);
-        temp.push(item);
-      }
-    });
-  }
+  data.forEach((item) => {
+    const title = item.find((v) => v.type === "title")?.value;
+    if (!name.includes(title)) {
+      name.push(title);
+      temp.push(item);
+    }
+  });
+
 
   if (!temp.length) {
     temp = data;
@@ -656,5 +654,5 @@ const flghtClubSort = (type) => {
 
 // compare();
 // filterName();
-// flghtClubSort('nba');
+flghtClubSort();
 // genJs()

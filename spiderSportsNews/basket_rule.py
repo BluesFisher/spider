@@ -54,7 +54,7 @@ def get_text(text):
 def deal_item(item):
     items = []
     for p in item.contents:
-      if  p.name == 'p' and (p.text or p.find('img')):
+      if  p.name == 'p' and (p.text or p.find('img') or p.find('video')):
         span = p.find('span') 
         if len(p.find_all('span')) > 2:
             text = get_text(p.text)
@@ -78,6 +78,8 @@ def deal_item(item):
                     items.append({ "type": "p", "value": text })
         elif p.find('img'):
             items.append({ "type": "img", "value": p.find('img').attrs['src'] })
+        elif p.find('video'):
+            items.append({ "type": "video", "value": p.find('video').attrs['src'] })
         else:
             text = get_text(p.text)
             if text != '':
@@ -126,8 +128,13 @@ def get_fiba_rules(url_src = ''):
     if not url_src:
       # url = 'http://www.lanqiucaipan.com/a/1' # 1
       # url = 'http://www.lanqiucaipan.com/a/52' # 2
-      url = 'http://www.lanqiucaipan.com/a/51' # 3
-      url_list = get_rule_list(url, 'phpmyfaq_ul', '3')
+      # url = 'http://www.lanqiucaipan.com/a/51' # 3
+      # url = 'http://www.lanqiucaipan.com/a/71' # 4
+      # url = 'http://www.lanqiucaipan.com/a/70' # 5
+      # url = 'http://www.lanqiucaipan.com/a/53' # 6
+      url = 'http://www.lanqiucaipan.com/a/73' # 7
+      
+      url_list = get_rule_list(url, 'phpmyfaq_ul', '7')
       fiba_data['urlList'] = url_list
       fiba_data['detailList'] = {}
       JsonFunc().save_json(fiba_data, file_path)
